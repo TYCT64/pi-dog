@@ -1,0 +1,15 @@
+{
+  "package_name": "i2c_pwm_board_msgs",
+  "non_idl_tuples": [
+    "/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_msgs:msg/Position.msg",
+    "/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_msgs:msg/PositionArray.msg",
+    "/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_msgs:msg/Servo.msg",
+    "/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_msgs:msg/ServoArray.msg",
+    "/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_msgs:msg/ServoConfig.msg",
+    "/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_msgs:msg/ServoConfigArray.msg",
+    "/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_msgs:srv/DriveMode.srv",
+    "/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_msgs:srv/IntValue.srv",
+    "/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_msgs:srv/ServosConfig.srv",
+    "/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_msgs:srv/StopServos.srv"
+  ]
+}

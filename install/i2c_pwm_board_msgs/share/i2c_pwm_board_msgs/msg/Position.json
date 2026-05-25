@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "i2c_pwm_board_msgs/msg/Position",
+      "fields": [
+        {
+          "name": "servo",
+          "type": {
+            "type_id": 4,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "position",
+          "type": {
+            "type_id": 4,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "i2c_pwm_board_msgs/msg/Position",
+      "hash_string": "RIHS01_5b61b76d4b051c49a7ba36ea3df3d703245729c7c9a03e074b3ef1a159952544"
+    }
+  ]
+}

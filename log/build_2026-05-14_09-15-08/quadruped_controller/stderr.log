@@ -1,0 +1,15 @@
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Ktf2/linearMath/quaternion.h: No such file or directory
+   10 | #include [01;31m[K"tf2/linearMath/quaternion.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:132: CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h:26[m[K,
+                 from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/main.cpp:3[m[K:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/command.h:3:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/float32.h: No such file or directory
+    3 | #include [01;31m[K"std_msgs/float32.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:76: CMakeFiles/ik_test_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

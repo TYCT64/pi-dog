@@ -1,0 +1,200 @@
+[0.000000] (-) TimerEvent: {}
+[0.000392] (-) JobUnselected: {'identifier': 'i2c_pwm_board'}
+[0.000739] (-) JobUnselected: {'identifier': 'i2c_pwm_board_calibration'}
+[0.000916] (-) JobUnselected: {'identifier': 'i2c_pwm_board_msgs'}
+[0.001131] (-) JobUnselected: {'identifier': 'i2c_pwm_board_xmlrp'}
+[0.001266] (-) JobUnselected: {'identifier': 'xmlrpcpp'}
+[0.001298] (quadruped_controller) JobQueued: {'identifier': 'quadruped_controller', 'dependencies': OrderedDict()}
+[0.001328] (quadruped_controller) JobStarted: {'identifier': 'quadruped_controller'}
+[0.011973] (quadruped_controller) JobProgress: {'identifier': 'quadruped_controller', 'progress': 'cmake'}
+[0.013236] (quadruped_controller) JobProgress: {'identifier': 'quadruped_controller', 'progress': 'build'}
+[0.014169] (quadruped_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/pi-dog_ws/build/quadruped_controller', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/pi-dog_ws/build/quadruped_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.103 51813 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-89545bbf-21d2-4266-aad8-7b01b1d71443.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-2a2f4df169.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/quadruped_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.103 51813 192.168.1.102 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.099793] (-) TimerEvent: {}
+[0.200386] (-) TimerEvent: {}
+[0.264454] (quadruped_controller) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o\x1b[0m\n'}
+[0.300499] (-) TimerEvent: {}
+[0.400903] (-) TimerEvent: {}
+[0.501371] (-) TimerEvent: {}
+[0.601779] (-) TimerEvent: {}
+[0.702289] (-) TimerEvent: {}
+[0.802897] (-) TimerEvent: {}
+[0.903367] (-) TimerEvent: {}
+[1.003738] (-) TimerEvent: {}
+[1.104154] (-) TimerEvent: {}
+[1.204609] (-) TimerEvent: {}
+[1.305017] (-) TimerEvent: {}
+[1.405476] (-) TimerEvent: {}
+[1.505945] (-) TimerEvent: {}
+[1.606341] (-) TimerEvent: {}
+[1.706760] (-) TimerEvent: {}
+[1.807240] (-) TimerEvent: {}
+[1.907629] (-) TimerEvent: {}
+[2.008000] (-) TimerEvent: {}
+[2.108352] (-) TimerEvent: {}
+[2.208816] (-) TimerEvent: {}
+[2.309536] (-) TimerEvent: {}
+[2.410054] (-) TimerEvent: {}
+[2.510528] (-) TimerEvent: {}
+[2.610921] (-) TimerEvent: {}
+[2.711315] (-) TimerEvent: {}
+[2.811671] (-) TimerEvent: {}
+[2.912023] (-) TimerEvent: {}
+[3.012394] (-) TimerEvent: {}
+[3.112839] (-) TimerEvent: {}
+[3.213334] (-) TimerEvent: {}
+[3.313806] (-) TimerEvent: {}
+[3.414310] (-) TimerEvent: {}
+[3.514750] (-) TimerEvent: {}
+[3.615265] (-) TimerEvent: {}
+[3.715649] (-) TimerEvent: {}
+[3.816084] (-) TimerEvent: {}
+[3.916651] (-) TimerEvent: {}
+[4.017062] (-) TimerEvent: {}
+[4.117495] (-) TimerEvent: {}
+[4.218129] (-) TimerEvent: {}
+[4.318785] (-) TimerEvent: {}
+[4.419295] (-) TimerEvent: {}
+[4.519825] (-) TimerEvent: {}
+[4.620195] (-) TimerEvent: {}
+[4.720555] (-) TimerEvent: {}
+[4.820920] (-) TimerEvent: {}
+[4.921299] (-) TimerEvent: {}
+[5.021641] (-) TimerEvent: {}
+[5.122031] (-) TimerEvent: {}
+[5.222523] (-) TimerEvent: {}
+[5.322908] (-) TimerEvent: {}
+[5.423350] (-) TimerEvent: {}
+[5.523844] (-) TimerEvent: {}
+[5.624202] (-) TimerEvent: {}
+[5.724576] (-) TimerEvent: {}
+[5.824956] (-) TimerEvent: {}
+[5.925343] (-) TimerEvent: {}
+[6.025839] (-) TimerEvent: {}
+[6.126179] (-) TimerEvent: {}
+[6.226524] (-) TimerEvent: {}
+[6.326892] (-) TimerEvent: {}
+[6.427238] (-) TimerEvent: {}
+[6.527608] (-) TimerEvent: {}
+[6.628016] (-) TimerEvent: {}
+[6.728495] (-) TimerEvent: {}
+[6.828869] (-) TimerEvent: {}
+[6.929216] (-) TimerEvent: {}
+[7.029574] (-) TimerEvent: {}
+[7.129933] (-) TimerEvent: {}
+[7.230315] (-) TimerEvent: {}
+[7.330808] (-) TimerEvent: {}
+[7.431169] (-) TimerEvent: {}
+[7.531532] (-) TimerEvent: {}
+[7.631908] (-) TimerEvent: {}
+[7.732263] (-) TimerEvent: {}
+[7.832661] (-) TimerEvent: {}
+[7.933004] (-) TimerEvent: {}
+[8.033343] (-) TimerEvent: {}
+[8.133721] (-) TimerEvent: {}
+[8.234069] (-) TimerEvent: {}
+[8.334412] (-) TimerEvent: {}
+[8.434772] (-) TimerEvent: {}
+[8.535124] (-) TimerEvent: {}
+[8.635466] (-) TimerEvent: {}
+[8.735819] (-) TimerEvent: {}
+[8.836148] (-) TimerEvent: {}
+[8.936512] (-) TimerEvent: {}
+[9.036870] (-) TimerEvent: {}
+[9.137209] (-) TimerEvent: {}
+[9.219147] (quadruped_controller) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking CXX executable ik_test_node\x1b[0m\n'}
+[9.237327] (-) TimerEvent: {}
+[9.337719] (-) TimerEvent: {}
+[9.438107] (-) TimerEvent: {}
+[9.538484] (-) TimerEvent: {}
+[9.638936] (-) TimerEvent: {}
+[9.739476] (-) TimerEvent: {}
+[9.839838] (-) TimerEvent: {}
+[9.940214] (-) TimerEvent: {}
+[10.040732] (-) TimerEvent: {}
+[10.141593] (-) TimerEvent: {}
+[10.242501] (-) TimerEvent: {}
+[10.343382] (-) TimerEvent: {}
+[10.444261] (-) TimerEvent: {}
+[10.545161] (-) TimerEvent: {}
+[10.646001] (-) TimerEvent: {}
+[10.746909] (-) TimerEvent: {}
+[10.847688] (-) TimerEvent: {}
+[10.948145] (-) TimerEvent: {}
+[11.048487] (-) TimerEvent: {}
+[11.148874] (-) TimerEvent: {}
+[11.249297] (-) TimerEvent: {}
+[11.349705] (-) TimerEvent: {}
+[11.450045] (-) TimerEvent: {}
+[11.550438] (-) TimerEvent: {}
+[11.650821] (-) TimerEvent: {}
+[11.751161] (-) TimerEvent: {}
+[11.815669] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o: in function `SpotMicroIdleState::SpotMicroIdleState()':\n"}
+[11.815995] (quadruped_controller) StderrLine: {'line': b"spot_micro_idle.cpp:(.text+0x10): undefined reference to `SpotMicroState::SpotMicroState()'\n"}
+[11.816114] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o: in function `SpotMicroIdleState::~SpotMicroIdleState()':\n"}
+[11.816360] (quadruped_controller) StderrLine: {'line': b"spot_micro_idle.cpp:(.text+0x50): undefined reference to `SpotMicroState::~SpotMicroState()'\n"}
+[11.816550] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o: in function `SpotMicroIdleState::handleInputCommands(smk::BodyState const&, SpotMicroNodeConfig const&, Command const&, SpotMicroMotionCmd*, smk::BodyState*)':\n"}
+[11.816830] (quadruped_controller) StderrLine: {'line': b"spot_micro_idle.cpp:(.text+0x148): undefined reference to `SpotMicroState::changeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState, std::default_delete<SpotMicroState> >)'\n"}
+[11.816990] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o:(.data.rel.ro._ZTV18SpotMicroIdleState[_ZTV18SpotMicroIdleState]+0x38): undefined reference to `SpotMicroState::initBodyStateFilters(float, float, float, float, smk::BodyState const&, BodyStateFilters*)'\n"}
+[11.817088] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o:(.data.rel.ro._ZTV18SpotMicroIdleState[_ZTV18SpotMicroIdleState]+0x40): undefined reference to `SpotMicroState::setBodyStateFilterCommands(smk::BodyState const&, BodyStateFilters*)'\n"}
+[11.817178] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o:(.data.rel.ro._ZTV18SpotMicroIdleState[_ZTV18SpotMicroIdleState]+0x48): undefined reference to `SpotMicroState::runFilters(BodyStateFilters*)'\n"}
+[11.817263] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o:(.data.rel.ro._ZTV18SpotMicroIdleState[_ZTV18SpotMicroIdleState]+0x50): undefined reference to `SpotMicroState::assignFilterValuesToBodyState(BodyStateFilters const&, smk::BodyState*)'\n"}
+[11.817349] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o:(.data.rel.ro._ZTV18SpotMicroIdleState[_ZTV18SpotMicroIdleState]+0x58): undefined reference to `SpotMicroState::checkBodyStateEquality(smk::BodyState const&, smk::BodyState const&, float)'\n"}
+[11.817569] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o:(.data.rel.ro._ZTI18SpotMicroIdleState[_ZTI18SpotMicroIdleState]+0x10): undefined reference to `typeinfo for SpotMicroState'\n"}
+[11.817805] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o: in function `SpotMicroStandState::SpotMicroStandState()':\n"}
+[11.817989] (quadruped_controller) StderrLine: {'line': b"spot_micro_stand.cpp:(.text+0x10): undefined reference to `SpotMicroState::SpotMicroState()'\n"}
+[11.818171] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o: in function `SpotMicroStandState::~SpotMicroStandState()':\n"}
+[11.818358] (quadruped_controller) StderrLine: {'line': b"spot_micro_stand.cpp:(.text+0x5c): undefined reference to `SpotMicroState::~SpotMicroState()'\n"}
+[11.818461] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o: in function `SpotMicroStandState::handleInputCommands(smk::BodyState const&, SpotMicroNodeConfig const&, Command const&, SpotMicroMotionCmd*, smk::BodyState*)':\n"}
+[11.818607] (quadruped_controller) StderrLine: {'line': b"spot_micro_stand.cpp:(.text+0x154): undefined reference to `SpotMicroState::changeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState, std::default_delete<SpotMicroState> >)'\n"}
+[11.818988] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: spot_micro_stand.cpp:(.text+0x1bc): undefined reference to `SpotMicroState::changeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState, std::default_delete<SpotMicroState> >)'\n"}
+[11.819087] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o:(.data.rel.ro._ZTV19SpotMicroStandState[_ZTV19SpotMicroStandState]+0x38): undefined reference to `SpotMicroState::initBodyStateFilters(float, float, float, float, smk::BodyState const&, BodyStateFilters*)'\n"}
+[11.819225] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o:(.data.rel.ro._ZTV19SpotMicroStandState[_ZTV19SpotMicroStandState]+0x40): undefined reference to `SpotMicroState::setBodyStateFilterCommands(smk::BodyState const&, BodyStateFilters*)'\n"}
+[11.819415] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o:(.data.rel.ro._ZTV19SpotMicroStandState[_ZTV19SpotMicroStandState]+0x48): undefined reference to `SpotMicroState::runFilters(BodyStateFilters*)'\n"}
+[11.819550] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o:(.data.rel.ro._ZTV19SpotMicroStandState[_ZTV19SpotMicroStandState]+0x50): undefined reference to `SpotMicroState::assignFilterValuesToBodyState(BodyStateFilters const&, smk::BodyState*)'\n"}
+[11.819687] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o:(.data.rel.ro._ZTV19SpotMicroStandState[_ZTV19SpotMicroStandState]+0x58): undefined reference to `SpotMicroState::checkBodyStateEquality(smk::BodyState const&, smk::BodyState const&, float)'\n"}
+[11.819821] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o:(.data.rel.ro._ZTI19SpotMicroStandState[_ZTI19SpotMicroStandState]+0x10): undefined reference to `typeinfo for SpotMicroState'\n"}
+[11.819920] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o: in function `SpotMicroTransitionIdleState::SpotMicroTransitionIdleState()':\n"}
+[11.820007] (quadruped_controller) StderrLine: {'line': b"spot_micro_transition_idle.cpp:(.text+0x10): undefined reference to `SpotMicroState::SpotMicroState()'\n"}
+[11.820090] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o: in function `SpotMicroTransitionIdleState::~SpotMicroTransitionIdleState()':\n"}
+[11.820172] (quadruped_controller) StderrLine: {'line': b"spot_micro_transition_idle.cpp:(.text+0x68): undefined reference to `SpotMicroState::~SpotMicroState()'\n"}
+[11.820276] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o: in function `SpotMicroTransitionIdleState::handleInputCommands(smk::BodyState const&, SpotMicroNodeConfig const&, Command const&, SpotMicroMotionCmd*, smk::BodyState*)':\n"}
+[11.820383] (quadruped_controller) StderrLine: {'line': b"spot_micro_transition_idle.cpp:(.text+0x318): undefined reference to `SpotMicroState::changeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState, std::default_delete<SpotMicroState> >)'\n"}
+[11.820481] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o:(.data.rel.ro._ZTV28SpotMicroTransitionIdleState[_ZTV28SpotMicroTransitionIdleState]+0x38): undefined reference to `SpotMicroState::initBodyStateFilters(float, float, float, float, smk::BodyState const&, BodyStateFilters*)'\n"}
+[11.820620] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o:(.data.rel.ro._ZTV28SpotMicroTransitionIdleState[_ZTV28SpotMicroTransitionIdleState]+0x40): undefined reference to `SpotMicroState::setBodyStateFilterCommands(smk::BodyState const&, BodyStateFilters*)'\n"}
+[11.820747] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o:(.data.rel.ro._ZTV28SpotMicroTransitionIdleState[_ZTV28SpotMicroTransitionIdleState]+0x48): undefined reference to `SpotMicroState::runFilters(BodyStateFilters*)'\n"}
+[11.820898] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o:(.data.rel.ro._ZTV28SpotMicroTransitionIdleState[_ZTV28SpotMicroTransitionIdleState]+0x50): undefined reference to `SpotMicroState::assignFilterValuesToBodyState(BodyStateFilters const&, smk::BodyState*)'\n"}
+[11.821146] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o:(.data.rel.ro._ZTV28SpotMicroTransitionIdleState[_ZTV28SpotMicroTransitionIdleState]+0x58): undefined reference to `SpotMicroState::checkBodyStateEquality(smk::BodyState const&, smk::BodyState const&, float)'\n"}
+[11.821263] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o:(.data.rel.ro._ZTI28SpotMicroTransitionIdleState[_ZTI28SpotMicroTransitionIdleState]+0x10): undefined reference to `typeinfo for SpotMicroState'\n"}
+[11.821352] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o: in function `SpotMicroTransitionStandState::SpotMicroTransitionStandState()':\n"}
+[11.821436] (quadruped_controller) StderrLine: {'line': b"spot_micro_transition_stand.cpp:(.text+0x10): undefined reference to `SpotMicroState::SpotMicroState()'\n"}
+[11.821524] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o: in function `SpotMicroTransitionStandState::~SpotMicroTransitionStandState()':\n"}
+[11.821635] (quadruped_controller) StderrLine: {'line': b"spot_micro_transition_stand.cpp:(.text+0x68): undefined reference to `SpotMicroState::~SpotMicroState()'\n"}
+[11.821720] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o: in function `SpotMicroTransitionStandState::handleInputCommands(smk::BodyState const&, SpotMicroNodeConfig const&, Command const&, SpotMicroMotionCmd*, smk::BodyState*)':\n"}
+[11.821803] (quadruped_controller) StderrLine: {'line': b"spot_micro_transition_stand.cpp:(.text+0x318): undefined reference to `SpotMicroState::changeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState, std::default_delete<SpotMicroState> >)'\n"}
+[11.821884] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o:(.data.rel.ro._ZTV29SpotMicroTransitionStandState[_ZTV29SpotMicroTransitionStandState]+0x38): undefined reference to `SpotMicroState::initBodyStateFilters(float, float, float, float, smk::BodyState const&, BodyStateFilters*)'\n"}
+[11.821974] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o:(.data.rel.ro._ZTV29SpotMicroTransitionStandState[_ZTV29SpotMicroTransitionStandState]+0x40): undefined reference to `SpotMicroState::setBodyStateFilterCommands(smk::BodyState const&, BodyStateFilters*)'\n"}
+[11.822059] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o:(.data.rel.ro._ZTV29SpotMicroTransitionStandState[_ZTV29SpotMicroTransitionStandState]+0x48): undefined reference to `SpotMicroState::runFilters(BodyStateFilters*)'\n"}
+[11.822142] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o:(.data.rel.ro._ZTV29SpotMicroTransitionStandState[_ZTV29SpotMicroTransitionStandState]+0x50): undefined reference to `SpotMicroState::assignFilterValuesToBodyState(BodyStateFilters const&, smk::BodyState*)'\n"}
+[11.822223] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o:(.data.rel.ro._ZTV29SpotMicroTransitionStandState[_ZTV29SpotMicroTransitionStandState]+0x58): undefined reference to `SpotMicroState::checkBodyStateEquality(smk::BodyState const&, smk::BodyState const&, float)'\n"}
+[11.822305] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o:(.data.rel.ro._ZTI29SpotMicroTransitionStandState[_ZTI29SpotMicroTransitionStandState]+0x10): undefined reference to `typeinfo for SpotMicroState'\n"}
+[11.822384] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o: in function `SpotMicroWalkState::SpotMicroWalkState()':\n"}
+[11.822464] (quadruped_controller) StderrLine: {'line': b"spot_micro_walk.cpp:(.text+0x10): undefined reference to `SpotMicroState::SpotMicroState()'\n"}
+[11.822544] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o: in function `SpotMicroWalkState::~SpotMicroWalkState()':\n"}
+[11.822640] (quadruped_controller) StderrLine: {'line': b"spot_micro_walk.cpp:(.text+0xa0): undefined reference to `SpotMicroState::~SpotMicroState()'\n"}
+[11.822722] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o: in function `SpotMicroWalkState::handleInputCommands(smk::BodyState const&, SpotMicroNodeConfig const&, Command const&, SpotMicroMotionCmd*, smk::BodyState*)':\n"}
+[11.822804] (quadruped_controller) StderrLine: {'line': b"spot_micro_walk.cpp:(.text+0x198): undefined reference to `SpotMicroState::changeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState, std::default_delete<SpotMicroState> >)'\n"}
+[11.824201] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o:(.data.rel.ro._ZTV18SpotMicroWalkState[_ZTV18SpotMicroWalkState]+0x38): undefined reference to `SpotMicroState::initBodyStateFilters(float, float, float, float, smk::BodyState const&, BodyStateFilters*)'\n"}
+[11.824508] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o:(.data.rel.ro._ZTV18SpotMicroWalkState[_ZTV18SpotMicroWalkState]+0x40): undefined reference to `SpotMicroState::setBodyStateFilterCommands(smk::BodyState const&, BodyStateFilters*)'\n"}
+[11.824845] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o:(.data.rel.ro._ZTV18SpotMicroWalkState[_ZTV18SpotMicroWalkState]+0x48): undefined reference to `SpotMicroState::runFilters(BodyStateFilters*)'\n"}
+[11.825019] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o:(.data.rel.ro._ZTV18SpotMicroWalkState[_ZTV18SpotMicroWalkState]+0x50): undefined reference to `SpotMicroState::assignFilterValuesToBodyState(BodyStateFilters const&, smk::BodyState*)'\n"}
+[11.825120] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o:(.data.rel.ro._ZTV18SpotMicroWalkState[_ZTV18SpotMicroWalkState]+0x58): undefined reference to `SpotMicroState::checkBodyStateEquality(smk::BodyState const&, smk::BodyState const&, float)'\n"}
+[11.825205] (quadruped_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o:(.data.rel.ro._ZTI18SpotMicroWalkState[_ZTI18SpotMicroWalkState]+0x10): undefined reference to `typeinfo for SpotMicroState'\n"}
+[11.851276] (-) TimerEvent: {}
+[11.951683] (-) TimerEvent: {}
+[11.957690] (quadruped_controller) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[11.962061] (quadruped_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:377: ik_test_node] Error 1\n'}
+[11.962649] (quadruped_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2\n'}
+[11.962979] (quadruped_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[11.966508] (quadruped_controller) CommandEnded: {'returncode': 2}
+[11.981619] (quadruped_controller) JobEnded: {'identifier': 'quadruped_controller', 'rc': 2}
+[11.992767] (-) EventReactorShutdown: {}

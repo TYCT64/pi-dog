@@ -1,0 +1,12 @@
+[  8%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o[0m
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:24:1:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ does not name a type; did you mean ‘[01m[KTransformData[m[K’?
+   24 | [01;31m[KTransformStamped[m[K eigAndFramesToTrans(
+      | [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      | [32m[KTransformData[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:41:3:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ does not name a type; did you mean ‘[01m[KTransformData[m[K’?
+   41 |   [01;31m[KTransformStamped[m[K createTransform(
+      |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |   [32m[KTransformData[m[K
+gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:146: CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

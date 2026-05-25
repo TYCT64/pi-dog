@@ -1,0 +1,16 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/main.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o[0m
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/Float32.hpp: No such file or directory
+    4 | #include [01;31m[K"std_msgs/msg/Float32.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:132: CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/main.cpp:3[m[K:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h:26:10:[m[K [01;31m[Kfatal error: [m[Kspot_micro_motion_cmd/command.h: No such file or directory
+   26 | #include [01;31m[K"spot_micro_motion_cmd/command.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:76: CMakeFiles/ik_test_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

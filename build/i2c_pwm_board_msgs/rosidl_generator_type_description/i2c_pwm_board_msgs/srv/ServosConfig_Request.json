@@ -1,0 +1,76 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "i2c_pwm_board_msgs/srv/ServosConfig_Request",
+      "fields": [
+        {
+          "name": "servos",
+          "type": {
+            "type_id": 145,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "i2c_pwm_board_msgs/msg/ServoConfig"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "i2c_pwm_board_msgs/msg/ServoConfig",
+        "fields": [
+          {
+            "name": "servo",
+            "type": {
+              "type_id": 4,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "center",
+            "type": {
+              "type_id": 4,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "range",
+            "type": {
+              "type_id": 4,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "direction",
+            "type": {
+              "type_id": 4,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "i2c_pwm_board_msgs/srv/ServosConfig_Request",
+      "hash_string": "RIHS01_21083bb8fdb315867a089df4cd715c0b68ad886b872c34632e4d7373b49e2c39"
+    },
+    {
+      "type_name": "i2c_pwm_board_msgs/msg/ServoConfig",
+      "hash_string": "RIHS01_7b6aa6998298af5f3c02498a29839a8d60d9dd9139523822615746bf5a7cccc2"
+    }
+  ]
+}

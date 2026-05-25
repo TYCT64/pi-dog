@@ -1,0 +1,14 @@
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_kinematics.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kspot_micro_kinematics/utils.h: No such file or directory
+    3 | #include [01;31m[K"spot_micro_kinematics/utils.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:90: CMakeFiles/ik_test_node.dir/src/spot_micro_kinematics.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/main.cpp:2[m[K:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics.h:5:10:[m[K [01;31m[Kfatal error: [m[Kspot_micro_kinematics/utils.h: No such file or directory
+    5 | #include [01;31m[K"spot_micro_kinematics/utils.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:76: CMakeFiles/ik_test_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

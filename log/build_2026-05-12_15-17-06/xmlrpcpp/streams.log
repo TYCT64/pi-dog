@@ -1,0 +1,71 @@
+[0.017s] Invoking command in '/home/ubuntu/pi-dog_ws/build/xmlrpcpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/pi-dog_ws/src/i2c_pwm_board/xmlrpcpp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/xmlrpcpp
+[0.135s] -- The C compiler identification is GNU 13.3.0
+[0.298s] -- The CXX compiler identification is GNU 13.3.0
+[0.355s] -- Detecting C compiler ABI info
+[0.619s] -- Detecting C compiler ABI info - done
+[0.653s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.654s] -- Detecting C compile features
+[0.655s] -- Detecting C compile features - done
+[0.688s] -- Detecting CXX compiler ABI info
+[0.913s] -- Detecting CXX compiler ABI info - done
+[0.930s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.930s] -- Detecting CXX compile features
+[0.931s] -- Detecting CXX compile features - done
+[0.936s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.146s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.428s] -- Configuring done (1.4s)
+[1.437s] -- Generating done (0.0s)
+[1.441s] -- Build files have been written to: /home/ubuntu/pi-dog_ws/build/xmlrpcpp
+[1.448s] Invoked command in '/home/ubuntu/pi-dog_ws/build/xmlrpcpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/pi-dog_ws/src/i2c_pwm_board/xmlrpcpp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/xmlrpcpp
+[1.450s] Invoking command in '/home/ubuntu/pi-dog_ws/build/xmlrpcpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/xmlrpcpp -- -j4 -l4
+[1.532s] [ 18%] [32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_client.cc.o[0m
+[1.532s] [ 18%] [32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_server_method.cc.o[0m
+[1.535s] [ 27%] [32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_server.cc.o[0m
+[1.535s] [ 36%] [32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_server_connection.cc.o[0m
+[2.158s] [ 45%] [32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_socket.cc.o[0m
+[2.321s] [ 54%] [32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_source.cc.o[0m
+[2.526s] [ 63%] [32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_util.cc.o[0m
+[2.594s] [ 72%] [32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_value.cc.o[0m
+[2.640s] [ 81%] [32mBuilding C object CMakeFiles/xmlrpcpp.dir/libb64/src/cdecode.c.o[0m
+[2.721s] [ 90%] [32mBuilding C object CMakeFiles/xmlrpcpp.dir/libb64/src/cencode.c.o[0m
+[3.588s] [100%] [32m[1mLinking CXX static library libxmlrpcpp.a[0m
+[3.699s] [100%] Built target xmlrpcpp
+[3.719s] Invoked command in '/home/ubuntu/pi-dog_ws/build/xmlrpcpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/xmlrpcpp -- -j4 -l4
+[3.721s] Invoking command in '/home/ubuntu/pi-dog_ws/build/xmlrpcpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/pi-dog_ws/build/xmlrpcpp
+[3.734s] -- Install configuration: ""
+[3.734s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib/libxmlrpcpp.a
+[3.736s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include/
+[3.736s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp
+[3.736s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcServerMethod.h
+[3.737s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcValue.h
+[3.737s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcException.h
+[3.737s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcSocket.h
+[3.737s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcClient.h
+[3.737s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcDispatch.h
+[3.737s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpc.h
+[3.737s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcServerConnection.h
+[3.737s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcDecl.h
+[3.738s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcServer.h
+[3.738s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/base64.h
+[3.738s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcUtil.h
+[3.738s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcSource.h
+[3.738s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/environment/library_path.sh
+[3.738s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/environment/library_path.dsv
+[3.739s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/ament_index/resource_index/package_run_dependencies/xmlrpcpp
+[3.739s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/ament_index/resource_index/parent_prefix_path/xmlrpcpp
+[3.739s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/environment/ament_prefix_path.sh
+[3.739s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/environment/ament_prefix_path.dsv
+[3.739s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/environment/path.sh
+[3.740s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/environment/path.dsv
+[3.740s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/local_setup.bash
+[3.740s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/local_setup.sh
+[3.740s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/local_setup.zsh
+[3.740s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/local_setup.dsv
+[3.740s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/package.dsv
+[3.741s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/ament_index/resource_index/packages/xmlrpcpp
+[3.741s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.741s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/cmake/ament_cmake_export_libraries-extras.cmake
+[3.741s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/cmake/xmlrpcppConfig.cmake
+[3.741s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/cmake/xmlrpcppConfig-version.cmake
+[3.741s] -- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/package.xml
+[3.745s] Invoked command in '/home/ubuntu/pi-dog_ws/build/xmlrpcpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/pi-dog_ws/build/xmlrpcpp

@@ -1,0 +1,75 @@
+[0.000000] (-) TimerEvent: {}
+[0.000379] (-) JobUnselected: {'identifier': 'i2c_pwm_board'}
+[0.000687] (-) JobUnselected: {'identifier': 'i2c_pwm_board_calibration'}
+[0.000858] (-) JobUnselected: {'identifier': 'i2c_pwm_board_msgs'}
+[0.001055] (-) JobUnselected: {'identifier': 'i2c_pwm_board_xmlrp'}
+[0.001196] (-) JobUnselected: {'identifier': 'xmlrpcpp'}
+[0.001234] (quadruped_controller) JobQueued: {'identifier': 'quadruped_controller', 'dependencies': OrderedDict()}
+[0.001284] (quadruped_controller) JobStarted: {'identifier': 'quadruped_controller'}
+[0.010384] (quadruped_controller) JobProgress: {'identifier': 'quadruped_controller', 'progress': 'cmake'}
+[0.011314] (quadruped_controller) JobProgress: {'identifier': 'quadruped_controller', 'progress': 'build'}
+[0.012103] (quadruped_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/pi-dog_ws/build/quadruped_controller', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/pi-dog_ws/build/quadruped_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 61330 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-d8409ca6-7bc1-4b1c-81ac-9eb1b1d6ddf5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-83ba020218.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/quadruped_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 61330 fe80::2ecf:67ff:fe63:7a9%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.082542] (quadruped_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099694] (-) TimerEvent: {}
+[0.200072] (-) TimerEvent: {}
+[0.304910] (-) TimerEvent: {}
+[0.405243] (-) TimerEvent: {}
+[0.500447] (quadruped_controller) StdoutLine: {'line': b'-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.505343] (-) TimerEvent: {}
+[0.580234] (quadruped_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.602876] (quadruped_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.605446] (-) TimerEvent: {}
+[0.636905] (quadruped_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.671590] (quadruped_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.705566] (-) TimerEvent: {}
+[0.805918] (-) TimerEvent: {}
+[0.810413] (quadruped_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.815672] (quadruped_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.906043] (-) TimerEvent: {}
+[0.957032] (quadruped_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.006157] (-) TimerEvent: {}
+[1.099719] (quadruped_controller) StdoutLine: {'line': b'-- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[1.106230] (-) TimerEvent: {}
+[1.137223] (quadruped_controller) StdoutLine: {'line': b'-- Found i2c_pwm_board_msgs: 0.1.0 (/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake)\n'}
+[1.172240] (quadruped_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[1.206350] (-) TimerEvent: {}
+[1.211456] (quadruped_controller) StdoutLine: {'line': b'-- Found tf2: 0.36.20 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[1.223675] (quadruped_controller) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.20 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[1.306474] (-) TimerEvent: {}
+[1.406838] (-) TimerEvent: {}
+[1.502057] (quadruped_controller) StdoutLine: {'line': b'-- Found tf2_eigen: 0.36.20 (/opt/ros/jazzy/share/tf2_eigen/cmake)\n'}
+[1.506934] (-) TimerEvent: {}
+[1.514027] (quadruped_controller) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.20 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[1.527921] (quadruped_controller) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[1.532026] (quadruped_controller) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.542429] (quadruped_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.607056] (-) TimerEvent: {}
+[1.707456] (-) TimerEvent: {}
+[1.738116] (quadruped_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.738963] (quadruped_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/ubuntu/pi-dog_ws/src/quadruped_controller/include;/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd;/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm;$<BUILD_INTERFACE:/home/ubuntu/pi-dog_ws/src/quadruped_controller/include>\n'}
+[1.739331] (quadruped_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.742344] (quadruped_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.746718] (quadruped_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.746895] (quadruped_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.748108] (quadruped_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.753724] (quadruped_controller) StdoutLine: {'line': b'-- Configuring done (1.7s)\n'}
+[1.759462] (quadruped_controller) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:30 (add_executable):\n'}
+[1.759687] (quadruped_controller) StderrLine: {'line': b'  Cannot find source file:\n'}
+[1.759800] (quadruped_controller) StderrLine: {'line': b'\n'}
+[1.759905] (quadruped_controller) StderrLine: {'line': b'    src/motion_cmd/spot_micro_motion_cmd.cpp\xe7\xb0\xbd\n'}
+[1.760011] (quadruped_controller) StderrLine: {'line': b'\n'}
+[1.760110] (quadruped_controller) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm\n'}
+[1.760209] (quadruped_controller) StderrLine: {'line': b'  .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90\n'}
+[1.760335] (quadruped_controller) StderrLine: {'line': b'  .f95 .f03 .hip .ispc\n'}
+[1.760440] (quadruped_controller) StderrLine: {'line': b'\n'}
+[1.760537] (quadruped_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[1.765620] (quadruped_controller) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:30 (add_executable):\n'}
+[1.765794] (quadruped_controller) StderrLine: {'line': b'  No SOURCES given to target: ik_test_node\n'}
+[1.765893] (quadruped_controller) StderrLine: {'line': b'\n'}
+[1.765985] (quadruped_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[1.766076] (quadruped_controller) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[1.782526] (quadruped_controller) StderrLine: {'line': b'gmake: *** [Makefile:375: cmake_check_build_system] Error 1\n'}
+[1.786454] (quadruped_controller) CommandEnded: {'returncode': 2}
+[1.807687] (-) TimerEvent: {}
+[1.810780] (quadruped_controller) JobEnded: {'identifier': 'quadruped_controller', 'rc': 2}
+[1.821478] (-) EventReactorShutdown: {}

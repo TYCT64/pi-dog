@@ -1,0 +1,14 @@
+[0.029s] Invoking command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4
+[0.184s] [  8%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o[0m
+[7.857s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:24:1:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ does not name a type; did you mean ‘[01m[KTransformData[m[K’?
+[7.858s]    24 | [01;31m[KTransformStamped[m[K eigAndFramesToTrans(
+[7.858s]       | [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.858s]       | [32m[KTransformData[m[K
+[7.864s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:41:3:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ does not name a type; did you mean ‘[01m[KTransformData[m[K’?
+[7.864s]    41 |   [01;31m[KTransformStamped[m[K createTransform(
+[7.865s]       |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.865s]       |   [32m[KTransformData[m[K
+[10.963s] gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:146: CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o] Error 1
+[10.964s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+[10.964s] gmake: *** [Makefile:146: all] Error 2
+[10.968s] Invoked command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4

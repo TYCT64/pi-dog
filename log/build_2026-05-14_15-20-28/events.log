@@ -1,0 +1,140 @@
+[0.000000] (-) TimerEvent: {}
+[0.000379] (-) JobUnselected: {'identifier': 'i2c_pwm_board'}
+[0.000694] (-) JobUnselected: {'identifier': 'i2c_pwm_board_calibration'}
+[0.000870] (-) JobUnselected: {'identifier': 'i2c_pwm_board_msgs'}
+[0.001075] (-) JobUnselected: {'identifier': 'i2c_pwm_board_xmlrp'}
+[0.001224] (-) JobUnselected: {'identifier': 'xmlrpcpp'}
+[0.001283] (quadruped_controller) JobQueued: {'identifier': 'quadruped_controller', 'dependencies': OrderedDict()}
+[0.001315] (quadruped_controller) JobStarted: {'identifier': 'quadruped_controller'}
+[0.009927] (quadruped_controller) JobProgress: {'identifier': 'quadruped_controller', 'progress': 'cmake'}
+[0.011165] (quadruped_controller) JobProgress: {'identifier': 'quadruped_controller', 'progress': 'build'}
+[0.012135] (quadruped_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/pi-dog_ws/build/quadruped_controller', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/pi-dog_ws/build/quadruped_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.103 51813 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-89545bbf-21d2-4266-aad8-7b01b1d71443.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-2a2f4df169.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/quadruped_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.103 51813 192.168.1.102 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.099724] (-) TimerEvent: {}
+[0.200105] (-) TimerEvent: {}
+[0.208363] (quadruped_controller) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o\x1b[0m\n'}
+[0.300169] (-) TimerEvent: {}
+[0.400504] (-) TimerEvent: {}
+[0.500869] (-) TimerEvent: {}
+[0.601365] (-) TimerEvent: {}
+[0.701794] (-) TimerEvent: {}
+[0.802470] (-) TimerEvent: {}
+[0.902818] (-) TimerEvent: {}
+[1.003226] (-) TimerEvent: {}
+[1.103711] (-) TimerEvent: {}
+[1.204144] (-) TimerEvent: {}
+[1.304607] (-) TimerEvent: {}
+[1.404980] (-) TimerEvent: {}
+[1.505359] (-) TimerEvent: {}
+[1.605734] (-) TimerEvent: {}
+[1.706146] (-) TimerEvent: {}
+[1.806526] (-) TimerEvent: {}
+[1.906902] (-) TimerEvent: {}
+[2.007284] (-) TimerEvent: {}
+[2.107655] (-) TimerEvent: {}
+[2.208022] (-) TimerEvent: {}
+[2.308473] (-) TimerEvent: {}
+[2.408842] (-) TimerEvent: {}
+[2.509225] (-) TimerEvent: {}
+[2.609598] (-) TimerEvent: {}
+[2.709949] (-) TimerEvent: {}
+[2.810373] (-) TimerEvent: {}
+[2.910848] (-) TimerEvent: {}
+[3.011245] (-) TimerEvent: {}
+[3.111605] (-) TimerEvent: {}
+[3.212005] (-) TimerEvent: {}
+[3.312631] (-) TimerEvent: {}
+[3.413210] (-) TimerEvent: {}
+[3.513674] (-) TimerEvent: {}
+[3.614162] (-) TimerEvent: {}
+[3.714604] (-) TimerEvent: {}
+[3.815361] (-) TimerEvent: {}
+[3.915915] (-) TimerEvent: {}
+[4.017218] (-) TimerEvent: {}
+[4.117771] (-) TimerEvent: {}
+[4.218356] (-) TimerEvent: {}
+[4.318966] (-) TimerEvent: {}
+[4.419468] (-) TimerEvent: {}
+[4.519850] (-) TimerEvent: {}
+[4.620199] (-) TimerEvent: {}
+[4.720577] (-) TimerEvent: {}
+[4.820981] (-) TimerEvent: {}
+[4.921410] (-) TimerEvent: {}
+[5.021832] (-) TimerEvent: {}
+[5.122183] (-) TimerEvent: {}
+[5.222549] (-) TimerEvent: {}
+[5.322912] (-) TimerEvent: {}
+[5.423276] (-) TimerEvent: {}
+[5.523660] (-) TimerEvent: {}
+[5.623999] (-) TimerEvent: {}
+[5.724402] (-) TimerEvent: {}
+[5.824750] (-) TimerEvent: {}
+[5.925114] (-) TimerEvent: {}
+[6.025454] (-) TimerEvent: {}
+[6.125813] (-) TimerEvent: {}
+[6.226172] (-) TimerEvent: {}
+[6.326541] (-) TimerEvent: {}
+[6.426906] (-) TimerEvent: {}
+[6.504782] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped\x1b[01;32m\x1b[K eigAndFramesToTrans\x1b[m\x1b[K(const Eigen::Affine3d&, std::string, std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.505134] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:28:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTransformStamped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.505269] (quadruped_controller) StderrLine: {'line': b'   28 |   \x1b[01;31m\x1b[KTransformStamped\x1b[m\x1b[K transform_stamped = tf2::eigenToTransform(transform);\n'}
+[6.505373] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.505478] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kgeometry_msgs::msg::TransformStamped\x1b[m\x1b[K\n'}
+[6.505562] (quadruped_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:7\x1b[m\x1b[K,\n'}
+[6.505649] (quadruped_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/tf2/tf2/convert.hpp:40\x1b[m\x1b[K,\n'}
+[6.505732] (quadruped_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_eigen/tf2_eigen/tf2_eigen.hpp:44\x1b[m\x1b[K,\n'}
+[6.505815] (quadruped_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/utils.h:5\x1b[m\x1b[K,\n'}
+[6.505899] (quadruped_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:1\x1b[m\x1b[K:\n'}
+[6.505982] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:160:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[6.506079] (quadruped_controller) StderrLine: {'line': b'  160 | using \x1b[01;36m\x1b[KTransformStamped\x1b[m\x1b[K =\n'}
+[6.506182] (quadruped_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.523172] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:30:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktransform_stamped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.523438] (quadruped_controller) StderrLine: {'line': b'   30 |   \x1b[01;31m\x1b[Ktransform_stamped\x1b[m\x1b[K.header.stamp = ros::Time::now();\n'}
+[6.523547] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.523637] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:30:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.523732] (quadruped_controller) StderrLine: {'line': b'   30 |   transform_stamped.header.stamp = \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Time::now();\n'}
+[6.523824] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.523912] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:25:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktransform\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.524003] (quadruped_controller) StderrLine: {'line': b'   25 |     \x1b[01;35m\x1b[Kconst Affine3d& transform\x1b[m\x1b[K,\n'}
+[6.524084] (quadruped_controller) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.525050] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped\x1b[01;32m\x1b[K createTransform\x1b[m\x1b[K(std::string, std::string, double, double, double, double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.525194] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:46:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTransformStamped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.525317] (quadruped_controller) StderrLine: {'line': b'   46 |       \x1b[01;31m\x1b[KTransformStamped\x1b[m\x1b[K tr_stamped;\n'}
+[6.525404] (quadruped_controller) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.525491] (quadruped_controller) StderrLine: {'line': b'      |       \x1b[32m\x1b[Kgeometry_msgs::msg::TransformStamped\x1b[m\x1b[K\n'}
+[6.525580] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:160:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[6.525668] (quadruped_controller) StderrLine: {'line': b'  160 | using \x1b[01;36m\x1b[KTransformStamped\x1b[m\x1b[K =\n'}
+[6.525748] (quadruped_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.526963] (-) TimerEvent: {}
+[6.539133] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:48:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktr_stamped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.539388] (quadruped_controller) StderrLine: {'line': b'   48 |   \x1b[01;31m\x1b[Ktr_stamped\x1b[m\x1b[K.header.stamp = rclcpp::Time::now();\n'}
+[6.539489] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.539582] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:48:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Know\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Time\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.539697] (quadruped_controller) StderrLine: {'line': b'   48 |   tr_stamped.header.stamp = rclcpp::Time::\x1b[01;31m\x1b[Know\x1b[m\x1b[K();\n'}
+[6.539795] (quadruped_controller) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.627129] (-) TimerEvent: {}
+[6.727601] (-) TimerEvent: {}
+[6.827950] (-) TimerEvent: {}
+[6.928316] (-) TimerEvent: {}
+[7.028669] (-) TimerEvent: {}
+[7.129012] (-) TimerEvent: {}
+[7.229376] (-) TimerEvent: {}
+[7.329739] (-) TimerEvent: {}
+[7.430080] (-) TimerEvent: {}
+[7.530435] (-) TimerEvent: {}
+[7.630795] (-) TimerEvent: {}
+[7.731145] (-) TimerEvent: {}
+[7.831496] (-) TimerEvent: {}
+[7.931844] (-) TimerEvent: {}
+[8.032198] (-) TimerEvent: {}
+[8.132555] (-) TimerEvent: {}
+[8.232904] (-) TimerEvent: {}
+[8.333256] (-) TimerEvent: {}
+[8.433635] (-) TimerEvent: {}
+[8.534050] (-) TimerEvent: {}
+[8.630436] (quadruped_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:146: CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o] Error 1\n'}
+[8.630843] (quadruped_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2\n'}
+[8.631193] (quadruped_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.634710] (quadruped_controller) CommandEnded: {'returncode': 2}
+[8.635078] (-) TimerEvent: {}
+[8.651236] (quadruped_controller) JobEnded: {'identifier': 'quadruped_controller', 'rc': 2}
+[8.662185] (-) EventReactorShutdown: {}

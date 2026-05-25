@@ -1,0 +1,770 @@
+[0.000000] (-) TimerEvent: {}
+[0.000369] (-) JobUnselected: {'identifier': 'i2c_pwm_board'}
+[0.000711] (-) JobUnselected: {'identifier': 'i2c_pwm_board_calibration'}
+[0.000884] (-) JobUnselected: {'identifier': 'i2c_pwm_board_msgs'}
+[0.000909] (-) JobUnselected: {'identifier': 'i2c_pwm_board_xmlrp'}
+[0.001105] (-) JobUnselected: {'identifier': 'xmlrpcpp'}
+[0.001131] (quadruped_controller) JobQueued: {'identifier': 'quadruped_controller', 'dependencies': OrderedDict()}
+[0.001259] (quadruped_controller) JobStarted: {'identifier': 'quadruped_controller'}
+[0.013097] (quadruped_controller) JobProgress: {'identifier': 'quadruped_controller', 'progress': 'cmake'}
+[0.016034] (quadruped_controller) JobProgress: {'identifier': 'quadruped_controller', 'progress': 'build'}
+[0.016817] (quadruped_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/pi-dog_ws/build/quadruped_controller', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/pi-dog_ws/build/quadruped_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.66.11 54415 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.121.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-219fad98-56ab-4003-a820-f7c5a5173325.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-2a2f4df169.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/quadruped_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.66.11 54415 192.168.66.24 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.100725] (-) TimerEvent: {}
+[0.201299] (-) TimerEvent: {}
+[0.302282] (-) TimerEvent: {}
+[0.326728] (quadruped_controller) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.342771] (quadruped_controller) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o\x1b[0m\n'}
+[0.356049] (quadruped_controller) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_state.cpp.o\x1b[0m\n'}
+[0.369750] (quadruped_controller) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o\x1b[0m\n'}
+[0.402436] (-) TimerEvent: {}
+[0.504659] (-) TimerEvent: {}
+[0.607702] (-) TimerEvent: {}
+[0.708292] (-) TimerEvent: {}
+[0.808815] (-) TimerEvent: {}
+[0.910426] (-) TimerEvent: {}
+[1.013612] (-) TimerEvent: {}
+[1.114517] (-) TimerEvent: {}
+[1.215680] (-) TimerEvent: {}
+[1.317696] (-) TimerEvent: {}
+[1.418719] (-) TimerEvent: {}
+[1.519369] (-) TimerEvent: {}
+[1.621871] (-) TimerEvent: {}
+[1.722458] (-) TimerEvent: {}
+[1.823692] (-) TimerEvent: {}
+[1.924231] (-) TimerEvent: {}
+[2.026518] (-) TimerEvent: {}
+[2.127115] (-) TimerEvent: {}
+[2.228003] (-) TimerEvent: {}
+[2.328420] (-) TimerEvent: {}
+[2.430720] (-) TimerEvent: {}
+[2.531242] (-) TimerEvent: {}
+[2.631834] (-) TimerEvent: {}
+[2.733826] (-) TimerEvent: {}
+[2.836784] (-) TimerEvent: {}
+[2.937760] (-) TimerEvent: {}
+[3.040684] (-) TimerEvent: {}
+[3.141137] (-) TimerEvent: {}
+[3.241679] (-) TimerEvent: {}
+[3.342160] (-) TimerEvent: {}
+[3.443701] (-) TimerEvent: {}
+[3.544179] (-) TimerEvent: {}
+[3.646706] (-) TimerEvent: {}
+[3.747195] (-) TimerEvent: {}
+[3.847887] (-) TimerEvent: {}
+[3.948547] (-) TimerEvent: {}
+[4.051689] (-) TimerEvent: {}
+[4.152135] (-) TimerEvent: {}
+[4.252659] (-) TimerEvent: {}
+[4.353371] (-) TimerEvent: {}
+[4.453875] (-) TimerEvent: {}
+[4.555910] (-) TimerEvent: {}
+[4.656405] (-) TimerEvent: {}
+[4.759035] (-) TimerEvent: {}
+[4.859551] (-) TimerEvent: {}
+[4.960171] (-) TimerEvent: {}
+[5.060666] (-) TimerEvent: {}
+[5.162702] (-) TimerEvent: {}
+[5.263222] (-) TimerEvent: {}
+[5.366735] (-) TimerEvent: {}
+[5.467252] (-) TimerEvent: {}
+[5.567851] (-) TimerEvent: {}
+[5.668462] (-) TimerEvent: {}
+[5.769559] (-) TimerEvent: {}
+[5.872065] (-) TimerEvent: {}
+[5.972545] (-) TimerEvent: {}
+[5.996730] (quadruped_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:1\x1b[m\x1b[K:\n'}
+[5.997497] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroState::\x1b[01;32m\x1b[KhandleInputCommands\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*, smk::BodyState*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.997774] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:42:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.997962] (quadruped_controller) StderrLine: {'line': b'   42 |   virtual void handleInputCommands(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[5.998090] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.998201] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:43:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmnc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.998336] (quadruped_controller) StderrLine: {'line': b'   43 |                                    \x1b[01;35m\x1b[Kconst SpotMicroNodeConfig& smnc\x1b[m\x1b[K,\n'}
+[5.998473] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[5.998632] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:44:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.998798] (quadruped_controller) StderrLine: {'line': b'   44 |                                    \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[5.998930] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.999065] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:45:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmmc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.999208] (quadruped_controller) StderrLine: {'line': b'   45 |                                    \x1b[01;35m\x1b[KSpotMicroMotionCmd* smmc\x1b[m\x1b[K,\n'}
+[5.999348] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[6.003077] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:46:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state_cmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.003273] (quadruped_controller) StderrLine: {'line': b'   46 |                                    \x1b[01;35m\x1b[Ksmk::BodyState* body_state_cmd\x1b[m\x1b[K) {}\n'}
+[6.003416] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.003563] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroState::\x1b[01;32m\x1b[Kinit\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.003810] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:48:43:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.003990] (quadruped_controller) StderrLine: {'line': b'   48 |   virtual void init(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[6.004146] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.004296] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:49:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmnc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.004498] (quadruped_controller) StderrLine: {'line': b'   49 |                     \x1b[01;35m\x1b[Kconst SpotMicroNodeConfig& smnc\x1b[m\x1b[K,\n'}
+[6.004733] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[6.004890] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:50:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.005070] (quadruped_controller) StderrLine: {'line': b'   50 |                     \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[6.005224] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[6.005367] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:51:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmmc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.005526] (quadruped_controller) StderrLine: {'line': b'   51 |                     \x1b[01;35m\x1b[KSpotMicroMotionCmd* smmc\x1b[m\x1b[K) {}\n'}
+[6.009050] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[6.072717] (-) TimerEvent: {}
+[6.173179] (-) TimerEvent: {}
+[6.273726] (-) TimerEvent: {}
+[6.376679] (-) TimerEvent: {}
+[6.477123] (-) TimerEvent: {}
+[6.578144] (-) TimerEvent: {}
+[6.680573] (-) TimerEvent: {}
+[6.783704] (-) TimerEvent: {}
+[6.884228] (-) TimerEvent: {}
+[6.987863] (-) TimerEvent: {}
+[7.088565] (-) TimerEvent: {}
+[7.190805] (-) TimerEvent: {}
+[7.241242] (quadruped_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_idle.h:5\x1b[m\x1b[K,\n'}
+[7.242024] (quadruped_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_idle.cpp:1\x1b[m\x1b[K:\n'}
+[7.242374] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroState::\x1b[01;32m\x1b[KhandleInputCommands\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*, smk::BodyState*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.242770] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:42:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.243117] (quadruped_controller) StderrLine: {'line': b'   42 |   virtual void handleInputCommands(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[7.249405] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.249860] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:43:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmnc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.250161] (quadruped_controller) StderrLine: {'line': b'   43 |                                    \x1b[01;35m\x1b[Kconst SpotMicroNodeConfig& smnc\x1b[m\x1b[K,\n'}
+[7.250411] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[7.250687] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:44:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.251011] (quadruped_controller) StderrLine: {'line': b'   44 |                                    \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[7.251298] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[7.251556] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:45:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmmc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.256166] (quadruped_controller) StderrLine: {'line': b'   45 |                                    \x1b[01;35m\x1b[KSpotMicroMotionCmd* smmc\x1b[m\x1b[K,\n'}
+[7.256707] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[7.257037] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:46:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state_cmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.257390] (quadruped_controller) StderrLine: {'line': b'   46 |                                    \x1b[01;35m\x1b[Ksmk::BodyState* body_state_cmd\x1b[m\x1b[K) {}\n'}
+[7.263047] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.263480] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroState::\x1b[01;32m\x1b[Kinit\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.263856] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:48:43:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.264135] (quadruped_controller) StderrLine: {'line': b'   48 |   virtual void init(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[7.264383] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.264646] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:49:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmnc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.264996] (quadruped_controller) StderrLine: {'line': b'   49 |                     \x1b[01;35m\x1b[Kconst SpotMicroNodeConfig& smnc\x1b[m\x1b[K,\n'}
+[7.265270] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[7.265566] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:50:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.269223] (quadruped_controller) StderrLine: {'line': b'   50 |                     \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[7.269508] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[7.269854] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:51:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmmc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.270148] (quadruped_controller) StderrLine: {'line': b'   51 |                     \x1b[01;35m\x1b[KSpotMicroMotionCmd* smmc\x1b[m\x1b[K) {}\n'}
+[7.270401] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[7.298693] (-) TimerEvent: {}
+[7.399736] (-) TimerEvent: {}
+[7.500347] (-) TimerEvent: {}
+[7.604879] (-) TimerEvent: {}
+[7.705393] (-) TimerEvent: {}
+[7.806037] (-) TimerEvent: {}
+[7.907751] (-) TimerEvent: {}
+[8.011701] (-) TimerEvent: {}
+[8.112220] (-) TimerEvent: {}
+[8.214690] (-) TimerEvent: {}
+[8.315692] (-) TimerEvent: {}
+[8.417086] (-) TimerEvent: {}
+[8.519267] (-) TimerEvent: {}
+[8.620115] (-) TimerEvent: {}
+[8.722773] (-) TimerEvent: {}
+[8.823286] (-) TimerEvent: {}
+[8.925959] (-) TimerEvent: {}
+[9.026893] (-) TimerEvent: {}
+[9.130200] (-) TimerEvent: {}
+[9.230784] (-) TimerEvent: {}
+[9.331884] (-) TimerEvent: {}
+[9.433131] (-) TimerEvent: {}
+[9.535943] (-) TimerEvent: {}
+[9.636560] (-) TimerEvent: {}
+[9.738070] (-) TimerEvent: {}
+[9.841094] (-) TimerEvent: {}
+[9.941693] (-) TimerEvent: {}
+[10.043040] (-) TimerEvent: {}
+[10.147013] (-) TimerEvent: {}
+[10.248443] (-) TimerEvent: {}
+[10.349073] (-) TimerEvent: {}
+[10.450443] (-) TimerEvent: {}
+[10.551494] (-) TimerEvent: {}
+[10.653745] (-) TimerEvent: {}
+[10.755718] (-) TimerEvent: {}
+[10.856346] (-) TimerEvent: {}
+[10.957617] (-) TimerEvent: {}
+[11.059255] (-) TimerEvent: {}
+[11.163214] (-) TimerEvent: {}
+[11.263863] (-) TimerEvent: {}
+[11.366205] (-) TimerEvent: {}
+[11.467260] (-) TimerEvent: {}
+[11.570696] (-) TimerEvent: {}
+[11.671200] (-) TimerEvent: {}
+[11.771827] (-) TimerEvent: {}
+[11.833761] (quadruped_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h:28\x1b[m\x1b[K,\n'}
+[11.856779] (quadruped_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/main.cpp:3\x1b[m\x1b[K:\n'}
+[11.857325] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroState::\x1b[01;32m\x1b[KhandleInputCommands\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*, smk::BodyState*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.857674] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:42:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.858020] (quadruped_controller) StderrLine: {'line': b'   42 |   virtual void handleInputCommands(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[11.858290] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.859166] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:43:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmnc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.859625] (quadruped_controller) StderrLine: {'line': b'   43 |                                    \x1b[01;35m\x1b[Kconst SpotMicroNodeConfig& smnc\x1b[m\x1b[K,\n'}
+[11.859932] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[11.860186] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:44:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.864010] (quadruped_controller) StderrLine: {'line': b'   44 |                                    \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[11.864383] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[11.865086] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:45:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmmc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.865511] (quadruped_controller) StderrLine: {'line': b'   45 |                                    \x1b[01;35m\x1b[KSpotMicroMotionCmd* smmc\x1b[m\x1b[K,\n'}
+[11.865865] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[11.866155] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:46:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state_cmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.866456] (quadruped_controller) StderrLine: {'line': b'   46 |                                    \x1b[01;35m\x1b[Ksmk::BodyState* body_state_cmd\x1b[m\x1b[K) {}\n'}
+[11.866761] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.867024] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroState::\x1b[01;32m\x1b[Kinit\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.867308] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:48:43:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.870732] (quadruped_controller) StderrLine: {'line': b'   48 |   virtual void init(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[11.871267] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.871540] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:49:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmnc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.871861] (-) TimerEvent: {}
+[11.874776] (quadruped_controller) StderrLine: {'line': b'   49 |                     \x1b[01;35m\x1b[Kconst SpotMicroNodeConfig& smnc\x1b[m\x1b[K,\n'}
+[11.875295] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[11.875931] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:50:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.876409] (quadruped_controller) StderrLine: {'line': b'   50 |                     \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[11.876745] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[11.877037] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:51:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmmc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.877367] (quadruped_controller) StderrLine: {'line': b'   51 |                     \x1b[01;35m\x1b[KSpotMicroMotionCmd* smmc\x1b[m\x1b[K) {}\n'}
+[11.877685] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[11.974696] (-) TimerEvent: {}
+[12.076418] (-) TimerEvent: {}
+[12.089706] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroState::\x1b[01;32m\x1b[KinitBodyStateFilters\x1b[m\x1b[K(float, float, float, float, const smk::BodyState&, BodyStateFilters*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.091521] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:35:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.091922] (quadruped_controller) StderrLine: {'line': b'   35 |       {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx = rlfof(dt, tau, body_state.leg_feet_pos.right_front.x, rl),\n'}
+[12.092166] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.092384] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:36:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.092697] (quadruped_controller) StderrLine: {'line': b'   36 |        \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = rlfof(dt, tau, body_state.leg_feet_pos.right_front.y, rl),\n'}
+[12.092981] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.093214] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:37:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.093459] (quadruped_controller) StderrLine: {'line': b'   37 |        \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz = rlfof(dt, tau, body_state.leg_feet_pos.right_front.z, rl)};\n'}
+[12.098492] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.098914] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:40:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.099192] (quadruped_controller) StderrLine: {'line': b'   40 |       {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx = rlfof(dt, tau, body_state.leg_feet_pos.right_back.x, rl),\n'}
+[12.099461] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.099723] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:41:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.099963] (quadruped_controller) StderrLine: {'line': b'   41 |        \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = rlfof(dt, tau, body_state.leg_feet_pos.right_back.y, rl),\n'}
+[12.100189] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.104444] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:42:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.104939] (quadruped_controller) StderrLine: {'line': b'   42 |        \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz = rlfof(dt, tau, body_state.leg_feet_pos.right_back.z, rl)};\n'}
+[12.105187] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.105405] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:45:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.105703] (quadruped_controller) StderrLine: {'line': b'   45 |       {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx = rlfof(dt, tau, body_state.leg_feet_pos.left_back.x, rl),\n'}
+[12.106026] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.106278] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:46:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.106537] (quadruped_controller) StderrLine: {'line': b'   46 |        \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = rlfof(dt, tau, body_state.leg_feet_pos.left_back.y, rl),\n'}
+[12.110146] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.110459] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:47:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.110822] (quadruped_controller) StderrLine: {'line': b'   47 |        \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz = rlfof(dt, tau, body_state.leg_feet_pos.left_back.z, rl)};\n'}
+[12.111144] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.111401] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:50:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.111737] (quadruped_controller) StderrLine: {'line': b'   50 |       {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx = rlfof(dt, tau, body_state.leg_feet_pos.left_front.x, rl),\n'}
+[12.112038] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.112272] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:51:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.112515] (quadruped_controller) StderrLine: {'line': b'   51 |        \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = rlfof(dt, tau, body_state.leg_feet_pos.left_front.y, rl),\n'}
+[12.119116] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.119438] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:52:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.119829] (quadruped_controller) StderrLine: {'line': b'   52 |        \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz = rlfof(dt, tau, body_state.leg_feet_pos.left_front.z, rl)};\n'}
+[12.120116] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.120370] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:55:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.120672] (quadruped_controller) StderrLine: {'line': b'   55 |       {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx = rlfof(dt, tau, body_state.xyz_pos.x, rl),\n'}
+[12.120947] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.121188] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:56:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.121487] (quadruped_controller) StderrLine: {'line': b'   56 |        \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = rlfof(dt, tau, body_state.xyz_pos.y, rl),\n'}
+[12.125946] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.126114] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:57:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.126276] (quadruped_controller) StderrLine: {'line': b'   57 |        \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz = rlfof(dt, tau, body_state.xyz_pos.z, rl)};\n'}
+[12.126406] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.126529] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:60:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.126710] (quadruped_controller) StderrLine: {'line': b'   60 |       {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx = rlfof(dt, tau, body_state.euler_angs.phi, rl_ang),\n'}
+[12.126851] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.126969] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:61:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.127093] (quadruped_controller) StderrLine: {'line': b'   61 |        \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = rlfof(dt, tau, body_state.euler_angs.theta, rl_ang),\n'}
+[12.127222] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.127349] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:62:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.127509] (quadruped_controller) StderrLine: {'line': b'   62 |        \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz = rlfof(dt, tau, body_state.euler_angs.psi, rl_ang)};\n'}
+[12.127692] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.177686] (-) TimerEvent: {}
+[12.278316] (-) TimerEvent: {}
+[12.380186] (-) TimerEvent: {}
+[12.480927] (-) TimerEvent: {}
+[12.583066] (-) TimerEvent: {}
+[12.687821] (-) TimerEvent: {}
+[12.788665] (-) TimerEvent: {}
+[12.892084] (-) TimerEvent: {}
+[12.992706] (-) TimerEvent: {}
+[13.093220] (-) TimerEvent: {}
+[13.194085] (-) TimerEvent: {}
+[13.297108] (-) TimerEvent: {}
+[13.343395] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_idle.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroIdleState::\x1b[01;32m\x1b[KhandleInputCommands\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*, smk::BodyState*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.344566] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_idle.cpp:24:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K\xe3\x84\x90\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.345986] (quadruped_controller) StderrLine: {'line': b'   24 |   if (cmd.getStandCmd() == true) {\x1b[01;31m\x1b[K\xe3\x84\x90\x1b[m\x1b[K\n'}
+[13.347368] (quadruped_controller) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[13.347772] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_idle.cpp:14:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.348102] (quadruped_controller) StderrLine: {'line': b'   14 | void SpotMicroIdleState::handleInputCommands(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[13.348366] (quadruped_controller) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.348613] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_idle.cpp:18:62:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state_cmd_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.353695] (quadruped_controller) StderrLine: {'line': b'   18 |                                              \x1b[01;35m\x1b[Ksmk::BodyState* body_state_cmd_\x1b[m\x1b[K) {\n'}
+[13.354059] (quadruped_controller) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.397243] (-) TimerEvent: {}
+[13.510721] (-) TimerEvent: {}
+[13.608083] (quadruped_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h:28\x1b[m\x1b[K,\n'}
+[13.608772] (quadruped_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:14\x1b[m\x1b[K:\n'}
+[13.609289] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroState::\x1b[01;32m\x1b[KhandleInputCommands\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*, smk::BodyState*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.609816] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:42:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.610311] (quadruped_controller) StderrLine: {'line': b'   42 |   virtual void handleInputCommands(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[13.610797] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.611179] (-) TimerEvent: {}
+[13.612923] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:43:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmnc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.613241] (quadruped_controller) StderrLine: {'line': b'   43 |                                    \x1b[01;35m\x1b[Kconst SpotMicroNodeConfig& smnc\x1b[m\x1b[K,\n'}
+[13.613394] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[13.613525] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:44:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.616201] (quadruped_controller) StderrLine: {'line': b'   44 |                                    \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[13.616393] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[13.616527] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:45:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmmc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.616773] (quadruped_controller) StderrLine: {'line': b'   45 |                                    \x1b[01;35m\x1b[KSpotMicroMotionCmd* smmc\x1b[m\x1b[K,\n'}
+[13.618750] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[13.619185] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:46:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state_cmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.619398] (quadruped_controller) StderrLine: {'line': b'   46 |                                    \x1b[01;35m\x1b[Ksmk::BodyState* body_state_cmd\x1b[m\x1b[K) {}\n'}
+[13.619547] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.619722] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroState::\x1b[01;32m\x1b[Kinit\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.619887] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:48:43:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.620035] (quadruped_controller) StderrLine: {'line': b'   48 |   virtual void init(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[13.620194] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.620322] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:49:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmnc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.620462] (quadruped_controller) StderrLine: {'line': b'   49 |                     \x1b[01;35m\x1b[Kconst SpotMicroNodeConfig& smnc\x1b[m\x1b[K,\n'}
+[13.620602] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[13.620780] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:50:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.620921] (quadruped_controller) StderrLine: {'line': b'   50 |                     \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[13.621043] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[13.621159] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:51:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmmc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.621288] (quadruped_controller) StderrLine: {'line': b'   51 |                     \x1b[01;35m\x1b[KSpotMicroMotionCmd* smmc\x1b[m\x1b[K) {}\n'}
+[13.621411] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[13.715718] (-) TimerEvent: {}
+[13.816416] (-) TimerEvent: {}
+[13.918066] (-) TimerEvent: {}
+[13.971610] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KSpotMicroMotionCmd::\x1b[01;32m\x1b[KSpotMicroMotionCmd\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.972471] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:44:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.973222] (quadruped_controller) StderrLine: {'line': b'   44 |   body_state_cmd_.euler_angs = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kphi = 0.0f, .theta = 0.0f, .psi = 0.0f};\n'}
+[13.973633] (quadruped_controller) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[13.974331] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:44:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.975519] (quadruped_controller) StderrLine: {'line': b'   44 |   body_state_cmd_.euler_angs = {.phi = 0.0f, \x1b[01;35m\x1b[K.\x1b[m\x1b[Ktheta = 0.0f, .psi = 0.0f};\n'}
+[13.975734] (quadruped_controller) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[13.975848] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:44:61:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.975976] (quadruped_controller) StderrLine: {'line': b'   44 |   body_state_cmd_.euler_angs = {.phi = 0.0f, .theta = 0.0f, \x1b[01;35m\x1b[K.\x1b[m\x1b[Kpsi = 0.0f};\n'}
+[13.976074] (quadruped_controller) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[13.976168] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:45:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.977265] (quadruped_controller) StderrLine: {'line': b'   45 |   body_state_cmd_.xyz_pos = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx = 0.0f, .y = smnc_.lie_do wn_height, .z = 0.0f};\n'}
+[13.978031] (quadruped_controller) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[13.979102] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:45:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.979927] (quadruped_controller) StderrLine: {'line': b'   45 |   body_state_cmd_.xyz_pos = {.x = 0.0f, \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = smnc_.lie_do wn_height, .z = 0.0f};\n'}
+[13.980127] (quadruped_controller) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[13.980255] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:45:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct SpotMicroNodeConfig\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Klie_do\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.981107] (quadruped_controller) StderrLine: {'line': b'   45 |   body_state_cmd_.xyz_pos = {.x = 0.0f, .y = smnc_.\x1b[01;31m\x1b[Klie_do\x1b[m\x1b[K wn_height, .z = 0.0f};\n'}
+[13.981296] (quadruped_controller) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[13.981426] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:45:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kwn_height\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.981575] (quadruped_controller) StderrLine: {'line': b'   45 |   body_state_cmd_.xyz_pos = \x1b[32m\x1b[K{\x1b[m\x1b[K.x = 0.0f, .y = smnc_.lie_do \x1b[01;31m\x1b[Kwn_height\x1b[m\x1b[K, .z = 0.0f};\n'}
+[13.982350] (quadruped_controller) StderrLine: {'line': b'      |                             \x1b[32m\x1b[K~\x1b[m\x1b[K                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[13.983025] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:45:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Ksmk::Point\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[13.985317] (quadruped_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/spot_micro_kinematics.h:5\x1b[m\x1b[K,\n'}
+[13.986130] (quadruped_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h:27\x1b[m\x1b[K:\n'}
+[13.986381] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/utils.h:8:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr smk::Point& smk::Point::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(const smk::Point&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.986511] (quadruped_controller) StderrLine: {'line': b'    8 | struct \x1b[01;36m\x1b[KPoint\x1b[m\x1b[K {\n'}
+[13.986662] (quadruped_controller) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.986793] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/utils.h:8:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst smk::Point&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.990681] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/utils.h:8:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr smk::Point& smk::Point::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(smk::Point&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.991051] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/utils.h:8:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Ksmk::Point&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.995384] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:\x1b[m\x1b[K At global scope:\n'}
+[13.996017] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:46:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbody_state_cmd_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[13.996261] (quadruped_controller) StderrLine: {'line': b'   46 |   \x1b[01;31m\x1b[Kbody_state_cmd_\x1b[m\x1b[K.leg_feet_pos = getLieDownStance();\n'}
+[13.996411] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.999514] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:49:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksm_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[13.999887] (quadruped_controller) StderrLine: {'line': b'   49 |   \x1b[01;31m\x1b[Ksm_\x1b[m\x1b[K.setBodyState(body_state_cmd_); //\xe6\x8a\x8a\xe5\x89\x9b\xe6\x89\x8d\xe7\x9a\x84\xe9\xa0\x90\xe8\xa8\xad\xe5\xa7\xbf\xe5\x8b\xa2\xe5\xa1\x9e\xe7\xb5\xa6\xe6\x95\xb8\xe5\xad\xb8\xe8\xa8\x88\xe7\xae\x97\xe5\x99\xa8\n'}
+[14.000041] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[14.007688] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:52:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krobot_odometry_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.008037] (quadruped_controller) StderrLine: {'line': b'   52 |   \x1b[01;31m\x1b[Krobot_odometry_\x1b[m\x1b[K.euler_angs = {.phi = 0.0f, .theta = 0.0f, .psi = 0.0f};\n'}
+[14.008170] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.015688] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:53:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krobot_odometry_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.016079] (quadruped_controller) StderrLine: {'line': b'   53 |   \x1b[01;31m\x1b[Krobot_odometry_\x1b[m\x1b[K.xyz_pos = {.x = 0.0f, .y = 0.0f, .z = 0.0f};\n'}
+[14.016274] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.016430] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:56:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kfor\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.016606] (quadruped_controller) StderrLine: {'line': b'   56 |   \x1b[01;31m\x1b[Kfor\x1b[m\x1b[K (int i = 1; i <= smnc_.num_servos; i++) {\n'}
+[14.016796] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[14.017369] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:56:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.017602] (quadruped_controller) StderrLine: {'line': b'   56 |   for (int i = 1; \x1b[01;31m\x1b[Ki\x1b[m\x1b[K <= smnc_.num_servos; i++) {\n'}
+[14.017782] (quadruped_controller) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[14.018135] (-) TimerEvent: {}
+[14.021692] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:56:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.022024] (quadruped_controller) StderrLine: {'line': b'   56 |   for (int i = 1; i <= smnc_.num_servos; \x1b[01;31m\x1b[Ki\x1b[m\x1b[K++) {\n'}
+[14.022171] (quadruped_controller) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[14.032221] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:65:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kservo_array_absolute_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.032826] (quadruped_controller) StderrLine: {'line': b'   65 |   \x1b[01;31m\x1b[Kservo_array_absolute_\x1b[m\x1b[K.servos = servo_array_.servos;\n'}
+[14.034997] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.038952] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:74:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstand_sub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.040654] (quadruped_controller) StderrLine: {'line': b'   74 |   \x1b[01;31m\x1b[Kstand_sub_\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::Bool>(\n'}
+[14.040841] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.044677] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:78:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kidle_sub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.046961] (quadruped_controller) StderrLine: {'line': b'   78 |   \x1b[01;31m\x1b[Kidle_sub_\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::Bool>(\n'}
+[14.047315] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[14.051745] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:82:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwalk_sub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.052057] (quadruped_controller) StderrLine: {'line': b'   82 |   \x1b[01;31m\x1b[Kwalk_sub_\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::Bool>(\n'}
+[14.052197] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[14.057258] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:86:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbody_angle_cmd_sub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.057602] (quadruped_controller) StderrLine: {'line': b'   86 |   \x1b[01;31m\x1b[Kbody_angle_cmd_sub_\x1b[m\x1b[K = this->create_subscription<geometry_msgs::msg::Vector3>(\n'}
+[14.057797] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.065430] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:90:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kve_clmd_sub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.066914] (quadruped_controller) StderrLine: {'line': b'   90 |   \x1b[01;31m\x1b[Kve_clmd_sub_\x1b[m\x1b[K = this->create_subscription<geometry_msgs::msg::Twist>(\n'}
+[14.067232] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.078717] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:95:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kservos_absolute_pub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.081632] (quadruped_controller) StderrLine: {'line': b'   95 |   \x1b[01;31m\x1b[Kservos_absolute_pub_\x1b[m\x1b[K = this->create_publisher<i2c_pwm_board_msgs::msg::ServoArray>("servos_absolute", 10);\n'}
+[14.081923] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.099607] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:98:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kservos_proportional_pub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.100131] (quadruped_controller) StderrLine: {'line': b'   98 |   \x1b[01;31m\x1b[Kservos_proportional_pub_\x1b[m\x1b[K = this->create_publisher<i2c_pwm_board_msgs::msg::ServoArray>("servos_proportional",10);\n'}
+[14.100434] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.111769] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:101:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbody_state_pub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.112324] (quadruped_controller) StderrLine: {'line': b'  101 |   \x1b[01;31m\x1b[Kbody_state_pub_\x1b[m\x1b[K = this->create_publisher<std_msgs::msg::Float32MultiArray>("body_state",10);\n'}
+[14.112632] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.120566] (-) TimerEvent: {}
+[14.123091] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:104:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_state_pub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.126031] (quadruped_controller) StderrLine: {'line': b'  104 |   \x1b[01;31m\x1b[Klcd_state_pub_\x1b[m\x1b[K = this->create_publisher<std_msgs::msg::String>("lcd_state",10);\n'}
+[14.126336] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.139417] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:107:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_vel_cmd_pub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.140190] (quadruped_controller) StderrLine: {'line': b'  107 |   \x1b[01;31m\x1b[Klcd_vel_cmd_pub_\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::Twist>("lcd_vel_cmd",10);\n'}
+[14.140492] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.149840] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:110:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_angle_cmd_pub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.150332] (quadruped_controller) StderrLine: {'line': b'  110 |   \x1b[01;31m\x1b[Klcd_angle_cmd_pub_\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::Vector3>("lcd_angle_cmd",10);\n'}
+[14.150598] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.161856] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:113:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktransform_br_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.162337] (quadruped_controller) StderrLine: {'line': b'  113 |   \x1b[01;31m\x1b[Ktransform_br_\x1b[m\x1b[K = std::make_unique<tf2_ros::TransformBroadcaster>(*this);\n'}
+[14.162565] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.170577] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:114:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstatic_transform_br_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.170931] (quadruped_controller) StderrLine: {'line': b'  114 |   \x1b[01;31m\x1b[Kstatic_transform_br_\x1b[m\x1b[K = std::make_unique<tf2_ros::StaticTransformBroadcaster>(*this);\n'}
+[14.171050] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.178571] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:116:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_state_string_msg_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.178947] (quadruped_controller) StderrLine: {'line': b'  116 |   \x1b[01;31m\x1b[Klcd_state_string_msg_\x1b[m\x1b[K.data = "Idle";\n'}
+[14.179109] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.185530] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:118:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_vel_cmd_msg_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.185898] (quadruped_controller) StderrLine: {'line': b'  118 |   \x1b[01;31m\x1b[Klcd_vel_cmd_msg_\x1b[m\x1b[K.linear.x = 0.0f;\n'}
+[14.186035] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.192696] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:119:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_vel_cmd_msg_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.193038] (quadruped_controller) StderrLine: {'line': b'  119 |   \x1b[01;31m\x1b[Klcd_vel_cmd_msg_\x1b[m\x1b[K.linear.y = 0.0f;\n'}
+[14.193203] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.201888] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:120:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_vel_cmd_msg_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.202214] (quadruped_controller) StderrLine: {'line': b'  120 |   \x1b[01;31m\x1b[Klcd_vel_cmd_msg_\x1b[m\x1b[K.linear.z = 0.0f;\n'}
+[14.202363] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.206726] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:121:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_vel_cmd_msg_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.208714] (quadruped_controller) StderrLine: {'line': b'  121 |   \x1b[01;31m\x1b[Klcd_vel_cmd_msg_\x1b[m\x1b[K.angular.x = 0.0f;\n'}
+[14.209001] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.214218] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:122:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_vel_cmd_msg_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.214569] (quadruped_controller) StderrLine: {'line': b'  122 |   \x1b[01;31m\x1b[Klcd_vel_cmd_msg_\x1b[m\x1b[K.angular.y = 0.0f;\n'}
+[14.214804] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.222850] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:123:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_vel_cmd_msg_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.223220] (-) TimerEvent: {}
+[14.223793] (quadruped_controller) StderrLine: {'line': b'  123 |   \x1b[01;31m\x1b[Klcd_vel_cmd_msg_\x1b[m\x1b[K.angular.z = 0.0f;\n'}
+[14.224352] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.233095] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:125:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_angle_cmd_msg_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.233572] (quadruped_controller) StderrLine: {'line': b'  125 |   \x1b[01;31m\x1b[Klcd_angle_cmd_msg_\x1b[m\x1b[K.x = 0.0f;\n'}
+[14.233930] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.243736] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:126:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_angle_cmd_msg_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.244008] (quadruped_controller) StderrLine: {'line': b'  126 |   \x1b[01;31m\x1b[Klcd_angle_cmd_msg_\x1b[m\x1b[K.y = 0.0f;\n'}
+[14.244111] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.250704] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:127:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_angle_cmd_msg_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.251764] (quadruped_controller) StderrLine: {'line': b'  127 |   \x1b[01;31m\x1b[Klcd_angle_cmd_msg_\x1b[m\x1b[K.z = 0.0f;\n'}
+[14.251869] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.251956] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:134:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.252051] (quadruped_controller) StderrLine: {'line': b'  134 |   \x1b[01;31m\x1b[Kif\x1b[m\x1b[K (smnc_.plot_mode) {\n'}
+[14.252136] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[14.252218] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:141:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected constructor, destructor, or type conversion before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[14.252302] (quadruped_controller) StderrLine: {'line': b'  141 |   publishStaticTransforms()\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[14.252382] (quadruped_controller) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[14.252458] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:142:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[14.252539] (quadruped_controller) StderrLine: {'line': b'  142 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[14.252641] (quadruped_controller) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[14.267087] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ksmk::LegsFootPos SpotMicroMotionCmd::\x1b[01;32m\x1b[KgetNeutralStance\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.267405] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:301:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.267666] (quadruped_controller) StderrLine: {'line': b'  301 |   neutral_stance.right_back  = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx = -len/2 + b_offset, .y = 0.0f, .z =  width/2 + l1};\n'}
+[14.267899] (quadruped_controller) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.268110] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:301:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.268363] (quadruped_controller) StderrLine: {'line': b'  301 |   neutral_stance.right_back  = {.x = -len/2 + b_offset, \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = 0.0f, .z =  width/2 + l1};\n'}
+[14.268567] (quadruped_controller) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.268794] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:301:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.269057] (quadruped_controller) StderrLine: {'line': b'  301 |   neutral_stance.right_back  = {.x = -len/2 + b_offset, .y = 0.0f, \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz =  width/2 + l1};\n'}
+[14.269253] (quadruped_controller) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.269451] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:302:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.272966] (quadruped_controller) StderrLine: {'line': b'  302 |   neutral_stance.right_front = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx =  len/2 + f_offset, .y = 0.0f, .z =  width/2 + l1};\n'}
+[14.273240] (quadruped_controller) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.273436] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:302:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.273673] (quadruped_controller) StderrLine: {'line': b'  302 |   neutral_stance.right_front = {.x =  len/2 + f_offset, \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = 0.0f, .z =  width/2 + l1};\n'}
+[14.273888] (quadruped_controller) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.274094] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:302:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.274328] (quadruped_controller) StderrLine: {'line': b'  302 |   neutral_stance.right_front = {.x =  len/2 + f_offset, .y = 0.0f, \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz =  width/2 + l1};\n'}
+[14.274572] (quadruped_controller) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.274845] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:303:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.275174] (quadruped_controller) StderrLine: {'line': b'  303 |   neutral_stance.left_front  = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx =  len/2 + f_offset, .y = 0.0f, .z = -width/2 - l1};\n'}
+[14.275388] (quadruped_controller) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.279720] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:303:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.280195] (quadruped_controller) StderrLine: {'line': b'  303 |   neutral_stance.left_front  = {.x =  len/2 + f_offset, \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = 0.0f, .z = -width/2 - l1};\n'}
+[14.280420] (quadruped_controller) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.280662] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:303:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.280917] (quadruped_controller) StderrLine: {'line': b'  303 |   neutral_stance.left_front  = {.x =  len/2 + f_offset, .y = 0.0f, \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz = -width/2 - l1};\n'}
+[14.281147] (quadruped_controller) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.281348] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:304:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.281613] (quadruped_controller) StderrLine: {'line': b'  304 |   neutral_stance.left_back   = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx = -len/2 + b_offset, .y = 0.0f, .z = -width/2 - l1};\n'}
+[14.281903] (quadruped_controller) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.282153] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:304:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.282452] (quadruped_controller) StderrLine: {'line': b'  304 |   neutral_stance.left_back   = {.x = -len/2 + b_offset, \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = 0.0f, .z = -width/2 - l1};\n'}
+[14.286092] (quadruped_controller) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.286437] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:304:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.290079] (quadruped_controller) StderrLine: {'line': b'  304 |   neutral_stance.left_back   = {.x = -len/2 + b_offset, .y = 0.0f, \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz = -width/2 - l1};\n'}
+[14.290442] (quadruped_controller) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.290801] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ksmk::LegsFootPos SpotMicroMotionCmd::\x1b[01;32m\x1b[KgetLieDownStance\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.291121] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:317:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.291395] (quadruped_controller) StderrLine: {'line': b'  317 |   lie_down_stance.right_back  = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx = -len/2 + x_off, .y = 0.0f, .z =  width/2 + l1};\n'}
+[14.291701] (quadruped_controller) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.291976] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:317:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.292224] (quadruped_controller) StderrLine: {'line': b'  317 |   lie_down_stance.right_back  = {.x = -len/2 + x_off, \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = 0.0f, .z =  width/2 + l1};\n'}
+[14.292469] (quadruped_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.292721] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:317:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.293040] (quadruped_controller) StderrLine: {'line': b'  317 |   lie_down_stance.right_back  = {.x = -len/2 + x_off, .y = 0.0f, \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz =  width/2 + l1};\n'}
+[14.293287] (quadruped_controller) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.293536] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:318:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.293888] (quadruped_controller) StderrLine: {'line': b'  318 |   lie_down_stance.right_front = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx =  len/2 + x_off, .y = 0.0f, .z =  width/2 + l1};\n'}
+[14.294150] (quadruped_controller) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.294383] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:318:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.300786] (quadruped_controller) StderrLine: {'line': b'  318 |   lie_down_stance.right_front = {.x =  len/2 + x_off, \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = 0.0f, .z =  width/2 + l1};\n'}
+[14.301252] (quadruped_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.301516] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:318:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.301914] (quadruped_controller) StderrLine: {'line': b'  318 |   lie_down_stance.right_front = {.x =  len/2 + x_off, .y = 0.0f, \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz =  width/2 + l1};\n'}
+[14.302183] (quadruped_controller) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.302425] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:319:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.302783] (quadruped_controller) StderrLine: {'line': b'  319 |   lie_down_stance.left_front  = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx =  len/2 + x_off, .y = 0.0f, .z = -width/2 - l1};\n'}
+[14.303034] (quadruped_controller) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.303275] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:319:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.303571] (quadruped_controller) StderrLine: {'line': b'  319 |   lie_down_stance.left_front  = {.x =  len/2 + x_off, \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = 0.0f, .z = -width/2 - l1};\n'}
+[14.303872] (quadruped_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.304109] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:319:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.304342] (quadruped_controller) StderrLine: {'line': b'  319 |   lie_down_stance.left_front  = {.x =  len/2 + x_off, .y = 0.0f, \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz = -width/2 - l1};\n'}
+[14.304562] (quadruped_controller) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.304847] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:320:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.305091] (quadruped_controller) StderrLine: {'line': b'  320 |   lie_down_stance.left_back   = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx = -len/2 + x_off, .y = 0.0f, .z = -width/2 - l1};\n'}
+[14.305301] (quadruped_controller) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.305508] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:320:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.311158] (quadruped_controller) StderrLine: {'line': b'  320 |   lie_down_stance.left_back   = {.x = -len/2 + x_off, \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = 0.0f, .z = -width/2 - l1};\n'}
+[14.311510] (quadruped_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.311817] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:320:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.312143] (quadruped_controller) StderrLine: {'line': b'  320 |   lie_down_stance.left_back   = {.x = -len/2 + x_off, .y = 0.0f, \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz = -width/2 - l1};\n'}
+[14.312408] (quadruped_controller) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.313568] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SpotMicroMotionCmd::\x1b[01;32m\x1b[KreadInConfigParameters\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.316932] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:429:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid type argument of unary \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 (have \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[14.320212] (quadruped_controller) StderrLine: {'line': b'  429 |     smnc_.phase_length = 2 * smnc_.swing_ticks +   \x1b[01;31m\x1b[K* smnc_.overlap_ticks\x1b[m\x1b[K;\n'}
+[14.320514] (quadruped_controller) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.323393] (-) TimerEvent: {}
+[14.406632] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SpotMicroMotionCmd::\x1b[01;32m\x1b[KpublishLcdMonitorData\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.406982] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:560:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klcd_angle_cmd_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Klcd_angle_cmd_msg_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[14.407165] (quadruped_controller) StderrLine: {'line': b'  560 |   \x1b[01;31m\x1b[Klcd_angle_cmd_pub_\x1b[m\x1b[K->publish(lcd_angle_cmd_msg_);\n'}
+[14.407322] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.407451] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[32m\x1b[Klcd_angle_cmd_msg_\x1b[m\x1b[K\n'}
+[14.408743] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SpotMicroMotionCmd::\x1b[01;32m\x1b[KpublishStaticTransforms\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.409964] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:592:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kconst\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.410123] (quadruped_controller) StderrLine: {'line': b'  592 |   \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K VectorStringPairs    {\n'}
+[14.410253] (quadruped_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[14.423685] (-) TimerEvent: {}
+[14.478212] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:599:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kleg_cover_pairs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.478821] (quadruped_controller) StderrLine: {'line': b'  599 |   for (auto it = \x1b[01;31m\x1b[Kleg_cover_pairs\x1b[m\x1b[K.begin(); it != leg_cover_pairs.end(); it++) {\n'}
+[14.479142] (quadruped_controller) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.526849] (-) TimerEvent: {}
+[14.629734] (-) TimerEvent: {}
+[14.730311] (-) TimerEvent: {}
+[14.832878] (-) TimerEvent: {}
+[14.933660] (-) TimerEvent: {}
+[14.939541] (quadruped_controller) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o\x1b[0m\n'}
+[15.034680] (-) TimerEvent: {}
+[15.135121] (-) TimerEvent: {}
+[15.237875] (-) TimerEvent: {}
+[15.338440] (-) TimerEvent: {}
+[15.352344] (quadruped_controller) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o\x1b[0m\n'}
+[15.375185] (quadruped_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:160: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o] Error 1\n'}
+[15.375620] (quadruped_controller) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[15.438540] (-) TimerEvent: {}
+[15.540136] (-) TimerEvent: {}
+[15.640671] (-) TimerEvent: {}
+[15.741027] (-) TimerEvent: {}
+[15.841419] (-) TimerEvent: {}
+[15.943829] (-) TimerEvent: {}
+[16.044613] (-) TimerEvent: {}
+[16.145389] (-) TimerEvent: {}
+[16.245945] (-) TimerEvent: {}
+[16.348742] (-) TimerEvent: {}
+[16.449388] (-) TimerEvent: {}
+[16.550071] (-) TimerEvent: {}
+[16.650861] (-) TimerEvent: {}
+[16.751362] (-) TimerEvent: {}
+[16.851779] (-) TimerEvent: {}
+[16.952261] (-) TimerEvent: {}
+[17.052690] (-) TimerEvent: {}
+[17.153272] (-) TimerEvent: {}
+[17.253906] (-) TimerEvent: {}
+[17.355404] (-) TimerEvent: {}
+[17.455862] (-) TimerEvent: {}
+[17.556365] (-) TimerEvent: {}
+[17.658365] (-) TimerEvent: {}
+[17.758872] (-) TimerEvent: {}
+[17.859295] (-) TimerEvent: {}
+[17.959833] (-) TimerEvent: {}
+[18.060261] (-) TimerEvent: {}
+[18.161170] (-) TimerEvent: {}
+[18.261639] (-) TimerEvent: {}
+[18.362812] (-) TimerEvent: {}
+[18.463370] (-) TimerEvent: {}
+[18.564536] (-) TimerEvent: {}
+[18.665565] (-) TimerEvent: {}
+[18.766840] (-) TimerEvent: {}
+[18.867816] (-) TimerEvent: {}
+[18.968354] (-) TimerEvent: {}
+[19.069299] (-) TimerEvent: {}
+[19.170529] (-) TimerEvent: {}
+[19.271424] (-) TimerEvent: {}
+[19.315814] (quadruped_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:132: CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o] Error 1\n'}
+[19.371551] (-) TimerEvent: {}
+[19.471974] (-) TimerEvent: {}
+[19.573167] (-) TimerEvent: {}
+[19.673727] (-) TimerEvent: {}
+[19.774912] (-) TimerEvent: {}
+[19.875625] (-) TimerEvent: {}
+[19.976014] (-) TimerEvent: {}
+[20.076505] (-) TimerEvent: {}
+[20.176937] (-) TimerEvent: {}
+[20.277474] (-) TimerEvent: {}
+[20.358485] (quadruped_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_stand.h:3\x1b[m\x1b[K,\n'}
+[20.358878] (quadruped_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_stand.cpp:1\x1b[m\x1b[K:\n'}
+[20.359072] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroState::\x1b[01;32m\x1b[KhandleInputCommands\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*, smk::BodyState*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.359269] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:42:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.359436] (quadruped_controller) StderrLine: {'line': b'   42 |   virtual void handleInputCommands(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[20.359623] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.359830] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:43:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmnc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.360008] (quadruped_controller) StderrLine: {'line': b'   43 |                                    \x1b[01;35m\x1b[Kconst SpotMicroNodeConfig& smnc\x1b[m\x1b[K,\n'}
+[20.360120] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[20.360220] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:44:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.360325] (quadruped_controller) StderrLine: {'line': b'   44 |                                    \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[20.360421] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[20.360510] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:45:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmmc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.360642] (quadruped_controller) StderrLine: {'line': b'   45 |                                    \x1b[01;35m\x1b[KSpotMicroMotionCmd* smmc\x1b[m\x1b[K,\n'}
+[20.360752] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[20.360847] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:46:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state_cmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.360942] (quadruped_controller) StderrLine: {'line': b'   46 |                                    \x1b[01;35m\x1b[Ksmk::BodyState* body_state_cmd\x1b[m\x1b[K) {}\n'}
+[20.361037] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.361128] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroState::\x1b[01;32m\x1b[Kinit\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.361227] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:48:43:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.361323] (quadruped_controller) StderrLine: {'line': b'   48 |   virtual void init(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[20.361434] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.361530] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:49:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmnc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.361659] (quadruped_controller) StderrLine: {'line': b'   49 |                     \x1b[01;35m\x1b[Kconst SpotMicroNodeConfig& smnc\x1b[m\x1b[K,\n'}
+[20.361764] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[20.361857] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:50:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.361974] (quadruped_controller) StderrLine: {'line': b'   50 |                     \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[20.362067] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[20.362154] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:51:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmmc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.362263] (quadruped_controller) StderrLine: {'line': b'   51 |                     \x1b[01;35m\x1b[KSpotMicroMotionCmd* smmc\x1b[m\x1b[K) {}\n'}
+[20.362363] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[20.377640] (-) TimerEvent: {}
+[20.405084] (quadruped_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_transition_idle.h:3\x1b[m\x1b[K,\n'}
+[20.406333] (quadruped_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp:1\x1b[m\x1b[K:\n'}
+[20.407010] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroState::\x1b[01;32m\x1b[KhandleInputCommands\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*, smk::BodyState*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.407465] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:42:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.407775] (quadruped_controller) StderrLine: {'line': b'   42 |   virtual void handleInputCommands(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[20.408018] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.408281] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:43:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmnc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.408520] (quadruped_controller) StderrLine: {'line': b'   43 |                                    \x1b[01;35m\x1b[Kconst SpotMicroNodeConfig& smnc\x1b[m\x1b[K,\n'}
+[20.409008] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[20.409448] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:44:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.410022] (quadruped_controller) StderrLine: {'line': b'   44 |                                    \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[20.410499] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[20.411003] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:45:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmmc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.411485] (quadruped_controller) StderrLine: {'line': b'   45 |                                    \x1b[01;35m\x1b[KSpotMicroMotionCmd* smmc\x1b[m\x1b[K,\n'}
+[20.412004] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[20.412477] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:46:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state_cmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.412992] (quadruped_controller) StderrLine: {'line': b'   46 |                                    \x1b[01;35m\x1b[Ksmk::BodyState* body_state_cmd\x1b[m\x1b[K) {}\n'}
+[20.413480] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.414015] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroState::\x1b[01;32m\x1b[Kinit\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.414510] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:48:43:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.415166] (quadruped_controller) StderrLine: {'line': b'   48 |   virtual void init(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[20.415808] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.416241] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:49:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmnc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.416552] (quadruped_controller) StderrLine: {'line': b'   49 |                     \x1b[01;35m\x1b[Kconst SpotMicroNodeConfig& smnc\x1b[m\x1b[K,\n'}
+[20.417284] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[20.417544] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:50:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.417876] (quadruped_controller) StderrLine: {'line': b'   50 |                     \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[20.418166] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[20.418410] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:51:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksmmc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.418673] (quadruped_controller) StderrLine: {'line': b'   51 |                     \x1b[01;35m\x1b[KSpotMicroMotionCmd* smmc\x1b[m\x1b[K) {}\n'}
+[20.418902] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[20.477749] (-) TimerEvent: {}
+[20.578143] (-) TimerEvent: {}
+[20.678615] (-) TimerEvent: {}
+[20.779045] (-) TimerEvent: {}
+[20.879448] (-) TimerEvent: {}
+[20.979886] (-) TimerEvent: {}
+[21.080277] (-) TimerEvent: {}
+[21.180672] (-) TimerEvent: {}
+[21.281054] (-) TimerEvent: {}
+[21.381468] (-) TimerEvent: {}
+[21.482002] (-) TimerEvent: {}
+[21.582420] (-) TimerEvent: {}
+[21.682958] (-) TimerEvent: {}
+[21.784326] (-) TimerEvent: {}
+[21.884693] (-) TimerEvent: {}
+[21.985095] (-) TimerEvent: {}
+[22.085478] (-) TimerEvent: {}
+[22.185876] (-) TimerEvent: {}
+[22.286255] (-) TimerEvent: {}
+[22.386649] (-) TimerEvent: {}
+[22.487037] (-) TimerEvent: {}
+[22.587450] (-) TimerEvent: {}
+[22.687997] (-) TimerEvent: {}
+[22.788388] (-) TimerEvent: {}
+[22.888835] (-) TimerEvent: {}
+[22.989254] (-) TimerEvent: {}
+[23.089767] (-) TimerEvent: {}
+[23.190288] (-) TimerEvent: {}
+[23.290698] (-) TimerEvent: {}
+[23.391090] (-) TimerEvent: {}
+[23.491483] (-) TimerEvent: {}
+[23.591874] (-) TimerEvent: {}
+[23.692241] (-) TimerEvent: {}
+[23.792630] (-) TimerEvent: {}
+[23.893054] (-) TimerEvent: {}
+[23.953508] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_stand.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroStandState::\x1b[01;32m\x1b[KhandleInputCommands\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*, smk::BodyState*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.953882] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_stand.cpp:17:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.954155] (quadruped_controller) StderrLine: {'line': b'   17 | void SpotMicroStandState::handleInputCommands(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[23.954299] (quadruped_controller) StderrLine: {'line': b'      |                                               \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.954421] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_stand.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroStandState::\x1b[01;32m\x1b[Kinit\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.954547] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_stand.cpp:66:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbody_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.954720] (quadruped_controller) StderrLine: {'line': b'   66 | void SpotMicroStandState::init(\x1b[01;35m\x1b[Kconst smk::BodyState& body_state\x1b[m\x1b[K,\n'}
+[23.954845] (quadruped_controller) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.954966] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_stand.cpp:68:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.955123] (quadruped_controller) StderrLine: {'line': b'   68 |                                \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[23.955261] (quadruped_controller) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[23.965618] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroTransitionIdleState::\x1b[01;32m\x1b[Kinit\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.965875] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp:19:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.965997] (quadruped_controller) StderrLine: {'line': b'   19 |                                          \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[23.966128] (quadruped_controller) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[23.974269] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SpotMicroTransitionIdleState::\x1b[01;32m\x1b[KhandleInputCommands\x1b[m\x1b[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*, smk::BodyState*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.974571] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp:54:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.974765] (quadruped_controller) StderrLine: {'line': b'   54 |                                    \x1b[01;35m\x1b[Kconst Command& cmd\x1b[m\x1b[K,\n'}
+[23.974899] (quadruped_controller) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[23.993159] (-) TimerEvent: {}
+[24.093628] (-) TimerEvent: {}
+[24.194121] (-) TimerEvent: {}
+[24.295032] (-) TimerEvent: {}
+[24.396031] (-) TimerEvent: {}
+[24.496410] (-) TimerEvent: {}
+[24.597088] (-) TimerEvent: {}
+[24.697466] (-) TimerEvent: {}
+[24.797895] (-) TimerEvent: {}
+[24.898419] (-) TimerEvent: {}
+[24.998917] (-) TimerEvent: {}
+[25.099468] (-) TimerEvent: {}
+[25.199940] (-) TimerEvent: {}
+[25.300473] (-) TimerEvent: {}
+[25.401108] (-) TimerEvent: {}
+[25.430563] (quadruped_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2\n'}
+[25.430900] (quadruped_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[25.462108] (quadruped_controller) CommandEnded: {'returncode': 2}
+[25.501250] (-) TimerEvent: {}
+[25.533628] (quadruped_controller) JobEnded: {'identifier': 'quadruped_controller', 'rc': 2}
+[25.544646] (-) EventReactorShutdown: {}

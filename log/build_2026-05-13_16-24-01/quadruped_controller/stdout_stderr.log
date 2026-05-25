@@ -1,0 +1,74 @@
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found i2c_pwm_board_msgs: 0.1.0 (/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake)
+-- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found tf2: 0.36.20 (/opt/ros/jazzy/share/tf2/cmake)
+-- Found tf2_ros: 0.36.20 (/opt/ros/jazzy/share/tf2_ros/cmake)
+-- Found tf2_eigen: 0.36.20 (/opt/ros/jazzy/share/tf2_eigen/cmake)
+-- Found tf2_geometry_msgs: 0.36.20 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/ubuntu/pi-dog_ws/src/quadruped_controller/include;$<BUILD_INTERFACE:/home/ubuntu/pi-dog_ws/src/quadruped_controller/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.5s)
+-- Generating done (0.3s)
+-- Build files have been written to: /home/ubuntu/pi-dog_ws/build/quadruped_controller
+[ 33%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/kinematics/utils.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/kinematics/spot_micro_kinematics.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/kinematics/spot_micro_leg.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/main.cpp.o[0m
+In file included from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/main.cpp:3[m[K:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h:26:10:[m[K [01;31m[Kfatal error: [m[Kcommand.h: No such file or directory
+   26 | #include [01;31m[K"command.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:76: CMakeFiles/ik_test_node.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/kinematics/spot_micro_kinematics.cpp:5[m[K:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/spot_micro_kinematics.h:[m[K In constructor ‘[01m[Ksmk::SpotMicroKinematics::[01;32m[KSpotMicroKinematics[m[K(float, float, float, const smk::SpotMicroConfig&)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/spot_micro_kinematics.h:109:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksmk::SpotMicroKinematics::z_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  109 |   float [01;35m[Kz_[m[K;
+      |         [01;35m[K^~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/spot_micro_kinematics.h:104:19:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Ksmk::SpotMicroConfig smk::SpotMicroKinematics::smc_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  104 |   SpotMicroConfig [01;35m[Ksmc_[m[K; // Spot micro config struct
+      |                   [01;35m[K^~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/kinematics/spot_micro_kinematics.cpp:11:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   11 | [01;35m[KSpotMicroKinematics[m[K::SpotMicroKinematics(float x, float y, float z,
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/kinematics/spot_micro_leg.cpp:[m[K In member function ‘[01m[Kvoid smk::SpotMicroLeg::[01;32m[KsetFootPosGlobalCoordinates[m[K(const smk::Point&, const Eigen::Matrix4f&)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/kinematics/spot_micro_leg.cpp:52:21:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   52 |   Point point_local{[01;35m[K.[m[Kx = p4_ht_vec(0), .y = p4_ht_vec(1), .z = p4_ht_vec(2)};
+      |                     [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/kinematics/spot_micro_leg.cpp:52:40:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   52 |   Point point_local{.x = p4_ht_vec(0), [01;35m[K.[m[Ky = p4_ht_vec(1), .z = p4_ht_vec(2)};
+      |                                        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/kinematics/spot_micro_leg.cpp:52:59:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   52 |   Point point_local{.x = p4_ht_vec(0), .y = p4_ht_vec(1), [01;35m[K.[m[Kz = p4_ht_vec(2)};
+      |                                                           [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/kinematics/spot_micro_leg.cpp:[m[K In member function ‘[01m[Ksmk::Point smk::SpotMicroLeg::[01;32m[KgetFootPosGlobalCoordinates[m[K(const Eigen::Matrix4f&)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/kinematics/spot_micro_leg.cpp:65:25:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   65 |   Point return_point = {[01;35m[K.[m[Kx = ht_foot(0,3),
+      |                         [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/kinematics/spot_micro_leg.cpp:66:25:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   66 |                         [01;35m[K.[m[Ky = ht_foot(1,3),
+      |                         [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/kinematics/spot_micro_leg.cpp:67:25:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   67 |                         [01;35m[K.[m[Kz = ht_foot(2,3) };
+      |                         [01;35m[K^[m[K
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

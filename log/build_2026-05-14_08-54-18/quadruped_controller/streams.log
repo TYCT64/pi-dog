@@ -1,0 +1,18 @@
+[0.017s] Invoking command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4
+[0.415s] [ 16%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/main.cpp.o[0m
+[0.416s] [ 33%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o[0m
+[2.333s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/float32_multiarray.hpp: No such file or directory
+[2.333s]     7 | #include [01;31m[K"std_msgs/msg/float32_multiarray.hpp"[m[K
+[2.333s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.333s] compilation terminated.
+[2.340s] gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:132: CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o] Error 1
+[2.340s] gmake[2]: *** Waiting for unfinished jobs....
+[2.629s] In file included from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/main.cpp:3[m[K:
+[2.629s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h:26:10:[m[K [01;31m[Kfatal error: [m[Kspot_micro_motion_cmd/command.h: No such file or directory
+[2.629s]    26 | #include [01;31m[K"spot_micro_motion_cmd/command.h"[m[K
+[2.629s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.630s] compilation terminated.
+[2.634s] gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:76: CMakeFiles/ik_test_node.dir/src/main.cpp.o] Error 1
+[2.635s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+[2.635s] gmake: *** [Makefile:146: all] Error 2
+[2.639s] Invoked command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4

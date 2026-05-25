@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "i2c_pwm_board_msgs/srv/IntValue_Request",
+      "fields": [
+        {
+          "name": "value",
+          "type": {
+            "type_id": 4,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "i2c_pwm_board_msgs/srv/IntValue_Request",
+      "hash_string": "RIHS01_83d41ef7a8318a4bc6db02b760f8cbdb2e8f7a0c12daf6bff8755c6bd0a08797"
+    }
+  ]
+}

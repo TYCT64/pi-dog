@@ -1,0 +1,10 @@
+/home/ubuntu/pi-dog_ws/build/xmlrpcpp/CMakeFiles/uninstall.dir
+/home/ubuntu/pi-dog_ws/build/xmlrpcpp/CMakeFiles/xmlrpcpp_uninstall.dir
+/home/ubuntu/pi-dog_ws/build/xmlrpcpp/CMakeFiles/xmlrpcpp.dir
+/home/ubuntu/pi-dog_ws/build/xmlrpcpp/CMakeFiles/test.dir
+/home/ubuntu/pi-dog_ws/build/xmlrpcpp/CMakeFiles/edit_cache.dir
+/home/ubuntu/pi-dog_ws/build/xmlrpcpp/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/pi-dog_ws/build/xmlrpcpp/CMakeFiles/list_install_components.dir
+/home/ubuntu/pi-dog_ws/build/xmlrpcpp/CMakeFiles/install.dir
+/home/ubuntu/pi-dog_ws/build/xmlrpcpp/CMakeFiles/install/local.dir
+/home/ubuntu/pi-dog_ws/build/xmlrpcpp/CMakeFiles/install/strip.dir

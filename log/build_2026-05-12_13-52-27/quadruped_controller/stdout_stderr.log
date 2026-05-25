@@ -1,0 +1,21 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/utils.cpp.o[0m
+[ 40%] [32m[1mLinking CXX executable ik_test_node[0m
+[100%] Built target ik_test_node
+-- Install configuration: ""
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/lib/quadruped_controller/ik_test_node
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/quadruped_controller/lib/quadruped_controller/ik_test_node" to ""
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/package_run_dependencies/quadruped_controller
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/parent_prefix_path/quadruped_controller
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/path.sh
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/path.dsv
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.bash
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.sh
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.zsh
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.dsv
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/package.dsv
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/packages/quadruped_controller
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/cmake/quadruped_controllerConfig.cmake
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/cmake/quadruped_controllerConfig-version.cmake
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/package.xml

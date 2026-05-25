@@ -1,0 +1,12 @@
+[0.025s] Invoking command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4
+[0.480s] [  8%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o[0m
+[0.481s] [ 16%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o[0m
+[0.481s] [ 25%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o[0m
+[2.775s] gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:216: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o] Interrupt
+[2.776s] gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:202: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o] Interrupt
+[2.776s] gmake[2]: *** wait: No child processes.  Stop.
+[2.777s] gmake[2]: *** Waiting for unfinished jobs....
+[2.777s] gmake[2]: *** wait: No child processes.  Stop.
+[2.777s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+[2.777s] gmake: *** [Makefile:146: all] Interrupt
+[3.061s] Invoked command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4

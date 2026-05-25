@@ -1,0 +1,10 @@
+/home/ubuntu/pi-dog_ws/build/i2c_pwm_board/CMakeFiles/uninstall.dir
+/home/ubuntu/pi-dog_ws/build/i2c_pwm_board/CMakeFiles/i2c_pwm_board_uninstall.dir
+/home/ubuntu/pi-dog_ws/build/i2c_pwm_board/CMakeFiles/node.dir
+/home/ubuntu/pi-dog_ws/build/i2c_pwm_board/CMakeFiles/test.dir
+/home/ubuntu/pi-dog_ws/build/i2c_pwm_board/CMakeFiles/edit_cache.dir
+/home/ubuntu/pi-dog_ws/build/i2c_pwm_board/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/pi-dog_ws/build/i2c_pwm_board/CMakeFiles/list_install_components.dir
+/home/ubuntu/pi-dog_ws/build/i2c_pwm_board/CMakeFiles/install.dir
+/home/ubuntu/pi-dog_ws/build/i2c_pwm_board/CMakeFiles/install/local.dir
+/home/ubuntu/pi-dog_ws/build/i2c_pwm_board/CMakeFiles/install/strip.dir

@@ -1,0 +1,85 @@
+In file included from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:1[m[K:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:[m[K In member function ‘[01m[Kvirtual void SpotMicroState::[01;32m[KhandleInputCommands[m[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*, smk::BodyState*)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:42:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbody_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   42 |   virtual void handleInputCommands([01;35m[Kconst smk::BodyState& body_state[m[K,
+      |                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:43:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksmnc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   43 |                                    [01;35m[Kconst SpotMicroNodeConfig& smnc[m[K,
+      |                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:44:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcmd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   44 |                                    [01;35m[Kconst Command& cmd[m[K,
+      |                                    [01;35m[K~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:45:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksmmc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   45 |                                    [01;35m[KSpotMicroMotionCmd* smmc[m[K,
+      |                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:46:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbody_state_cmd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   46 |                                    [01;35m[Ksmk::BodyState* body_state_cmd[m[K) {}
+      |                                    [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:[m[K In member function ‘[01m[Kvirtual void SpotMicroState::[01;32m[Kinit[m[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:48:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbody_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   48 |   virtual void init([01;35m[Kconst smk::BodyState& body_state[m[K,
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:49:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksmnc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   49 |                     [01;35m[Kconst SpotMicroNodeConfig& smnc[m[K,
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:50:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcmd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   50 |                     [01;35m[Kconst Command& cmd[m[K,
+      |                     [01;35m[K~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:51:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksmmc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   51 |                     [01;35m[KSpotMicroMotionCmd* smmc[m[K) {}
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:[m[K In member function ‘[01m[Kvirtual void SpotMicroState::[01;32m[KinitBodyStateFilters[m[K(float, float, float, float, const smk::BodyState&, BodyStateFilters*)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:35:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   35 |       {[01;35m[K.[m[Kx = rlfof(dt, tau, body_state.leg_feet_pos.right_front.x, rl),
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:36:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   36 |        [01;35m[K.[m[Ky = rlfof(dt, tau, body_state.leg_feet_pos.right_front.y, rl),
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:37:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   37 |        [01;35m[K.[m[Kz = rlfof(dt, tau, body_state.leg_feet_pos.right_front.z, rl)};
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:40:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   40 |       {[01;35m[K.[m[Kx = rlfof(dt, tau, body_state.leg_feet_pos.right_back.x, rl),
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:41:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   41 |        [01;35m[K.[m[Ky = rlfof(dt, tau, body_state.leg_feet_pos.right_back.y, rl),
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:42:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   42 |        [01;35m[K.[m[Kz = rlfof(dt, tau, body_state.leg_feet_pos.right_back.z, rl)};
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:45:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   45 |       {[01;35m[K.[m[Kx = rlfof(dt, tau, body_state.leg_feet_pos.left_back.x, rl),
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:46:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   46 |        [01;35m[K.[m[Ky = rlfof(dt, tau, body_state.leg_feet_pos.left_back.y, rl),
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:47:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   47 |        [01;35m[K.[m[Kz = rlfof(dt, tau, body_state.leg_feet_pos.left_back.z, rl)};
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:50:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   50 |       {[01;35m[K.[m[Kx = rlfof(dt, tau, body_state.leg_feet_pos.left_front.x, rl),
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:51:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   51 |        [01;35m[K.[m[Ky = rlfof(dt, tau, body_state.leg_feet_pos.left_front.y, rl),
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:52:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   52 |        [01;35m[K.[m[Kz = rlfof(dt, tau, body_state.leg_feet_pos.left_front.z, rl)};
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:55:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   55 |       {[01;35m[K.[m[Kx = rlfof(dt, tau, body_state.xyz_pos.x, rl),
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:56:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   56 |        [01;35m[K.[m[Ky = rlfof(dt, tau, body_state.xyz_pos.y, rl),
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:57:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   57 |        [01;35m[K.[m[Kz = rlfof(dt, tau, body_state.xyz_pos.z, rl)};
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:60:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   60 |       {[01;35m[K.[m[Kx = rlfof(dt, tau, body_state.euler_angs.phi, rl_ang),
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:61:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   61 |        [01;35m[K.[m[Ky = rlfof(dt, tau, body_state.euler_angs.theta, rl_ang),
+      |        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp:62:8:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   62 |        [01;35m[K.[m[Kz = rlfof(dt, tau, body_state.euler_angs.psi, rl_ang)};
+      |        [01;35m[K^[m[K

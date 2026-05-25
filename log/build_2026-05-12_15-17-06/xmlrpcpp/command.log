@@ -1,0 +1,6 @@
+Invoking command in '/home/ubuntu/pi-dog_ws/build/xmlrpcpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/pi-dog_ws/src/i2c_pwm_board/xmlrpcpp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/xmlrpcpp
+Invoked command in '/home/ubuntu/pi-dog_ws/build/xmlrpcpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/pi-dog_ws/src/i2c_pwm_board/xmlrpcpp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/xmlrpcpp
+Invoking command in '/home/ubuntu/pi-dog_ws/build/xmlrpcpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/xmlrpcpp -- -j4 -l4
+Invoked command in '/home/ubuntu/pi-dog_ws/build/xmlrpcpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/xmlrpcpp -- -j4 -l4
+Invoking command in '/home/ubuntu/pi-dog_ws/build/xmlrpcpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/pi-dog_ws/build/xmlrpcpp
+Invoked command in '/home/ubuntu/pi-dog_ws/build/xmlrpcpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/pi-dog_ws/build/xmlrpcpp

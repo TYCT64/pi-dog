@@ -1,0 +1,26 @@
+[  7%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o[0m
+[ 23%] [32m[1mLinking CXX executable ik_test_node[0m
+[100%] Built target ik_test_node
+-- Install configuration: ""
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/lib/quadruped_controller/ik_test_node
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/quadruped_controller/lib/quadruped_controller/ik_test_node" to ""
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/launch
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/launch/run_robot.launch.py
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/config
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/config/spot_micro_config.yaml
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/package_run_dependencies/quadruped_controller
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/parent_prefix_path/quadruped_controller
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/path.sh
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/path.dsv
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.bash
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.sh
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.zsh
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.dsv
+-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/package.dsv
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/packages/quadruped_controller
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/cmake/quadruped_controllerConfig.cmake
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/cmake/quadruped_controllerConfig-version.cmake
+-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/package.xml

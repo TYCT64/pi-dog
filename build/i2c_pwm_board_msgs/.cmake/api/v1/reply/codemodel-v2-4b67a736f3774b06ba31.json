@@ -1,0 +1,267 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a5a58c539a6ebaec9259.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "i2c_pwm_board_msgs__py",
+					"jsonFile" : "directory-i2c_pwm_board_msgs__py-9bc824f5aa62910440c6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/i2c_pwm_board_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "i2c_pwm_board_msgs__rs",
+					"jsonFile" : "directory-i2c_pwm_board_msgs__rs-eada59459b5755a3cd18.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/i2c_pwm_board_msgs__rs",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "i2c_pwm_board_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_i2c_pwm_board_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_i2c_pwm_board_msgs_egg-009a0fa601f3d08a4190.json",
+					"name" : "ament_cmake_python_build_i2c_pwm_board_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_i2c_pwm_board_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_i2c_pwm_board_msgs-2fb24dd7ac7ba5d45d6c.json",
+					"name" : "ament_cmake_python_copy_i2c_pwm_board_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs-13da1a13230de732c6c1.json",
+					"name" : "i2c_pwm_board_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs__cpp-ec53695257d6377fad92.json",
+					"name" : "i2c_pwm_board_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "i2c_pwm_board_msgs__py::@228cad643bc711ca7b3a",
+					"jsonFile" : "target-i2c_pwm_board_msgs__py-98f620c3262f12cbf13a.json",
+					"name" : "i2c_pwm_board_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs__rosidl_generator_c-facc4fd0ee96d15b3dc3.json",
+					"name" : "i2c_pwm_board_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs__rosidl_generator_py-88cb9fa12bfa57837982.json",
+					"name" : "i2c_pwm_board_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs__rosidl_generator_type_description-dbac5015741973dad051.json",
+					"name" : "i2c_pwm_board_msgs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs__rosidl_typesupport_c-e25d38c92956f64a55c7.json",
+					"name" : "i2c_pwm_board_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs__rosidl_typesupport_cpp-46680f54172c3d758b10.json",
+					"name" : "i2c_pwm_board_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c-6aea98d12deb4e9237ca.json",
+					"name" : "i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp-18980f79fc640452ebc3.json",
+					"name" : "i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs__rosidl_typesupport_introspection_c-4a4b9bed69452f5e2753.json",
+					"name" : "i2c_pwm_board_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp-506f8f4b36d12279a26a.json",
+					"name" : "i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "i2c_pwm_board_msgs__rs::@3a94b1b95d16d25e9a86",
+					"jsonFile" : "target-i2c_pwm_board_msgs__rs-4df1d25baaec8af28cc9.json",
+					"name" : "i2c_pwm_board_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs_s__rosidl_typesupport_c-3563c6bb76872bfaf496.json",
+					"name" : "i2c_pwm_board_msgs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs_s__rosidl_typesupport_fastrtps_c-bc35e48b81d9ad497345.json",
+					"name" : "i2c_pwm_board_msgs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs_s__rosidl_typesupport_introspection_c-ae6d7c6fa3f95172ca05.json",
+					"name" : "i2c_pwm_board_msgs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "i2c_pwm_board_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-i2c_pwm_board_msgs_uninstall-6904e59223404078ad66.json",
+					"name" : "i2c_pwm_board_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-bf32262f4fccc344142e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs",
+		"source" : "/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,881 @@
+[0.000000] (-) TimerEvent: {}
+[0.000415] (-) JobUnselected: {'identifier': 'i2c_pwm_board_calibration'}
+[0.000754] (-) JobUnselected: {'identifier': 'i2c_pwm_board_xmlrp'}
+[0.000782] (-) JobUnselected: {'identifier': 'quadruped_controller'}
+[0.000802] (-) JobUnselected: {'identifier': 'xmlrpcpp'}
+[0.000823] (i2c_pwm_board_msgs) JobQueued: {'identifier': 'i2c_pwm_board_msgs', 'dependencies': OrderedDict()}
+[0.000846] (i2c_pwm_board) JobQueued: {'identifier': 'i2c_pwm_board', 'dependencies': OrderedDict({'i2c_pwm_board_msgs': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs', 'xmlrpcpp': '/home/ubuntu/pi-dog_ws/install/xmlrpcpp', 'i2c_pwm_board_xmlrp': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp'})}
+[0.000877] (i2c_pwm_board_msgs) JobStarted: {'identifier': 'i2c_pwm_board_msgs'}
+[0.010335] (i2c_pwm_board_msgs) JobProgress: {'identifier': 'i2c_pwm_board_msgs', 'progress': 'cmake'}
+[0.010986] (i2c_pwm_board_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_msgs', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs'], 'cwd': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws/src', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[0.099780] (-) TimerEvent: {}
+[0.115673] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199884] (-) TimerEvent: {}
+[0.214465] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.243260] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299999] (-) TimerEvent: {}
+[0.388219] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.400065] (-) TimerEvent: {}
+[0.403396] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.403772] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.404327] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.418873] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500219] (-) TimerEvent: {}
+[0.587619] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.600289] (-) TimerEvent: {}
+[0.603388] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.603796] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.604465] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.615871] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.700421] (-) TimerEvent: {}
+[0.800750] (-) TimerEvent: {}
+[0.821441] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.900850] (-) TimerEvent: {}
+[0.963331] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.971237] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.000951] (-) TimerEvent: {}
+[1.025846] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.097438] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.101019] (-) TimerEvent: {}
+[1.201246] (-) TimerEvent: {}
+[1.301587] (-) TimerEvent: {}
+[1.401921] (-) TimerEvent: {}
+[1.502256] (-) TimerEvent: {}
+[1.602566] (-) TimerEvent: {}
+[1.702921] (-) TimerEvent: {}
+[1.803231] (-) TimerEvent: {}
+[1.903532] (-) TimerEvent: {}
+[2.003868] (-) TimerEvent: {}
+[2.074732] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[2.103978] (-) TimerEvent: {}
+[2.204349] (-) TimerEvent: {}
+[2.304678] (-) TimerEvent: {}
+[2.404987] (-) TimerEvent: {}
+[2.505330] (-) TimerEvent: {}
+[2.605638] (-) TimerEvent: {}
+[2.705962] (-) TimerEvent: {}
+[2.707467] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.806059] (-) TimerEvent: {}
+[2.906383] (-) TimerEvent: {}
+[3.006706] (-) TimerEvent: {}
+[3.107001] (-) TimerEvent: {}
+[3.207331] (-) TimerEvent: {}
+[3.307644] (-) TimerEvent: {}
+[3.407966] (-) TimerEvent: {}
+[3.508354] (-) TimerEvent: {}
+[3.540826] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.608475] (-) TimerEvent: {}
+[3.660620] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[3.708598] (-) TimerEvent: {}
+[3.808958] (-) TimerEvent: {}
+[3.904961] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[3.909025] (-) TimerEvent: {}
+[4.009241] (-) TimerEvent: {}
+[4.109581] (-) TimerEvent: {}
+[4.209932] (-) TimerEvent: {}
+[4.310287] (-) TimerEvent: {}
+[4.410615] (-) TimerEvent: {}
+[4.510919] (-) TimerEvent: {}
+[4.611231] (-) TimerEvent: {}
+[4.711516] (-) TimerEvent: {}
+[4.811819] (-) TimerEvent: {}
+[4.827550] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[4.911927] (-) TimerEvent: {}
+[4.927337] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.931196] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[4.975394] (i2c_pwm_board_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.979216] (i2c_pwm_board_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.981197] (i2c_pwm_board_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.985589] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Configuring done (5.0s)\n'}
+[5.012027] (-) TimerEvent: {}
+[5.069790] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[5.089449] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs\n'}
+[5.108323] (i2c_pwm_board_msgs) CommandEnded: {'returncode': 0}
+[5.108974] (i2c_pwm_board_msgs) JobProgress: {'identifier': 'i2c_pwm_board_msgs', 'progress': 'build'}
+[5.109698] (i2c_pwm_board_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws/src', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[5.112088] (-) TimerEvent: {}
+[5.211039] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[5.211337] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[5.212200] (-) TimerEvent: {}
+[5.228364] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_i2c_pwm_board_msgs\n'}
+[5.315298] (-) TimerEvent: {}
+[5.415695] (-) TimerEvent: {}
+[5.516143] (-) TimerEvent: {}
+[5.611373] (i2c_pwm_board_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.613568] (i2c_pwm_board_msgs) StdoutLine: {'line': b'creating i2c_pwm_board_msgs.egg-info\n'}
+[5.616243] (-) TimerEvent: {}
+[5.660087] (i2c_pwm_board_msgs) StdoutLine: {'line': b'writing i2c_pwm_board_msgs.egg-info/PKG-INFO\n'}
+[5.661893] (i2c_pwm_board_msgs) StdoutLine: {'line': b'writing dependency_links to i2c_pwm_board_msgs.egg-info/dependency_links.txt\n'}
+[5.662241] (i2c_pwm_board_msgs) StdoutLine: {'line': b'writing top-level names to i2c_pwm_board_msgs.egg-info/top_level.txt\n'}
+[5.665232] (i2c_pwm_board_msgs) StdoutLine: {'line': b"writing manifest file 'i2c_pwm_board_msgs.egg-info/SOURCES.txt'\n"}
+[5.716350] (-) TimerEvent: {}
+[5.727671] (i2c_pwm_board_msgs) StdoutLine: {'line': b"reading manifest file 'i2c_pwm_board_msgs.egg-info/SOURCES.txt'\n"}
+[5.728767] (i2c_pwm_board_msgs) StdoutLine: {'line': b"writing manifest file 'i2c_pwm_board_msgs.egg-info/SOURCES.txt'\n"}
+[5.812851] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_build_i2c_pwm_board_msgs_egg\n'}
+[5.816470] (-) TimerEvent: {}
+[5.916843] (-) TimerEvent: {}
+[6.018297] (-) TimerEvent: {}
+[6.038560] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  1%] Built target i2c_pwm_board_msgs__rosidl_generator_type_description\n'}
+[6.063385] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.105421] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.120282] (-) TimerEvent: {}
+[6.167779] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  2%] Built target i2c_pwm_board_msgs__rs\n'}
+[6.220383] (-) TimerEvent: {}
+[6.320794] (-) TimerEvent: {}
+[6.421666] (-) TimerEvent: {}
+[6.521977] (-) TimerEvent: {}
+[6.622277] (-) TimerEvent: {}
+[6.722667] (-) TimerEvent: {}
+[6.822989] (-) TimerEvent: {}
+[6.923415] (-) TimerEvent: {}
+[7.023703] (-) TimerEvent: {}
+[7.124020] (-) TimerEvent: {}
+[7.224785] (-) TimerEvent: {}
+[7.325147] (-) TimerEvent: {}
+[7.425908] (-) TimerEvent: {}
+[7.526268] (-) TimerEvent: {}
+[7.628103] (-) TimerEvent: {}
+[7.730275] (-) TimerEvent: {}
+[7.830780] (-) TimerEvent: {}
+[7.926885] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  2%] Built target i2c_pwm_board_msgs__cpp\n'}
+[7.930916] (-) TimerEvent: {}
+[8.031404] (-) TimerEvent: {}
+[8.131926] (-) TimerEvent: {}
+[8.233704] (-) TimerEvent: {}
+[8.334237] (-) TimerEvent: {}
+[8.361364] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/position__description.c.o\x1b[0m\n'}
+[8.361649] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/position__functions.c.o\x1b[0m\n'}
+[8.361771] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/position__type_support.c.o\x1b[0m\n'}
+[8.361871] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/position_array__description.c.o\x1b[0m\n'}
+[8.431061] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/position_array__functions.c.o\x1b[0m\n'}
+[8.434362] (-) TimerEvent: {}
+[8.444207] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/position_array__type_support.c.o\x1b[0m\n'}
+[8.447058] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/servo__description.c.o\x1b[0m\n'}
+[8.491355] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/servo__functions.c.o\x1b[0m\n'}
+[8.512391] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/servo__type_support.c.o\x1b[0m\n'}
+[8.522549] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/servo_array__description.c.o\x1b[0m\n'}
+[8.527582] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/servo_array__functions.c.o\x1b[0m\n'}
+[8.534495] (-) TimerEvent: {}
+[8.602914] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/servo_array__type_support.c.o\x1b[0m\n'}
+[8.635355] (-) TimerEvent: {}
+[8.644549] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/servo_config__description.c.o\x1b[0m\n'}
+[8.650138] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/servo_config__functions.c.o\x1b[0m\n'}
+[8.675277] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/servo_config__type_support.c.o\x1b[0m\n'}
+[8.683548] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/servo_config_array__description.c.o\x1b[0m\n'}
+[8.722701] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/servo_config_array__functions.c.o\x1b[0m\n'}
+[8.735549] (-) TimerEvent: {}
+[8.745942] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support.c.o\x1b[0m\n'}
+[8.762047] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/srv/detail/drive_mode__description.c.o\x1b[0m\n'}
+[8.789237] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/srv/detail/drive_mode__functions.c.o\x1b[0m\n'}
+[8.837326] (-) TimerEvent: {}
+[8.857375] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support.c.o\x1b[0m\n'}
+[8.870214] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/srv/detail/int_value__description.c.o\x1b[0m\n'}
+[8.912414] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/srv/detail/int_value__functions.c.o\x1b[0m\n'}
+[8.935040] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/srv/detail/int_value__type_support.c.o\x1b[0m\n'}
+[8.937509] (-) TimerEvent: {}
+[8.991284] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/srv/detail/servos_config__description.c.o\x1b[0m\n'}
+[9.006330] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/srv/detail/servos_config__functions.c.o\x1b[0m\n'}
+[9.039295] (-) TimerEvent: {}
+[9.062680] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/srv/detail/servos_config__type_support.c.o\x1b[0m\n'}
+[9.115890] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/srv/detail/stop_servos__description.c.o\x1b[0m\n'}
+[9.126474] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/srv/detail/stop_servos__functions.c.o\x1b[0m\n'}
+[9.141275] (-) TimerEvent: {}
+[9.147004] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_c.dir/rosidl_generator_c/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support.c.o\x1b[0m\n'}
+[9.241432] (-) TimerEvent: {}
+[9.303826] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking C shared library libi2c_pwm_board_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[9.341554] (-) TimerEvent: {}
+[9.403593] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 27%] Built target i2c_pwm_board_msgs__rosidl_generator_c\n'}
+[9.428407] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.428704] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[9.431501] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.432618] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.441667] (-) TimerEvent: {}
+[9.542061] (-) TimerEvent: {}
+[9.642536] (-) TimerEvent: {}
+[9.742891] (-) TimerEvent: {}
+[9.843404] (-) TimerEvent: {}
+[9.945229] (-) TimerEvent: {}
+[10.045563] (-) TimerEvent: {}
+[10.145985] (-) TimerEvent: {}
+[10.246340] (-) TimerEvent: {}
+[10.348370] (-) TimerEvent: {}
+[10.448710] (-) TimerEvent: {}
+[10.549190] (-) TimerEvent: {}
+[10.649558] (-) TimerEvent: {}
+[10.719339] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2c_pwm_board_msgs/msg/position__type_support.cpp.o\x1b[0m\n'}
+[10.749675] (-) TimerEvent: {}
+[10.826564] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2c_pwm_board_msgs/msg/position_array__type_support.cpp.o\x1b[0m\n'}
+[10.849842] (-) TimerEvent: {}
+[10.932272] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2c_pwm_board_msgs/msg/servo__type_support.cpp.o\x1b[0m\n'}
+[10.949947] (-) TimerEvent: {}
+[11.039403] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2c_pwm_board_msgs/msg/servo_array__type_support.cpp.o\x1b[0m\n'}
+[11.050108] (-) TimerEvent: {}
+[11.148566] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2c_pwm_board_msgs/msg/servo_config__type_support.cpp.o\x1b[0m\n'}
+[11.150253] (-) TimerEvent: {}
+[11.245497] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2c_pwm_board_msgs/msg/detail/position__type_support.c.o\x1b[0m\n'}
+[11.252302] (-) TimerEvent: {}
+[11.275930] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2c_pwm_board_msgs/msg/servo_config_array__type_support.cpp.o\x1b[0m\n'}
+[11.338993] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2c_pwm_board_msgs/msg/detail/position_array__type_support.c.o\x1b[0m\n'}
+[11.352421] (-) TimerEvent: {}
+[11.378346] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2c_pwm_board_msgs/srv/drive_mode__type_support.cpp.o\x1b[0m\n'}
+[11.452626] (-) TimerEvent: {}
+[11.473054] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2c_pwm_board_msgs/msg/detail/servo__type_support.c.o\x1b[0m\n'}
+[11.514426] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2c_pwm_board_msgs/srv/int_value__type_support.cpp.o\x1b[0m\n'}
+[11.551000] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2c_pwm_board_msgs/msg/detail/servo_array__type_support.c.o\x1b[0m\n'}
+[11.552724] (-) TimerEvent: {}
+[11.650478] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2c_pwm_board_msgs/srv/servos_config__type_support.cpp.o\x1b[0m\n'}
+[11.654501] (-) TimerEvent: {}
+[11.683302] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2c_pwm_board_msgs/msg/detail/servo_config__type_support.c.o\x1b[0m\n'}
+[11.692025] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2c_pwm_board_msgs/msg/detail/dds_fastrtps/position__type_support.cpp.o\x1b[0m\n'}
+[11.750161] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2c_pwm_board_msgs/srv/stop_servos__type_support.cpp.o\x1b[0m\n'}
+[11.754627] (-) TimerEvent: {}
+[11.756375] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support.c.o\x1b[0m\n'}
+[11.854774] (-) TimerEvent: {}
+[11.887731] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support.c.o\x1b[0m\n'}
+[11.889600] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libi2c_pwm_board_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[11.922340] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2c_pwm_board_msgs/msg/detail/position__type_support_c.cpp.o\x1b[0m\n'}
+[11.954895] (-) TimerEvent: {}
+[11.986218] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 46%] Built target i2c_pwm_board_msgs__rosidl_typesupport_c\n'}
+[12.007597] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2c_pwm_board_msgs/srv/detail/int_value__type_support.c.o\x1b[0m\n'}
+[12.021288] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2c_pwm_board_msgs/srv/detail/servos_config__type_support.c.o\x1b[0m\n'}
+[12.055067] (-) TimerEvent: {}
+[12.132081] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support.c.o\x1b[0m\n'}
+[12.148330] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2c_pwm_board_msgs/msg/detail/dds_fastrtps/position_array__type_support.cpp.o\x1b[0m\n'}
+[12.155217] (-) TimerEvent: {}
+[12.258521] (-) TimerEvent: {}
+[12.266948] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking C shared library libi2c_pwm_board_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[12.351042] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 50%] Built target i2c_pwm_board_msgs__rosidl_typesupport_introspection_c\n'}
+[12.361296] (-) TimerEvent: {}
+[12.374123] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[12.461443] (-) TimerEvent: {}
+[12.562009] (-) TimerEvent: {}
+[12.662460] (-) TimerEvent: {}
+[12.766466] (-) TimerEvent: {}
+[12.866935] (-) TimerEvent: {}
+[12.933392] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 52%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.969263] (-) TimerEvent: {}
+[13.069721] (-) TimerEvent: {}
+[13.109257] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2c_pwm_board_msgs/msg/detail/position_array__type_support_c.cpp.o\x1b[0m\n'}
+[13.171258] (-) TimerEvent: {}
+[13.271777] (-) TimerEvent: {}
+[13.372281] (-) TimerEvent: {}
+[13.438054] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2c_pwm_board_msgs/msg/detail/dds_fastrtps/servo__type_support.cpp.o\x1b[0m\n'}
+[13.474296] (-) TimerEvent: {}
+[13.574807] (-) TimerEvent: {}
+[13.675480] (-) TimerEvent: {}
+[13.777244] (-) TimerEvent: {}
+[13.877617] (-) TimerEvent: {}
+[13.978122] (-) TimerEvent: {}
+[14.078993] (-) TimerEvent: {}
+[14.181866] (-) TimerEvent: {}
+[14.218544] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2c_pwm_board_msgs/msg/detail/servo__type_support_c.cpp.o\x1b[0m\n'}
+[14.282018] (-) TimerEvent: {}
+[14.383509] (-) TimerEvent: {}
+[14.433709] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2c_pwm_board_msgs/msg/detail/position__type_support.cpp.o\x1b[0m\n'}
+[14.440946] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2c_pwm_board_msgs/msg/position__type_support.cpp.o\x1b[0m\n'}
+[14.486295] (-) TimerEvent: {}
+[14.586842] (-) TimerEvent: {}
+[14.642319] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2c_pwm_board_msgs/msg/detail/dds_fastrtps/servo_array__type_support.cpp.o\x1b[0m\n'}
+[14.687004] (-) TimerEvent: {}
+[14.787619] (-) TimerEvent: {}
+[14.888068] (-) TimerEvent: {}
+[14.989591] (-) TimerEvent: {}
+[15.092527] (-) TimerEvent: {}
+[15.193133] (-) TimerEvent: {}
+[15.226722] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2c_pwm_board_msgs/msg/detail/position_array__type_support.cpp.o\x1b[0m\n'}
+[15.232543] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2c_pwm_board_msgs/msg/position_array__type_support.cpp.o\x1b[0m\n'}
+[15.296297] (-) TimerEvent: {}
+[15.388362] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2c_pwm_board_msgs/msg/detail/servo_array__type_support_c.cpp.o\x1b[0m\n'}
+[15.396414] (-) TimerEvent: {}
+[15.496831] (-) TimerEvent: {}
+[15.597399] (-) TimerEvent: {}
+[15.699712] (-) TimerEvent: {}
+[15.800271] (-) TimerEvent: {}
+[15.901030] (-) TimerEvent: {}
+[16.002645] (-) TimerEvent: {}
+[16.103424] (-) TimerEvent: {}
+[16.106567] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2c_pwm_board_msgs/msg/detail/dds_fastrtps/servo_config__type_support.cpp.o\x1b[0m\n'}
+[16.117207] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2c_pwm_board_msgs/msg/servo__type_support.cpp.o\x1b[0m\n'}
+[16.131022] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2c_pwm_board_msgs/msg/detail/servo__type_support.cpp.o\x1b[0m\n'}
+[16.205280] (-) TimerEvent: {}
+[16.305720] (-) TimerEvent: {}
+[16.406268] (-) TimerEvent: {}
+[16.506718] (-) TimerEvent: {}
+[16.607675] (-) TimerEvent: {}
+[16.647246] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2c_pwm_board_msgs/msg/detail/servo_config__type_support_c.cpp.o\x1b[0m\n'}
+[16.707843] (-) TimerEvent: {}
+[16.811553] (-) TimerEvent: {}
+[16.912300] (-) TimerEvent: {}
+[17.013463] (-) TimerEvent: {}
+[17.114166] (-) TimerEvent: {}
+[17.215064] (-) TimerEvent: {}
+[17.259477] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2c_pwm_board_msgs/msg/servo_array__type_support.cpp.o\x1b[0m\n'}
+[17.265727] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2c_pwm_board_msgs/msg/detail/servo_array__type_support.cpp.o\x1b[0m\n'}
+[17.281954] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2c_pwm_board_msgs/msg/detail/dds_fastrtps/servo_config_array__type_support.cpp.o\x1b[0m\n'}
+[17.315251] (-) TimerEvent: {}
+[17.415701] (-) TimerEvent: {}
+[17.516077] (-) TimerEvent: {}
+[17.616565] (-) TimerEvent: {}
+[17.716967] (-) TimerEvent: {}
+[17.797374] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support_c.cpp.o\x1b[0m\n'}
+[17.817321] (-) TimerEvent: {}
+[17.906757] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2c_pwm_board_msgs/msg/servo_config__type_support.cpp.o\x1b[0m\n'}
+[17.917432] (-) TimerEvent: {}
+[18.018235] (-) TimerEvent: {}
+[18.118732] (-) TimerEvent: {}
+[18.220294] (-) TimerEvent: {}
+[18.320797] (-) TimerEvent: {}
+[18.422460] (-) TimerEvent: {}
+[18.523032] (-) TimerEvent: {}
+[18.581326] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2c_pwm_board_msgs/msg/detail/servo_config__type_support.cpp.o\x1b[0m\n'}
+[18.623222] (-) TimerEvent: {}
+[18.723780] (-) TimerEvent: {}
+[18.737538] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2c_pwm_board_msgs/msg/servo_config_array__type_support.cpp.o\x1b[0m\n'}
+[18.823913] (-) TimerEvent: {}
+[18.924350] (-) TimerEvent: {}
+[19.003325] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2c_pwm_board_msgs/srv/detail/dds_fastrtps/drive_mode__type_support.cpp.o\x1b[0m\n'}
+[19.024471] (-) TimerEvent: {}
+[19.056898] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support_c.cpp.o\x1b[0m\n'}
+[19.124642] (-) TimerEvent: {}
+[19.225248] (-) TimerEvent: {}
+[19.328489] (-) TimerEvent: {}
+[19.377135] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support.cpp.o\x1b[0m\n'}
+[19.428621] (-) TimerEvent: {}
+[19.529518] (-) TimerEvent: {}
+[19.551313] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2c_pwm_board_msgs/srv/drive_mode__type_support.cpp.o\x1b[0m\n'}
+[19.629628] (-) TimerEvent: {}
+[19.731505] (-) TimerEvent: {}
+[19.832075] (-) TimerEvent: {}
+[19.932583] (-) TimerEvent: {}
+[20.035429] (-) TimerEvent: {}
+[20.135837] (-) TimerEvent: {}
+[20.236417] (-) TimerEvent: {}
+[20.253412] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support.cpp.o\x1b[0m\n'}
+[20.336576] (-) TimerEvent: {}
+[20.351358] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2c_pwm_board_msgs/srv/detail/int_value__type_support_c.cpp.o\x1b[0m\n'}
+[20.436723] (-) TimerEvent: {}
+[20.537148] (-) TimerEvent: {}
+[20.637704] (-) TimerEvent: {}
+[20.649383] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2c_pwm_board_msgs/srv/int_value__type_support.cpp.o\x1b[0m\n'}
+[20.737862] (-) TimerEvent: {}
+[20.814995] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2c_pwm_board_msgs/srv/detail/dds_fastrtps/int_value__type_support.cpp.o\x1b[0m\n'}
+[20.837993] (-) TimerEvent: {}
+[20.938449] (-) TimerEvent: {}
+[21.041517] (-) TimerEvent: {}
+[21.141979] (-) TimerEvent: {}
+[21.244273] (-) TimerEvent: {}
+[21.344730] (-) TimerEvent: {}
+[21.445283] (-) TimerEvent: {}
+[21.547293] (-) TimerEvent: {}
+[21.600293] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2c_pwm_board_msgs/srv/detail/int_value__type_support.cpp.o\x1b[0m\n'}
+[21.628716] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2c_pwm_board_msgs/srv/detail/servos_config__type_support_c.cpp.o\x1b[0m\n'}
+[21.647439] (-) TimerEvent: {}
+[21.749479] (-) TimerEvent: {}
+[21.782326] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2c_pwm_board_msgs/srv/servos_config__type_support.cpp.o\x1b[0m\n'}
+[21.849634] (-) TimerEvent: {}
+[21.950396] (-) TimerEvent: {}
+[22.051375] (-) TimerEvent: {}
+[22.155466] (-) TimerEvent: {}
+[22.256068] (-) TimerEvent: {}
+[22.356826] (-) TimerEvent: {}
+[22.457748] (-) TimerEvent: {}
+[22.475733] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2c_pwm_board_msgs/srv/detail/dds_fastrtps/servos_config__type_support.cpp.o\x1b[0m\n'}
+[22.557918] (-) TimerEvent: {}
+[22.655205] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2c_pwm_board_msgs/srv/detail/servos_config__type_support.cpp.o\x1b[0m\n'}
+[22.658039] (-) TimerEvent: {}
+[22.758534] (-) TimerEvent: {}
+[22.859468] (-) TimerEvent: {}
+[22.861921] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2c_pwm_board_msgs/srv/stop_servos__type_support.cpp.o\x1b[0m\n'}
+[22.884269] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support_c.cpp.o\x1b[0m\n'}
+[22.959627] (-) TimerEvent: {}
+[23.061469] (-) TimerEvent: {}
+[23.161953] (-) TimerEvent: {}
+[23.265428] (-) TimerEvent: {}
+[23.366492] (-) TimerEvent: {}
+[23.467070] (-) TimerEvent: {}
+[23.568051] (-) TimerEvent: {}
+[23.671277] (-) TimerEvent: {}
+[23.771755] (-) TimerEvent: {}
+[23.872823] (-) TimerEvent: {}
+[23.882990] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libi2c_pwm_board_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[23.955972] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support.cpp.o\x1b[0m\n'}
+[23.974376] (-) TimerEvent: {}
+[24.076799] (-) TimerEvent: {}
+[24.138314] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 81%] Built target i2c_pwm_board_msgs__rosidl_typesupport_cpp\n'}
+[24.172666] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2c_pwm_board_msgs/srv/detail/dds_fastrtps/stop_servos__type_support.cpp.o\x1b[0m\n'}
+[24.177397] (-) TimerEvent: {}
+[24.190368] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libi2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[24.277618] (-) TimerEvent: {}
+[24.378301] (-) TimerEvent: {}
+[24.437258] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 83%] Built target i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c\n'}
+[24.478421] (-) TimerEvent: {}
+[24.578817] (-) TimerEvent: {}
+[24.679657] (-) TimerEvent: {}
+[24.780024] (-) TimerEvent: {}
+[24.882275] (-) TimerEvent: {}
+[24.982691] (-) TimerEvent: {}
+[25.045256] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libi2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[25.082817] (-) TimerEvent: {}
+[25.183250] (-) TimerEvent: {}
+[25.257608] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 84%] Built target i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp\n'}
+[25.283352] (-) TimerEvent: {}
+[25.383679] (-) TimerEvent: {}
+[25.484010] (-) TimerEvent: {}
+[25.487898] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libi2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[25.584122] (-) TimerEvent: {}
+[25.652073] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 85%] Built target i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[25.684266] (-) TimerEvent: {}
+[25.686645] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 85%] Built target i2c_pwm_board_msgs\n'}
+[25.720987] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 86%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[25.784367] (-) TimerEvent: {}
+[25.884659] (-) TimerEvent: {}
+[25.984943] (-) TimerEvent: {}
+[26.085222] (-) TimerEvent: {}
+[26.185526] (-) TimerEvent: {}
+[26.285902] (-) TimerEvent: {}
+[26.386184] (-) TimerEvent: {}
+[26.486465] (-) TimerEvent: {}
+[26.586774] (-) TimerEvent: {}
+[26.687176] (-) TimerEvent: {}
+[26.787516] (-) TimerEvent: {}
+[26.887941] (-) TimerEvent: {}
+[26.988256] (-) TimerEvent: {}
+[27.088642] (-) TimerEvent: {}
+[27.188964] (-) TimerEvent: {}
+[27.289374] (-) TimerEvent: {}
+[27.389648] (-) TimerEvent: {}
+[27.489932] (-) TimerEvent: {}
+[27.590216] (-) TimerEvent: {}
+[27.690516] (-) TimerEvent: {}
+[27.790934] (-) TimerEvent: {}
+[27.891374] (-) TimerEvent: {}
+[27.991730] (-) TimerEvent: {}
+[28.022513] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 86%] Built target i2c_pwm_board_msgs__py\n'}
+[28.057445] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_py.dir/rosidl_generator_py/i2c_pwm_board_msgs/msg/_position_s.c.o\x1b[0m\n'}
+[28.057940] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_py.dir/rosidl_generator_py/i2c_pwm_board_msgs/msg/_servo_s.c.o\x1b[0m\n'}
+[28.058272] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_py.dir/rosidl_generator_py/i2c_pwm_board_msgs/msg/_position_array_s.c.o\x1b[0m\n'}
+[28.060283] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_py.dir/rosidl_generator_py/i2c_pwm_board_msgs/msg/_servo_array_s.c.o\x1b[0m\n'}
+[28.091901] (-) TimerEvent: {}
+[28.193323] (-) TimerEvent: {}
+[28.293850] (-) TimerEvent: {}
+[28.395612] (-) TimerEvent: {}
+[28.494750] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_py.dir/rosidl_generator_py/i2c_pwm_board_msgs/msg/_servo_config_array_s.c.o\x1b[0m\n'}
+[28.495139] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_py.dir/rosidl_generator_py/i2c_pwm_board_msgs/msg/_servo_config_s.c.o\x1b[0m\n'}
+[28.495692] (-) TimerEvent: {}
+[28.500219] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_py.dir/rosidl_generator_py/i2c_pwm_board_msgs/srv/_drive_mode_s.c.o\x1b[0m\n'}
+[28.501347] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_py.dir/rosidl_generator_py/i2c_pwm_board_msgs/srv/_int_value_s.c.o\x1b[0m\n'}
+[28.598291] (-) TimerEvent: {}
+[28.698865] (-) TimerEvent: {}
+[28.779445] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_py.dir/rosidl_generator_py/i2c_pwm_board_msgs/srv/_servos_config_s.c.o\x1b[0m\n'}
+[28.788091] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs__rosidl_generator_py.dir/rosidl_generator_py/i2c_pwm_board_msgs/srv/_stop_servos_s.c.o\x1b[0m\n'}
+[28.799037] (-) TimerEvent: {}
+[28.900088] (-) TimerEvent: {}
+[29.000465] (-) TimerEvent: {}
+[29.100937] (-) TimerEvent: {}
+[29.162104] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library libi2c_pwm_board_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[29.201064] (-) TimerEvent: {}
+[29.248913] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 95%] Built target i2c_pwm_board_msgs__rosidl_generator_py\n'}
+[29.285586] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/i2c_pwm_board_msgs/_i2c_pwm_board_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[29.285887] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/i2c_pwm_board_msgs/_i2c_pwm_board_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[29.285984] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/i2c_pwm_board_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/i2c_pwm_board_msgs/_i2c_pwm_board_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[29.303245] (-) TimerEvent: {}
+[29.403627] (-) TimerEvent: {}
+[29.504142] (-) TimerEvent: {}
+[29.604630] (-) TimerEvent: {}
+[29.645165] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[29.656161] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[29.678903] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[29.704766] (-) TimerEvent: {}
+[29.731589] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[100%] Built target i2c_pwm_board_msgs_s__rosidl_typesupport_c\n'}
+[29.744467] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[100%] Built target i2c_pwm_board_msgs_s__rosidl_typesupport_introspection_c\n'}
+[29.747653] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[100%] Built target i2c_pwm_board_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[29.769799] (i2c_pwm_board_msgs) CommandEnded: {'returncode': 0}
+[29.770661] (i2c_pwm_board_msgs) JobProgress: {'identifier': 'i2c_pwm_board_msgs', 'progress': 'install'}
+[29.786339] (i2c_pwm_board_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs'], 'cwd': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws/src', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[29.804872] (-) TimerEvent: {}
+[29.812282] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.813147] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/ament_index/resource_index/rosidl_interfaces/i2c_pwm_board_msgs\n'}
+[29.813823] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/Position.json\n'}
+[29.814242] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/PositionArray.json\n'}
+[29.814698] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/Servo.json\n'}
+[29.815145] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoArray.json\n'}
+[29.815558] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoConfig.json\n'}
+[29.815935] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoConfigArray.json\n'}
+[29.816466] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/DriveMode.json\n'}
+[29.816891] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/IntValue.json\n'}
+[29.817326] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/ServosConfig.json\n'}
+[29.817776] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/StopServos.json\n'}
+[29.818220] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs\n'}
+[29.818599] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg\n'}
+[29.818870] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo_config_array.h\n'}
+[29.819194] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo_config.h\n'}
+[29.819492] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail\n'}
+[29.819787] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__functions.h\n'}
+[29.820125] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__description.c\n'}
+[29.820462] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__functions.c\n'}
+[29.820784] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__type_support.c\n'}
+[29.821073] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__type_support.c\n'}
+[29.821399] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__functions.c\n'}
+[29.821714] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__type_support.h\n'}
+[29.822031] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support.c\n'}
+[29.822365] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__functions.h\n'}
+[29.822678] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__struct.h\n'}
+[29.822980] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__type_support.h\n'}
+[29.823323] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__type_support.c\n'}
+[29.823643] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__type_support.h\n'}
+[29.823939] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__functions.h\n'}
+[29.824321] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__type_support.c\n'}
+[29.824625] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__type_support.h\n'}
+[29.824923] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__struct.h\n'}
+[29.825261] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__description.c\n'}
+[29.825574] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__functions.c\n'}
+[29.825888] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__functions.c\n'}
+[29.826208] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__functions.c\n'}
+[29.826520] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__functions.h\n'}
+[29.826872] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__type_support.c\n'}
+[29.827191] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__struct.h\n'}
+[29.827507] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__description.c\n'}
+[29.827864] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__struct.h\n'}
+[29.828425] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__description.c\n'}
+[29.828889] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support.h\n'}
+[29.829278] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__description.c\n'}
+[29.829559] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__type_support.h\n'}
+[29.829831] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__description.c\n'}
+[29.830373] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__functions.h\n'}
+[29.830822] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__struct.h\n'}
+[29.831119] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__struct.h\n'}
+[29.831427] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__functions.h\n'}
+[29.831700] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__functions.c\n'}
+[29.831958] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[29.832256] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo.h\n'}
+[29.832520] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/position.h\n'}
+[29.832763] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo_array.h\n'}
+[29.833029] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/position_array.h\n'}
+[29.833352] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv\n'}
+[29.833667] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/servos_config.h\n'}
+[29.833975] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail\n'}
+[29.834257] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__description.c\n'}
+[29.834665] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__functions.h\n'}
+[29.835028] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__description.c\n'}
+[29.835456] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__type_support.h\n'}
+[29.835757] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__struct.h\n'}
+[29.836056] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__functions.h\n'}
+[29.836458] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__struct.h\n'}
+[29.836757] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__functions.c\n'}
+[29.837131] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support.c\n'}
+[29.837440] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__description.c\n'}
+[29.837802] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__type_support.h\n'}
+[29.838100] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__functions.c\n'}
+[29.838589] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support.c\n'}
+[29.838982] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__functions.h\n'}
+[29.839392] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__functions.c\n'}
+[29.839782] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__struct.h\n'}
+[29.840090] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__functions.h\n'}
+[29.840491] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support.h\n'}
+[29.840790] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__type_support.c\n'}
+[29.841083] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__description.c\n'}
+[29.841465] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__struct.h\n'}
+[29.841773] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__functions.c\n'}
+[29.842136] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support.h\n'}
+[29.842460] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__type_support.c\n'}
+[29.842758] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/int_value.h\n'}
+[29.843046] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/drive_mode.h\n'}
+[29.843346] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/stop_servos.h\n'}
+[29.843966] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/library_path.sh\n'}
+[29.844473] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/library_path.dsv\n'}
+[29.845094] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_generator_c.so\n'}
+[29.847103] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_generator_c.so" to ""\n'}
+[29.847407] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs\n'}
+[29.847690] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg\n'}
+[29.847897] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail\n'}
+[29.848259] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__rosidl_typesupport_fastrtps_c.h\n'}
+[29.848495] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__rosidl_typesupport_fastrtps_c.h\n'}
+[29.848767] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__rosidl_typesupport_fastrtps_c.h\n'}
+[29.848953] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__rosidl_typesupport_fastrtps_c.h\n'}
+[29.849251] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__rosidl_typesupport_fastrtps_c.h\n'}
+[29.849584] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__rosidl_typesupport_fastrtps_c.h\n'}
+[29.849872] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[29.850200] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv\n'}
+[29.850505] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail\n'}
+[29.850707] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__rosidl_typesupport_fastrtps_c.h\n'}
+[29.850914] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__rosidl_typesupport_fastrtps_c.h\n'}
+[29.851082] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__rosidl_typesupport_fastrtps_c.h\n'}
+[29.851224] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__rosidl_typesupport_fastrtps_c.h\n'}
+[29.851510] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[29.852395] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[29.852555] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs\n'}
+[29.852644] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg\n'}
+[29.852760] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[29.852845] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail\n'}
+[29.852961] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__rosidl_typesupport_introspection_c.h\n'}
+[29.853041] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__rosidl_typesupport_introspection_c.h\n'}
+[29.853140] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__type_support.c\n'}
+[29.853273] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__type_support.c\n'}
+[29.853439] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__rosidl_typesupport_introspection_c.h\n'}
+[29.853572] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support.c\n'}
+[29.853736] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__type_support.c\n'}
+[29.853892] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__type_support.c\n'}
+[29.854049] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__rosidl_typesupport_introspection_c.h\n'}
+[29.854213] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__rosidl_typesupport_introspection_c.h\n'}
+[29.854350] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__type_support.c\n'}
+[29.854496] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__rosidl_typesupport_introspection_c.h\n'}
+[29.854619] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv\n'}
+[29.854736] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail\n'}
+[29.854818] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__rosidl_typesupport_introspection_c.h\n'}
+[29.854937] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__rosidl_typesupport_introspection_c.h\n'}
+[29.855046] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support.c\n'}
+[29.855240] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__rosidl_typesupport_introspection_c.h\n'}
+[29.855372] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support.c\n'}
+[29.855567] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__type_support.c\n'}
+[29.855764] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__rosidl_typesupport_introspection_c.h\n'}
+[29.855895] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__type_support.c\n'}
+[29.856197] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_introspection_c.so\n'}
+[29.856841] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[29.856957] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_c.so\n'}
+[29.857519] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_c.so" to ""\n'}
+[29.857636] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs\n'}
+[29.857746] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg\n'}
+[29.857827] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[29.857931] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/position_array.hpp\n'}
+[29.858035] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo.hpp\n'}
+[29.858129] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail\n'}
+[29.858251] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__struct.hpp\n'}
+[29.858359] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__type_support.hpp\n'}
+[29.858479] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__traits.hpp\n'}
+[29.858601] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__builder.hpp\n'}
+[29.858732] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__type_support.hpp\n'}
+[29.858864] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__builder.hpp\n'}
+[29.858996] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__struct.hpp\n'}
+[29.859132] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__struct.hpp\n'}
+[29.859310] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__traits.hpp\n'}
+[29.859445] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__builder.hpp\n'}
+[29.859575] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__type_support.hpp\n'}
+[29.859706] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__struct.hpp\n'}
+[29.859843] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__builder.hpp\n'}
+[29.859976] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support.hpp\n'}
+[29.860104] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__builder.hpp\n'}
+[29.860246] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__struct.hpp\n'}
+[29.860388] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__traits.hpp\n'}
+[29.860518] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__type_support.hpp\n'}
+[29.860649] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__type_support.hpp\n'}
+[29.860779] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__traits.hpp\n'}
+[29.860909] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__builder.hpp\n'}
+[29.861040] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__traits.hpp\n'}
+[29.861178] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__traits.hpp\n'}
+[29.861319] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__struct.hpp\n'}
+[29.861454] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo_config_array.hpp\n'}
+[29.861596] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo_config.hpp\n'}
+[29.861719] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo_array.hpp\n'}
+[29.861842] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/position.hpp\n'}
+[29.861959] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv\n'}
+[29.862062] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/int_value.hpp\n'}
+[29.862189] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/drive_mode.hpp\n'}
+[29.862327] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/servos_config.hpp\n'}
+[29.862449] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail\n'}
+[29.862543] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__traits.hpp\n'}
+[29.862671] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__builder.hpp\n'}
+[29.862800] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__struct.hpp\n'}
+[29.862954] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support.hpp\n'}
+[29.863095] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__struct.hpp\n'}
+[29.863254] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support.hpp\n'}
+[29.863387] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__traits.hpp\n'}
+[29.863537] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__builder.hpp\n'}
+[29.863669] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__struct.hpp\n'}
+[29.863824] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__traits.hpp\n'}
+[29.863974] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__type_support.hpp\n'}
+[29.864105] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__builder.hpp\n'}
+[29.864246] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__builder.hpp\n'}
+[29.864388] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__struct.hpp\n'}
+[29.864544] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__type_support.hpp\n'}
+[29.864676] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__traits.hpp\n'}
+[29.864828] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/stop_servos.hpp\n'}
+[29.865047] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs\n'}
+[29.865158] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg\n'}
+[29.868313] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[29.868495] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail\n'}
+[29.868607] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.868696] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/dds_fastrtps\n'}
+[29.868781] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.868865] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.869032] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.869115] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.869208] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.869290] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv\n'}
+[29.869370] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail\n'}
+[29.869442] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/dds_fastrtps\n'}
+[29.869513] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.869584] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.869655] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.869726] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.869797] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[29.869866] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[29.869937] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs\n'}
+[29.870008] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg\n'}
+[29.870079] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail\n'}
+[29.870155] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.870255] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.870408] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.870544] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.870648] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.870743] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.870827] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__type_support.cpp\n'}
+[29.870908] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support.cpp\n'}
+[29.871018] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__type_support.cpp\n'}
+[29.871100] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__type_support.cpp\n'}
+[29.871193] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__type_support.cpp\n'}
+[29.871288] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__type_support.cpp\n'}
+[29.871416] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv\n'}
+[29.871491] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail\n'}
+[29.871573] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.871657] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support.cpp\n'}
+[29.871738] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__type_support.cpp\n'}
+[29.871818] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.871899] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__type_support.cpp\n'}
+[29.872011] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.872131] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support.cpp\n'}
+[29.872253] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.872334] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[29.873493] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[29.873649] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_cpp.so\n'}
+[29.874764] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[29.874968] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/pythonpath.sh\n'}
+[29.875105] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/pythonpath.dsv\n'}
+[29.875409] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs-0.1.0-py3.12.egg-info\n'}
+[29.875617] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs-0.1.0-py3.12.egg-info/dependency_links.txt\n'}
+[29.875799] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs-0.1.0-py3.12.egg-info/SOURCES.txt\n'}
+[29.875981] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs-0.1.0-py3.12.egg-info/top_level.txt\n'}
+[29.876143] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs-0.1.0-py3.12.egg-info/PKG-INFO\n'}
+[29.876474] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs\n'}
+[29.876642] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg\n'}
+[29.876788] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo.py\n'}
+[29.876960] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_array.py\n'}
+[29.877140] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_position.py\n'}
+[29.877380] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_s.c\n'}
+[29.877524] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_config_array_s.c\n'}
+[29.877688] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_position_s.c\n'}
+[29.877830] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_config.py\n'}
+[29.877990] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/__init__.py\n'}
+[29.878138] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_config_s.c\n'}
+[29.878312] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_array_s.c\n'}
+[29.878530] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_config_array.py\n'}
+[29.878752] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_position_array_s.c\n'}
+[29.878971] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_position_array.py\n'}
+[29.879213] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv\n'}
+[29.879468] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_stop_servos.py\n'}
+[29.879624] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_int_value.py\n'}
+[29.879835] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_drive_mode_s.c\n'}
+[29.880115] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/__init__.py\n'}
+[29.880517] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_servos_config_s.c\n'}
+[29.880806] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_int_value_s.c\n'}
+[29.881041] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_servos_config.py\n'}
+[29.881255] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_drive_mode.py\n'}
+[29.881593] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_stop_servos_s.c\n'}
+[29.881849] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/__init__.py\n'}
+[29.882070] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/_i2c_pwm_board_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[29.882252] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[29.882582] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/_i2c_pwm_board_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[29.883310] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_c.so\n'}
+[29.883576] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[29.883723] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/_i2c_pwm_board_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[29.905002] (-) TimerEvent: {}
+[29.981830] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs'...\n"}
+[29.982105] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/__init__.py'...\n"}
+[29.982239] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg'...\n"}
+[29.982343] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/__init__.py'...\n"}
+[29.982428] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_position.py'...\n"}
+[29.982549] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_position_array.py'...\n"}
+[29.982628] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo.py'...\n"}
+[29.982705] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_array.py'...\n"}
+[29.982780] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_config.py'...\n"}
+[29.982854] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_config_array.py'...\n"}
+[29.982929] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv'...\n"}
+[29.983000] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/__init__.py'...\n"}
+[29.983073] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_drive_mode.py'...\n"}
+[29.983144] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_int_value.py'...\n"}
+[29.983242] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_servos_config.py'...\n"}
+[29.983319] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_stop_servos.py'...\n"}
+[29.993991] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[29.994619] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[29.994958] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[29.995556] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[29.995878] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_c.so\n'}
+[29.996438] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[29.996554] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_generator_py.so\n'}
+[29.997235] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_generator_py.so" to ""\n'}
+[29.997384] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/ament_index/resource_index/rust_packages/i2c_pwm_board_msgs\n'}
+[29.997572] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust\n'}
+[29.997673] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src\n'}
+[29.997764] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/msg\n'}
+[29.997864] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/msg/rmw.rs\n'}
+[29.998000] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/srv\n'}
+[29.998092] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/srv/rmw.rs\n'}
+[29.998269] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/msg.rs\n'}
+[29.998415] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/lib.rs\n'}
+[29.998536] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/srv.rs\n'}
+[29.998676] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/build.rs\n'}
+[29.998802] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/Cargo.toml\n'}
+[29.998984] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/Position.idl\n'}
+[29.999185] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/PositionArray.idl\n'}
+[29.999371] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/Servo.idl\n'}
+[29.999555] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoArray.idl\n'}
+[29.999728] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoConfig.idl\n'}
+[29.999924] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoConfigArray.idl\n'}
+[30.000104] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/DriveMode.idl\n'}
+[30.000298] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/IntValue.idl\n'}
+[30.000478] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/ServosConfig.idl\n'}
+[30.000668] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/StopServos.idl\n'}
+[30.000845] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/Position.msg\n'}
+[30.001033] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/PositionArray.msg\n'}
+[30.001239] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/Servo.msg\n'}
+[30.001427] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoArray.msg\n'}
+[30.001694] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoConfig.msg\n'}
+[30.002117] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoConfigArray.msg\n'}
+[30.002336] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/DriveMode.srv\n'}
+[30.002545] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/IntValue.srv\n'}
+[30.002744] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/ServosConfig.srv\n'}
+[30.002955] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/StopServos.srv\n'}
+[30.003274] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/ament_index/resource_index/package_run_dependencies/i2c_pwm_board_msgs\n'}
+[30.003552] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/ament_index/resource_index/parent_prefix_path/i2c_pwm_board_msgs\n'}
+[30.003776] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/ament_prefix_path.sh\n'}
+[30.004004] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/ament_prefix_path.dsv\n'}
+[30.004252] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/path.sh\n'}
+[30.004466] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/path.dsv\n'}
+[30.004678] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/local_setup.bash\n'}
+[30.004898] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/local_setup.sh\n'}
+[30.004988] (-) TimerEvent: {}
+[30.005144] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/local_setup.zsh\n'}
+[30.005401] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/local_setup.dsv\n'}
+[30.005616] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/package.dsv\n'}
+[30.005921] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/ament_index/resource_index/packages/i2c_pwm_board_msgs\n'}
+[30.006212] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_generator_cExport.cmake\n'}
+[30.006473] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[30.006831] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[30.007132] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[30.007448] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[30.007718] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[30.008194] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_cExport.cmake\n'}
+[30.008430] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[30.008726] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_generator_cppExport.cmake\n'}
+[30.009008] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[30.009260] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[30.009519] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[30.009742] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[30.009990] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[30.010226] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[30.010475] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_generator_pyExport.cmake\n'}
+[30.010693] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[30.010926] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[30.011148] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[30.011406] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[30.011618] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[30.011847] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[30.012071] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[30.012365] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[30.012582] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgsConfig.cmake\n'}
+[30.012738] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgsConfig-version.cmake\n'}
+[30.012942] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/package.xml\n'}
+[30.016492] (i2c_pwm_board_msgs) CommandEnded: {'returncode': 0}
+[30.053500] (i2c_pwm_board_msgs) JobEnded: {'identifier': 'i2c_pwm_board_msgs', 'rc': 0}
+[30.054888] (i2c_pwm_board) JobStarted: {'identifier': 'i2c_pwm_board'}
+[30.062788] (i2c_pwm_board) JobEnded: {'identifier': 'i2c_pwm_board', 'rc': 1}
+[30.073469] (-) EventReactorShutdown: {}

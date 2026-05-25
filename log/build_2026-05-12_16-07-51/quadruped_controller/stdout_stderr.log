@@ -1,0 +1,8 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/main.cpp.o[0m
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/main.cpp:67:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kloop_rate[m[K’ was not declared in this scope
+   67 |         [01;31m[Kloop_rate[m[K.sleep();          // 睡一下，維持 10Hz 的節奏
+      |         [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:76: CMakeFiles/ik_test_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

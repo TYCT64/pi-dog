@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/pi-dog_ws/src/build/quadruped_controller': /usr/bin/cmake /home/ubuntu/pi-dog_ws/src/quadruped_controller -DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/src/install/quadruped_controller
+Invoked command in '/home/ubuntu/pi-dog_ws/src/build/quadruped_controller' returned '1': /usr/bin/cmake /home/ubuntu/pi-dog_ws/src/quadruped_controller -DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/src/install/quadruped_controller

@@ -1,0 +1,97 @@
+[0.016s] Invoking command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4
+[0.058s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.377s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.408s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.422s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.438s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.457s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.600s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.603s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.690s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.769s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.787s] -- Found i2c_pwm_board_msgs: 0.1.0 (/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake)
+[0.808s] -- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.827s] -- Found tf2: 0.36.20 (/opt/ros/jazzy/share/tf2/cmake)
+[0.832s] -- Found tf2_ros: 0.36.20 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[1.028s] -- Found tf2_eigen: 0.36.20 (/opt/ros/jazzy/share/tf2_eigen/cmake)
+[1.032s] -- Found tf2_geometry_msgs: 0.36.20 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[1.037s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[1.039s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.046s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.198s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.199s] -- Configured cppcheck include dirs: /home/ubuntu/pi-dog_ws/src/quadruped_controller/include;/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd;/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm;$<BUILD_INTERFACE:/home/ubuntu/pi-dog_ws/src/quadruped_controller/include>
+[1.199s] -- Configured cppcheck exclude dirs and/or files: 
+[1.200s] -- Added test 'lint_cmake' to check CMake code style
+[1.203s] -- Added test 'uncrustify' to check C / C++ code style
+[1.203s] -- Configured uncrustify additional arguments: 
+[1.204s] -- Added test 'xmllint' to check XML markup files
+[1.205s] -- Configuring done (1.2s)
+[1.234s] -- Generating done (0.0s)
+[1.252s] -- Build files have been written to: /home/ubuntu/pi-dog_ws/build/quadruped_controller
+[1.407s] [  8%] [32m[1mLinking CXX executable ik_test_node[0m
+[3.554s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o: in function `SpotMicroIdleState::SpotMicroIdleState()':
+[3.554s] spot_micro_idle.cpp:(.text+0x10): undefined reference to `SpotMicroState::SpotMicroState()'
+[3.554s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o: in function `SpotMicroIdleState::~SpotMicroIdleState()':
+[3.555s] spot_micro_idle.cpp:(.text+0x50): undefined reference to `SpotMicroState::~SpotMicroState()'
+[3.555s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o: in function `SpotMicroIdleState::handleInputCommands(smk::BodyState const&, SpotMicroNodeConfig const&, Command const&, SpotMicroMotionCmd*, smk::BodyState*)':
+[3.555s] spot_micro_idle.cpp:(.text+0x148): undefined reference to `SpotMicroState::changeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState, std::default_delete<SpotMicroState> >)'
+[3.556s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o:(.data.rel.ro._ZTV18SpotMicroIdleState[_ZTV18SpotMicroIdleState]+0x38): undefined reference to `SpotMicroState::initBodyStateFilters(float, float, float, float, smk::BodyState const&, BodyStateFilters*)'
+[3.556s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o:(.data.rel.ro._ZTV18SpotMicroIdleState[_ZTV18SpotMicroIdleState]+0x40): undefined reference to `SpotMicroState::setBodyStateFilterCommands(smk::BodyState const&, BodyStateFilters*)'
+[3.556s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o:(.data.rel.ro._ZTV18SpotMicroIdleState[_ZTV18SpotMicroIdleState]+0x48): undefined reference to `SpotMicroState::runFilters(BodyStateFilters*)'
+[3.557s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o:(.data.rel.ro._ZTV18SpotMicroIdleState[_ZTV18SpotMicroIdleState]+0x50): undefined reference to `SpotMicroState::assignFilterValuesToBodyState(BodyStateFilters const&, smk::BodyState*)'
+[3.557s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o:(.data.rel.ro._ZTV18SpotMicroIdleState[_ZTV18SpotMicroIdleState]+0x58): undefined reference to `SpotMicroState::checkBodyStateEquality(smk::BodyState const&, smk::BodyState const&, float)'
+[3.557s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o:(.data.rel.ro._ZTI18SpotMicroIdleState[_ZTI18SpotMicroIdleState]+0x10): undefined reference to `typeinfo for SpotMicroState'
+[3.558s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o: in function `SpotMicroStandState::SpotMicroStandState()':
+[3.558s] spot_micro_stand.cpp:(.text+0x10): undefined reference to `SpotMicroState::SpotMicroState()'
+[3.558s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o: in function `SpotMicroStandState::~SpotMicroStandState()':
+[3.558s] spot_micro_stand.cpp:(.text+0x5c): undefined reference to `SpotMicroState::~SpotMicroState()'
+[3.558s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o: in function `SpotMicroStandState::handleInputCommands(smk::BodyState const&, SpotMicroNodeConfig const&, Command const&, SpotMicroMotionCmd*, smk::BodyState*)':
+[3.559s] spot_micro_stand.cpp:(.text+0x154): undefined reference to `SpotMicroState::changeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState, std::default_delete<SpotMicroState> >)'
+[3.559s] /usr/bin/ld: spot_micro_stand.cpp:(.text+0x1bc): undefined reference to `SpotMicroState::changeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState, std::default_delete<SpotMicroState> >)'
+[3.559s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o:(.data.rel.ro._ZTV19SpotMicroStandState[_ZTV19SpotMicroStandState]+0x38): undefined reference to `SpotMicroState::initBodyStateFilters(float, float, float, float, smk::BodyState const&, BodyStateFilters*)'
+[3.559s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o:(.data.rel.ro._ZTV19SpotMicroStandState[_ZTV19SpotMicroStandState]+0x40): undefined reference to `SpotMicroState::setBodyStateFilterCommands(smk::BodyState const&, BodyStateFilters*)'
+[3.560s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o:(.data.rel.ro._ZTV19SpotMicroStandState[_ZTV19SpotMicroStandState]+0x48): undefined reference to `SpotMicroState::runFilters(BodyStateFilters*)'
+[3.560s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o:(.data.rel.ro._ZTV19SpotMicroStandState[_ZTV19SpotMicroStandState]+0x50): undefined reference to `SpotMicroState::assignFilterValuesToBodyState(BodyStateFilters const&, smk::BodyState*)'
+[3.560s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o:(.data.rel.ro._ZTV19SpotMicroStandState[_ZTV19SpotMicroStandState]+0x58): undefined reference to `SpotMicroState::checkBodyStateEquality(smk::BodyState const&, smk::BodyState const&, float)'
+[3.561s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o:(.data.rel.ro._ZTI19SpotMicroStandState[_ZTI19SpotMicroStandState]+0x10): undefined reference to `typeinfo for SpotMicroState'
+[3.561s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o: in function `SpotMicroTransitionIdleState::SpotMicroTransitionIdleState()':
+[3.561s] spot_micro_transition_idle.cpp:(.text+0x10): undefined reference to `SpotMicroState::SpotMicroState()'
+[3.562s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o: in function `SpotMicroTransitionIdleState::~SpotMicroTransitionIdleState()':
+[3.562s] spot_micro_transition_idle.cpp:(.text+0x68): undefined reference to `SpotMicroState::~SpotMicroState()'
+[3.562s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o: in function `SpotMicroTransitionIdleState::handleInputCommands(smk::BodyState const&, SpotMicroNodeConfig const&, Command const&, SpotMicroMotionCmd*, smk::BodyState*)':
+[3.562s] spot_micro_transition_idle.cpp:(.text+0x318): undefined reference to `SpotMicroState::changeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState, std::default_delete<SpotMicroState> >)'
+[3.563s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o:(.data.rel.ro._ZTV28SpotMicroTransitionIdleState[_ZTV28SpotMicroTransitionIdleState]+0x38): undefined reference to `SpotMicroState::initBodyStateFilters(float, float, float, float, smk::BodyState const&, BodyStateFilters*)'
+[3.563s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o:(.data.rel.ro._ZTV28SpotMicroTransitionIdleState[_ZTV28SpotMicroTransitionIdleState]+0x40): undefined reference to `SpotMicroState::setBodyStateFilterCommands(smk::BodyState const&, BodyStateFilters*)'
+[3.563s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o:(.data.rel.ro._ZTV28SpotMicroTransitionIdleState[_ZTV28SpotMicroTransitionIdleState]+0x48): undefined reference to `SpotMicroState::runFilters(BodyStateFilters*)'
+[3.563s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o:(.data.rel.ro._ZTV28SpotMicroTransitionIdleState[_ZTV28SpotMicroTransitionIdleState]+0x50): undefined reference to `SpotMicroState::assignFilterValuesToBodyState(BodyStateFilters const&, smk::BodyState*)'
+[3.564s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o:(.data.rel.ro._ZTV28SpotMicroTransitionIdleState[_ZTV28SpotMicroTransitionIdleState]+0x58): undefined reference to `SpotMicroState::checkBodyStateEquality(smk::BodyState const&, smk::BodyState const&, float)'
+[3.564s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o:(.data.rel.ro._ZTI28SpotMicroTransitionIdleState[_ZTI28SpotMicroTransitionIdleState]+0x10): undefined reference to `typeinfo for SpotMicroState'
+[3.564s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o: in function `SpotMicroTransitionStandState::SpotMicroTransitionStandState()':
+[3.565s] spot_micro_transition_stand.cpp:(.text+0x10): undefined reference to `SpotMicroState::SpotMicroState()'
+[3.565s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o: in function `SpotMicroTransitionStandState::~SpotMicroTransitionStandState()':
+[3.565s] spot_micro_transition_stand.cpp:(.text+0x68): undefined reference to `SpotMicroState::~SpotMicroState()'
+[3.565s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o: in function `SpotMicroTransitionStandState::handleInputCommands(smk::BodyState const&, SpotMicroNodeConfig const&, Command const&, SpotMicroMotionCmd*, smk::BodyState*)':
+[3.565s] spot_micro_transition_stand.cpp:(.text+0x318): undefined reference to `SpotMicroState::changeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState, std::default_delete<SpotMicroState> >)'
+[3.566s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o:(.data.rel.ro._ZTV29SpotMicroTransitionStandState[_ZTV29SpotMicroTransitionStandState]+0x38): undefined reference to `SpotMicroState::initBodyStateFilters(float, float, float, float, smk::BodyState const&, BodyStateFilters*)'
+[3.566s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o:(.data.rel.ro._ZTV29SpotMicroTransitionStandState[_ZTV29SpotMicroTransitionStandState]+0x40): undefined reference to `SpotMicroState::setBodyStateFilterCommands(smk::BodyState const&, BodyStateFilters*)'
+[3.566s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o:(.data.rel.ro._ZTV29SpotMicroTransitionStandState[_ZTV29SpotMicroTransitionStandState]+0x48): undefined reference to `SpotMicroState::runFilters(BodyStateFilters*)'
+[3.566s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o:(.data.rel.ro._ZTV29SpotMicroTransitionStandState[_ZTV29SpotMicroTransitionStandState]+0x50): undefined reference to `SpotMicroState::assignFilterValuesToBodyState(BodyStateFilters const&, smk::BodyState*)'
+[3.567s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o:(.data.rel.ro._ZTV29SpotMicroTransitionStandState[_ZTV29SpotMicroTransitionStandState]+0x58): undefined reference to `SpotMicroState::checkBodyStateEquality(smk::BodyState const&, smk::BodyState const&, float)'
+[3.567s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o:(.data.rel.ro._ZTI29SpotMicroTransitionStandState[_ZTI29SpotMicroTransitionStandState]+0x10): undefined reference to `typeinfo for SpotMicroState'
+[3.567s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o: in function `SpotMicroWalkState::SpotMicroWalkState()':
+[3.567s] spot_micro_walk.cpp:(.text+0x10): undefined reference to `SpotMicroState::SpotMicroState()'
+[3.567s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o: in function `SpotMicroWalkState::~SpotMicroWalkState()':
+[3.568s] spot_micro_walk.cpp:(.text+0xa0): undefined reference to `SpotMicroState::~SpotMicroState()'
+[3.568s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o: in function `SpotMicroWalkState::handleInputCommands(smk::BodyState const&, SpotMicroNodeConfig const&, Command const&, SpotMicroMotionCmd*, smk::BodyState*)':
+[3.568s] spot_micro_walk.cpp:(.text+0x198): undefined reference to `SpotMicroState::changeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState, std::default_delete<SpotMicroState> >)'
+[3.572s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o:(.data.rel.ro._ZTV18SpotMicroWalkState[_ZTV18SpotMicroWalkState]+0x38): undefined reference to `SpotMicroState::initBodyStateFilters(float, float, float, float, smk::BodyState const&, BodyStateFilters*)'
+[3.572s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o:(.data.rel.ro._ZTV18SpotMicroWalkState[_ZTV18SpotMicroWalkState]+0x40): undefined reference to `SpotMicroState::setBodyStateFilterCommands(smk::BodyState const&, BodyStateFilters*)'
+[3.573s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o:(.data.rel.ro._ZTV18SpotMicroWalkState[_ZTV18SpotMicroWalkState]+0x48): undefined reference to `SpotMicroState::runFilters(BodyStateFilters*)'
+[3.573s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o:(.data.rel.ro._ZTV18SpotMicroWalkState[_ZTV18SpotMicroWalkState]+0x50): undefined reference to `SpotMicroState::assignFilterValuesToBodyState(BodyStateFilters const&, smk::BodyState*)'
+[3.573s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o:(.data.rel.ro._ZTV18SpotMicroWalkState[_ZTV18SpotMicroWalkState]+0x58): undefined reference to `SpotMicroState::checkBodyStateEquality(smk::BodyState const&, smk::BodyState const&, float)'
+[3.574s] /usr/bin/ld: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o:(.data.rel.ro._ZTI18SpotMicroWalkState[_ZTI18SpotMicroWalkState]+0x10): undefined reference to `typeinfo for SpotMicroState'
+[3.724s] collect2: error: ld returned 1 exit status
+[3.726s] gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:377: ik_test_node] Error 1
+[3.727s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+[3.727s] gmake: *** [Makefile:146: all] Error 2
+[3.731s] Invoked command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4

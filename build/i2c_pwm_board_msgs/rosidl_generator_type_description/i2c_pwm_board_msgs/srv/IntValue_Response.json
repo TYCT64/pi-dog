@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "i2c_pwm_board_msgs/srv/IntValue_Response",
+      "fields": [
+        {
+          "name": "error",
+          "type": {
+            "type_id": 4,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "i2c_pwm_board_msgs/srv/IntValue_Response",
+      "hash_string": "RIHS01_9dfd4c5d8c1240135f260e595bc978385d8020bdfe14b7e4f9b815648264a5d4"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:[m[K In function ‘[01m[Kgeometry_msgs::msg::TransformStamped[01;32m[K eigAndFramesToTrans[m[K(const Eigen::Affine3d&, std::string, std::string)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:28:3:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ was not declared in this scope; did you mean ‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’?
+   28 |   [01;31m[KTransformStamped[m[K transform_stamped = tf2::eigenToTransform(transform);
+      |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |   [32m[Kgeometry_msgs::msg::TransformStamped[m[K
+In file included from [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:7[m[K,
+                 from [01m[K/opt/ros/jazzy/include/tf2/tf2/convert.hpp:40[m[K,
+                 from [01m[K/opt/ros/jazzy/include/tf2_eigen/tf2_eigen/tf2_eigen.hpp:44[m[K,
+                 from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/utils.h:5[m[K,
+                 from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:160:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’ declared here
+  160 | using [01;36m[KTransformStamped[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:30:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransform_stamped[m[K’ was not declared in this scope
+   30 |   [01;31m[Ktransform_stamped[m[K.header.stamp = ros::Time::now();
+      |   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:30:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   30 |   transform_stamped.header.stamp = [01;31m[Kros[m[K::Time::now();
+      |                                    [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:25:21:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktransform[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   25 |     [01;35m[Kconst Affine3d& transform[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:[m[K In function ‘[01m[Kgeometry_msgs::msg::TransformStamped[01;32m[K createTransform[m[K(std::string, std::string, double, double, double, double, double, double)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:46:7:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ was not declared in this scope; did you mean ‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’?
+   46 |       [01;31m[KTransformStamped[m[K tr_stamped;
+      |       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |       [32m[Kgeometry_msgs::msg::TransformStamped[m[K
+[01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:160:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’ declared here
+  160 | using [01;36m[KTransformStamped[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:48:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktr_stamped[m[K’ was not declared in this scope
+   48 |   [01;31m[Ktr_stamped[m[K.header.stamp = ros::Time::now();
+      |   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:48:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   48 |   tr_stamped.header.stamp = [01;31m[Kros[m[K::Time::now();
+      |                             [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:146: CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

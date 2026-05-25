@@ -1,0 +1,379 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o[0m
+In file included from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h:28[m[K,
+                 from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:14[m[K:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:[m[K In member function ‘[01m[Kvirtual void SpotMicroState::[01;32m[KhandleInputCommands[m[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*, smk::BodyState*)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:42:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbody_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   42 |   virtual void handleInputCommands([01;35m[Kconst smk::BodyState& body_state[m[K,
+      |                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:43:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksmnc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   43 |                                    [01;35m[Kconst SpotMicroNodeConfig& smnc[m[K,
+      |                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:44:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcmd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   44 |                                    [01;35m[Kconst Command& cmd[m[K,
+      |                                    [01;35m[K~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:45:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksmmc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   45 |                                    [01;35m[KSpotMicroMotionCmd* smmc[m[K,
+      |                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:46:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbody_state_cmd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   46 |                                    [01;35m[Ksmk::BodyState* body_state_cmd[m[K) {}
+      |                                    [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:[m[K In member function ‘[01m[Kvirtual void SpotMicroState::[01;32m[Kinit[m[K(const smk::BodyState&, const SpotMicroNodeConfig&, const Command&, SpotMicroMotionCmd*)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:48:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbody_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   48 |   virtual void init([01;35m[Kconst smk::BodyState& body_state[m[K,
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:49:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksmnc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   49 |                     [01;35m[Kconst SpotMicroNodeConfig& smnc[m[K,
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:50:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcmd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   50 |                     [01;35m[Kconst Command& cmd[m[K,
+      |                     [01;35m[K~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.h:51:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksmmc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   51 |                     [01;35m[KSpotMicroMotionCmd* smmc[m[K) {}
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+In file included from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:19[m[K:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/utils.h:[m[K At global scope:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/utils.h:18:16:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+   18 | geometry_msgs::[01;31m[KTransformStamped[m[K eigAndFramesToTrans(
+      |                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/utils.h:26:18:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+   26 |   geometry_msgs::[01;31m[KTransformStamped[m[K createTransform(
+      |                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:[m[K In constructor ‘[01m[KSpotMicroMotionCmd::[01;32m[KSpotMicroMotionCmd[m[K()[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:44:33:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   44 |   body_state_cmd_.euler_angs = {[01;35m[K.[m[Kphi = 0.0f, .theta = 0.0f, .psi = 0.0f};
+      |                                 [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:44:46:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   44 |   body_state_cmd_.euler_angs = {.phi = 0.0f, [01;35m[K.[m[Ktheta = 0.0f, .psi = 0.0f};
+      |                                              [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:44:61:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   44 |   body_state_cmd_.euler_angs = {.phi = 0.0f, .theta = 0.0f, [01;35m[K.[m[Kpsi = 0.0f};
+      |                                                             [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:45:30:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   45 |   body_state_cmd_.xyz_pos = {[01;35m[K.[m[Kx = 0.0f, .y = smnc_.lie_down_height, .z = 0.0f};
+      |                              [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:45:41:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   45 |   body_state_cmd_.xyz_pos = {.x = 0.0f, [01;35m[K.[m[Ky = smnc_.lie_down_height, .z = 0.0f};
+      |                                         [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:45:69:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   45 |   body_state_cmd_.xyz_pos = {.x = 0.0f, .y = smnc_.lie_down_height, [01;35m[K.[m[Kz = 0.0f};
+      |                                                                     [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:52:33:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   52 |   robot_odometry_.euler_angs = {[01;35m[K.[m[Kphi = 0.0f, .theta = 0.0f, .psi = 0.0f};
+      |                                 [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:52:46:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   52 |   robot_odometry_.euler_angs = {.phi = 0.0f, [01;35m[K.[m[Ktheta = 0.0f, .psi = 0.0f};
+      |                                              [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:52:61:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   52 |   robot_odometry_.euler_angs = {.phi = 0.0f, .theta = 0.0f, [01;35m[K.[m[Kpsi = 0.0f};
+      |                                                             [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:53:30:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   53 |   robot_odometry_.xyz_pos = {[01;35m[K.[m[Kx = 0.0f, .y = 0.0f, .z = 0.0f};
+      |                              [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:53:41:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   53 |   robot_odometry_.xyz_pos = {.x = 0.0f, [01;35m[K.[m[Ky = 0.0f, .z = 0.0f};
+      |                                         [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:53:52:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   53 |   robot_odometry_.xyz_pos = {.x = 0.0f, .y = 0.0f, [01;35m[K.[m[Kz = 0.0f};
+      |                                                    [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:[m[K In member function ‘[01m[Kbool SpotMicroMotionCmd::[01;32m[KpublishServoConfiguration[m[K()[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:181:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ki2cpwm_board[m[K’ has not been declared
+  181 |   [01;31m[Ki2cpwm_board[m[K::ServoConfig temp_servo_config;
+      |   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:182:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ki2cpwm_board[m[K’ has not been declared
+  182 |   [01;31m[Ki2cpwm_board[m[K::ServosConfig temp_servo_config_array;
+      |   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:191:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp_servo_config[m[K’ was not declared in this scope
+  191 |     [01;31m[Ktemp_servo_config[m[K.center = servo_config_params["center"];
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:197:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp_servo_config_array[m[K’ was not declared in this scope
+  197 |     [01;31m[Ktemp_servo_config_array[m[K.request.servos.push_back(temp_servo_config);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:201:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kservos_config_client_[m[K’ was not declared in this scope
+  201 |   if (![01;31m[Kservos_config_client_[m[K.call(temp_servo_config_array)) {
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:201:35:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp_servo_config_array[m[K’ was not declared in this scope
+  201 |   if (!servos_config_client_.call([01;31m[Ktemp_servo_config_array[m[K)) {
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:204:7:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_ERROR[m[K’ was not declared in this scope
+  204 |       [01;31m[KROS_ERROR[m[K("Failed to call service servo_config");
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:[m[K In member function ‘[01m[Kvoid SpotMicroMotionCmd::[01;32m[KpublishServoProportionalCommand[m[K()[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:256:7:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_WARN[m[K’ was not declared in this scope
+  256 |       [01;31m[KROS_WARN[m[K("Proportional Command above +1.0 was computed, clipped to 1.0");
+      |       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:261:7:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_WARN[m[K’ was not declared in this scope
+  261 |       [01;31m[KROS_WARN[m[K("Proportional Command below -1.0 was computed, clipped to -1.0");
+      |       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:270:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing rclcpp::Publisher<i2c_pwm_board_msgs::msg::ServoArray_<std::allocator<void> > >::SharedPtr = class std::shared_ptr<rclcpp::Publisher<i2c_pwm_board_msgs::msg::ServoArray_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<i2c_pwm_board_msgs::msg::ServoArray_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  270 |  servos_proportional_pub_.[01;31m[Kpublish[m[K(servo_array_);
+      |                           [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:[m[K In member function ‘[01m[Kvoid SpotMicroMotionCmd::[01;32m[KpublishZeroServoAbsoluteCommand[m[K()[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:276:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing rclcpp::Publisher<i2c_pwm_board_msgs::msg::ServoArray_<std::allocator<void> > >::SharedPtr = class std::shared_ptr<rclcpp::Publisher<i2c_pwm_board_msgs::msg::ServoArray_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<i2c_pwm_board_msgs::msg::ServoArray_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  276 |   servos_absolute_pub_.[01;31m[Kpublish[m[K(servo_array_absolute_);
+      |                        [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:[m[K In member function ‘[01m[Ksmk::LegsFootPos SpotMicroMotionCmd::[01;32m[KgetNeutralStance[m[K()[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:293:33:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  293 |   neutral_stance.right_back  = {[01;35m[K.[m[Kx = -len/2 + b_offset, .y = 0.0f, .z =  width/2 + l1};
+      |                                 [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:293:57:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  293 |   neutral_stance.right_back  = {.x = -len/2 + b_offset, [01;35m[K.[m[Ky = 0.0f, .z =  width/2 + l1};
+      |                                                         [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:293:68:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  293 |   neutral_stance.right_back  = {.x = -len/2 + b_offset, .y = 0.0f, [01;35m[K.[m[Kz =  width/2 + l1};
+      |                                                                    [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:294:33:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  294 |   neutral_stance.right_front = {[01;35m[K.[m[Kx =  len/2 + f_offset, .y = 0.0f, .z =  width/2 + l1};
+      |                                 [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:294:57:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  294 |   neutral_stance.right_front = {.x =  len/2 + f_offset, [01;35m[K.[m[Ky = 0.0f, .z =  width/2 + l1};
+      |                                                         [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:294:68:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  294 |   neutral_stance.right_front = {.x =  len/2 + f_offset, .y = 0.0f, [01;35m[K.[m[Kz =  width/2 + l1};
+      |                                                                    [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:295:33:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  295 |   neutral_stance.left_front  = {[01;35m[K.[m[Kx =  len/2 + f_offset, .y = 0.0f, .z = -width/2 - l1};
+      |                                 [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:295:57:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  295 |   neutral_stance.left_front  = {.x =  len/2 + f_offset, [01;35m[K.[m[Ky = 0.0f, .z = -width/2 - l1};
+      |                                                         [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:295:68:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  295 |   neutral_stance.left_front  = {.x =  len/2 + f_offset, .y = 0.0f, [01;35m[K.[m[Kz = -width/2 - l1};
+      |                                                                    [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:296:33:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  296 |   neutral_stance.left_back   = {[01;35m[K.[m[Kx = -len/2 + b_offset, .y = 0.0f, .z = -width/2 - l1};
+      |                                 [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:296:57:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  296 |   neutral_stance.left_back   = {.x = -len/2 + b_offset, [01;35m[K.[m[Ky = 0.0f, .z = -width/2 - l1};
+      |                                                         [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:296:68:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  296 |   neutral_stance.left_back   = {.x = -len/2 + b_offset, .y = 0.0f, [01;35m[K.[m[Kz = -width/2 - l1};
+      |                                                                    [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:[m[K In member function ‘[01m[Ksmk::LegsFootPos SpotMicroMotionCmd::[01;32m[KgetLieDownStance[m[K()[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:309:34:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  309 |   lie_down_stance.right_back  = {[01;35m[K.[m[Kx = -len/2 + x_off, .y = 0.0f, .z =  width/2 + l1};
+      |                                  [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:309:55:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  309 |   lie_down_stance.right_back  = {.x = -len/2 + x_off, [01;35m[K.[m[Ky = 0.0f, .z =  width/2 + l1};
+      |                                                       [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:309:66:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  309 |   lie_down_stance.right_back  = {.x = -len/2 + x_off, .y = 0.0f, [01;35m[K.[m[Kz =  width/2 + l1};
+      |                                                                  [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:310:34:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  310 |   lie_down_stance.right_front = {[01;35m[K.[m[Kx =  len/2 + x_off, .y = 0.0f, .z =  width/2 + l1};
+      |                                  [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:310:55:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  310 |   lie_down_stance.right_front = {.x =  len/2 + x_off, [01;35m[K.[m[Ky = 0.0f, .z =  width/2 + l1};
+      |                                                       [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:310:66:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  310 |   lie_down_stance.right_front = {.x =  len/2 + x_off, .y = 0.0f, [01;35m[K.[m[Kz =  width/2 + l1};
+      |                                                                  [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:311:34:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  311 |   lie_down_stance.left_front  = {[01;35m[K.[m[Kx =  len/2 + x_off, .y = 0.0f, .z = -width/2 - l1};
+      |                                  [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:311:55:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  311 |   lie_down_stance.left_front  = {.x =  len/2 + x_off, [01;35m[K.[m[Ky = 0.0f, .z = -width/2 - l1};
+      |                                                       [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:311:66:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  311 |   lie_down_stance.left_front  = {.x =  len/2 + x_off, .y = 0.0f, [01;35m[K.[m[Kz = -width/2 - l1};
+      |                                                                  [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:312:34:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  312 |   lie_down_stance.left_back   = {[01;35m[K.[m[Kx = -len/2 + x_off, .y = 0.0f, .z = -width/2 - l1};
+      |                                  [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:312:55:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  312 |   lie_down_stance.left_back   = {.x = -len/2 + x_off, [01;35m[K.[m[Ky = 0.0f, .z = -width/2 - l1};
+      |                                                       [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:312:66:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+  312 |   lie_down_stance.left_back   = {.x = -len/2 + x_off, .y = 0.0f, [01;35m[K.[m[Kz = -width/2 - l1};
+      |                                                                  [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:[m[K In member function ‘[01m[Kvoid SpotMicroMotionCmd::[01;32m[KreadInConfigParameters[m[K()[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:333:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kpnh_[m[K’ was not declared in this scope
+  333 |   [01;31m[Kpnh_[m[K.getParam("hip_link_length", smnc_.smc.hip_link_length);
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:418:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+  418 |     const std_msgs::[01;31m[KBool[m[K::ConstPtr& msg) {
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:418:35:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  418 |     const std_msgs::Bool::ConstPtr[01;31m[K&[m[K msg) {
+      |                                   [01;31m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:418:35:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+  418 |     const std_msgs::Bool::ConstPtr[01;31m[K&[m[K msg) {
+      |                                   [01;31m[K^[m[K
+      |                                   [32m[K)[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:417:46:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  417 | void SpotMicroMotionCmd::standCommandCallback[01;36m[K([m[K
+      |                                              [01;36m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:418:37:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+  418 |     const std_msgs::Bool::ConstPtr& [01;31m[Kmsg[m[K) {
+      |                                     [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:424:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+  424 |     const std_msgs::[01;31m[KBool[m[K::ConstPtr& msg) {
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:424:35:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  424 |     const std_msgs::Bool::ConstPtr[01;31m[K&[m[K msg) {
+      |                                   [01;31m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:424:35:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+  424 |     const std_msgs::Bool::ConstPtr[01;31m[K&[m[K msg) {
+      |                                   [01;31m[K^[m[K
+      |                                   [32m[K)[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:423:45:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  423 | void SpotMicroMotionCmd::idleCommandCallback[01;36m[K([m[K
+      |                                             [01;36m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:424:37:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+  424 |     const std_msgs::Bool::ConstPtr& [01;31m[Kmsg[m[K) {
+      |                                     [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:430:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+  430 |     const std_msgs::[01;31m[KBool[m[K::ConstPtr& msg) {
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:430:35:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  430 |     const std_msgs::Bool::ConstPtr[01;31m[K&[m[K msg) {
+      |                                   [01;31m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:430:35:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+  430 |     const std_msgs::Bool::ConstPtr[01;31m[K&[m[K msg) {
+      |                                   [01;31m[K^[m[K
+      |                                   [32m[K)[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:429:45:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  429 | void SpotMicroMotionCmd::walkCommandCallback[01;36m[K([m[K
+      |                                             [01;36m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:430:37:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+  430 |     const std_msgs::Bool::ConstPtr& [01;31m[Kmsg[m[K) {
+      |                                     [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:436:26:[m[K [01;31m[Kerror: [m[K‘[01m[KVector3ConstPtr[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+  436 |     const geometry_msgs::[01;31m[KVector3ConstPtr[m[K& msg) {
+      |                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:435:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid SpotMicroMotionCmd::[01;32m[KangleCommandCallback[m[K(const int&)[m[K’
+  435 | void [01;31m[KSpotMicroMotionCmd[m[K::angleCommandCallback(
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h:203:8:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid SpotMicroMotionCmd::[01;32m[KangleCommandCallback[m[K(geometry_msgs::msg::Vector3_<std::allocator<void> >::SharedPtr)[m[K’
+  203 |   void [01;36m[KangleCommandCallback[m[K(const geometry_msgs::msg::Vector3::SharedPtr msg);
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h:81:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SpotMicroMotionCmd[m[K’ defined here
+   81 | class [01;36m[KSpotMicroMotionCmd[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:444:26:[m[K [01;31m[Kerror: [m[K‘[01m[KTwistConstPtr[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+  444 |     const geometry_msgs::[01;31m[KTwistConstPtr[m[K& msg) {
+      |                          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:443:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid SpotMicroMotionCmd::[01;32m[KvelCommandCallback[m[K(const int&)[m[K’
+  443 | void [01;31m[KSpotMicroMotionCmd[m[K::velCommandCallback(
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h:208:8:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid SpotMicroMotionCmd::[01;32m[KvelCommandCallback[m[K(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’
+  208 |   void [01;36m[KvelCommandCallback[m[K(const geometry_msgs::msg::Twist::SharedPtr msg);
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h:81:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SpotMicroMotionCmd[m[K’ defined here
+   81 | class [01;36m[KSpotMicroMotionCmd[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:[m[K In member function ‘[01m[Kvoid SpotMicroMotionCmd::[01;32m[KpublishBodyState[m[K()[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:508:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing rclcpp::Publisher<std_msgs::msg::Float32MultiArray_<std::allocator<void> > >::SharedPtr = class std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Float32MultiArray_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Float32MultiArray_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  508 |   body_state_pub_.[01;31m[Kpublish[m[K(body_state_msg_);
+      |                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:[m[K In member function ‘[01m[Kvoid SpotMicroMotionCmd::[01;32m[KpublishLcdMonitorData[m[K()[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:523:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >::SharedPtr = class std::shared_ptr<rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  523 |   lcd_state_pub_.[01;31m[Kpublish[m[K(lcd_state_string_msg_);
+      |                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:524:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > >::SharedPtr = class std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  524 |   lcd_vel_cmd_pub_.[01;31m[Kpublish[m[K(lcd_vel_cmd_msg_);
+      |                    [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:525:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing rclcpp::Publisher<geometry_msgs::msg::Vector3_<std::allocator<void> > >::SharedPtr = class std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Vector3_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Vector3_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  525 |   lcd_angle_cmd_pub_.[01;31m[Kpublish[m[K(lcd_angle_cmd_msg_);
+      |                      [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:[m[K In member function ‘[01m[Kvoid SpotMicroMotionCmd::[01;32m[KpublishStaticTransforms[m[K()[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:531:3:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ was not declared in this scope; did you mean ‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’?
+  531 |   [01;31m[KTransformStamped[m[K tr_stamped;
+      |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |   [32m[Kgeometry_msgs::msg::TransformStamped[m[K
+In file included from [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:7[m[K,
+                 from [01m[K/opt/ros/jazzy/include/tf2/tf2/convert.hpp:40[m[K,
+                 from [01m[K/opt/ros/jazzy/include/tf2_eigen/tf2_eigen/tf2_eigen.hpp:44[m[K,
+                 from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:11[m[K:
+[01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:160:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’ declared here
+  160 | using [01;36m[KTransformStamped[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:534:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktr_stamped[m[K’ was not declared in this scope
+  534 |   [01;31m[Ktr_stamped[m[K = createTransform("base_link", "front_link",
+      |   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:534:16:[m[K [01;31m[Kerror: [m[K‘[01m[KcreateTransform[m[K’ was not declared in this scope
+  534 |   tr_stamped = [01;31m[KcreateTransform[m[K("base_link", "front_link",
+      |                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:537:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::StaticTransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  537 |   static_transform_br_.[01;31m[KsendTransform[m[K(tr_stamped);
+      |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:543:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::StaticTransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  543 |   static_transform_br_.[01;31m[KsendTransform[m[K(tr_stamped);
+      |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:553:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::StaticTransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  553 |   static_transform_br_.[01;31m[KsendTransform[m[K(tr_stamped);
+      |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:567:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::StaticTransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  567 |     static_transform_br_.[01;31m[KsendTransform[m[K(tr_stamped);
+      |                          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:582:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::StaticTransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  582 |     static_transform_br_.[01;31m[KsendTransform[m[K(tr_stamped);
+      |                          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:[m[K In member function ‘[01m[Kvoid SpotMicroMotionCmd::[01;32m[KpublishDynamicTransforms[m[K()[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:593:3:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ was not declared in this scope; did you mean ‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’?
+  593 |   [01;31m[KTransformStamped[m[K transform_stamped;
+      |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |   [32m[Kgeometry_msgs::msg::TransformStamped[m[K
+[01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:160:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’ declared here
+  160 | using [01;36m[KTransformStamped[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:600:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransform_stamped[m[K’ was not declared in this scope
+  600 |     [01;31m[Ktransform_stamped[m[K = eigAndFramesToTrans(getOdometryTransform(), "odom", "base_footprint");
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:600:25:[m[K [01;31m[Kerror: [m[K‘[01m[KeigAndFramesToTrans[m[K’ was not declared in this scope
+  600 |     transform_stamped = [01;31m[KeigAndFramesToTrans[m[K(getOdometryTransform(), "odom", "base_footprint");
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:601:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  601 |     transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:620:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransform_stamped[m[K’ was not declared in this scope
+  620 |   [01;31m[Ktransform_stamped[m[K = eigAndFramesToTrans(temp_trans, "base_footprint", "base_link");
+      |   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:620:23:[m[K [01;31m[Kerror: [m[K‘[01m[KeigAndFramesToTrans[m[K’ was not declared in this scope
+  620 |   transform_stamped = [01;31m[KeigAndFramesToTrans[m[K(temp_trans, "base_footprint", "base_link");
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:621:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  621 |   transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:628:23:[m[K [01;31m[Kerror: [m[K‘[01m[KcreateTransform[m[K’ was not declared in this scope
+  628 |   transform_stamped = [01;31m[KcreateTransform[m[K("base_link", "front_right_shoulder_link",
+      |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:631:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  631 |   transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:637:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  637 |   transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:643:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  643 |   transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:653:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  653 |   transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:659:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  659 |   transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:665:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  665 |   transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:675:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  675 |   transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:681:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  681 |   transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:687:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  687 |   transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:697:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  697 |   transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:703:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  703 |   transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/spot_micro_motion_cmd.cpp:709:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::TransformBroadcaster>[m[K’ has no member named ‘[01m[KsendTransform[m[K’
+  709 |   transform_br_.[01;31m[KsendTransform[m[K(transform_stamped);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:132: CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

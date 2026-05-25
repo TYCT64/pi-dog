@@ -1,0 +1,45 @@
+{
+  "package_name": "i2c_pwm_board_msgs",
+  "output_dir": "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_typesupport_fastrtps_cpp/i2c_pwm_board_msgs",
+  "template_dir": "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource",
+  "idl_tuples": [
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs:msg/Position.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs:msg/PositionArray.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs:msg/Servo.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs:msg/ServoArray.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs:msg/ServoConfig.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs:msg/ServoConfigArray.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs:srv/DriveMode.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs:srv/IntValue.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs:srv/ServosConfig.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs:srv/StopServos.idl"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/jazzy/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp",
+    "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_typesupport_fastrtps_cpp/__init__.py",
+    "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/idl__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/msg__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs/msg/Position.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs/msg/PositionArray.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs/msg/Servo.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs/msg/ServoArray.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs/msg/ServoConfig.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs/msg/ServoConfigArray.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs/srv/DriveMode.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs/srv/IntValue.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs/srv/ServosConfig.idl",
+    "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_adapter/i2c_pwm_board_msgs/srv/StopServos.idl",
+    "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
+  ]
+}

@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/pi-dog_ws/src/quadruped_controller -DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/quadruped_controller
+Invoked command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller' returned '1': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/pi-dog_ws/src/quadruped_controller -DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/quadruped_controller

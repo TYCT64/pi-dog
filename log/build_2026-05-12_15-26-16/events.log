@@ -1,0 +1,210 @@
+[0.000000] (-) TimerEvent: {}
+[0.000355] (-) JobUnselected: {'identifier': 'i2c_pwm_board'}
+[0.000646] (-) JobUnselected: {'identifier': 'i2c_pwm_board_calibration'}
+[0.000924] (-) JobUnselected: {'identifier': 'i2c_pwm_board_msgs'}
+[0.000945] (-) JobUnselected: {'identifier': 'i2c_pwm_board_xmlrp'}
+[0.000962] (-) JobUnselected: {'identifier': 'xmlrpcpp'}
+[0.000982] (quadruped_controller) JobQueued: {'identifier': 'quadruped_controller', 'dependencies': OrderedDict()}
+[0.001004] (quadruped_controller) JobStarted: {'identifier': 'quadruped_controller'}
+[0.009892] (quadruped_controller) JobProgress: {'identifier': 'quadruped_controller', 'progress': 'cmake'}
+[0.010743] (quadruped_controller) JobProgress: {'identifier': 'quadruped_controller', 'progress': 'build'}
+[0.011483] (quadruped_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/pi-dog_ws/build/quadruped_controller', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/pi-dog_ws/build/quadruped_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/lib:/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws/src', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp:/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/quadruped_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp:/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[0.056466] (quadruped_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099724] (-) TimerEvent: {}
+[0.200072] (-) TimerEvent: {}
+[0.300375] (-) TimerEvent: {}
+[0.374857] (quadruped_controller) StdoutLine: {'line': b'-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.400495] (-) TimerEvent: {}
+[0.405726] (quadruped_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.418770] (quadruped_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.434859] (quadruped_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.453197] (quadruped_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500583] (-) TimerEvent: {}
+[0.533806] (quadruped_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.535710] (quadruped_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600712] (-) TimerEvent: {}
+[0.621767] (quadruped_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.700824] (-) TimerEvent: {}
+[0.701263] (quadruped_controller) StdoutLine: {'line': b'-- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.719108] (quadruped_controller) StdoutLine: {'line': b'-- Found i2c_pwm_board_msgs: 0.1.0 (/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake)\n'}
+[0.763743] (quadruped_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.800941] (-) TimerEvent: {}
+[0.901311] (-) TimerEvent: {}
+[0.957000] (quadruped_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.957255] (quadruped_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/ubuntu/pi-dog_ws/src/quadruped_controller/include\n'}
+[0.957364] (quadruped_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.958137] (quadruped_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.959535] (quadruped_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.959649] (quadruped_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.960101] (quadruped_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.962417] (quadruped_controller) StdoutLine: {'line': b'-- Configuring done (0.9s)\n'}
+[1.001424] (-) TimerEvent: {}
+[1.002860] (quadruped_controller) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.019770] (quadruped_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/pi-dog_ws/build/quadruped_controller\n'}
+[1.102492] (-) TimerEvent: {}
+[1.107416] (quadruped_controller) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/spot_micro_kinematics.cpp.o\x1b[0m\n'}
+[1.110648] (quadruped_controller) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/main.cpp.o\x1b[0m\n'}
+[1.111262] (quadruped_controller) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/utils.cpp.o\x1b[0m\n'}
+[1.113671] (quadruped_controller) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/spot_micro_leg.cpp.o\x1b[0m\n'}
+[1.202548] (-) TimerEvent: {}
+[1.302947] (-) TimerEvent: {}
+[1.404826] (-) TimerEvent: {}
+[1.505224] (-) TimerEvent: {}
+[1.606935] (-) TimerEvent: {}
+[1.709616] (-) TimerEvent: {}
+[1.810150] (-) TimerEvent: {}
+[1.910604] (-) TimerEvent: {}
+[2.011728] (-) TimerEvent: {}
+[2.113775] (-) TimerEvent: {}
+[2.214322] (-) TimerEvent: {}
+[2.316815] (-) TimerEvent: {}
+[2.417802] (-) TimerEvent: {}
+[2.520828] (-) TimerEvent: {}
+[2.622071] (-) TimerEvent: {}
+[2.725765] (-) TimerEvent: {}
+[2.826405] (-) TimerEvent: {}
+[2.926916] (-) TimerEvent: {}
+[3.027517] (-) TimerEvent: {}
+[3.130760] (-) TimerEvent: {}
+[3.231354] (-) TimerEvent: {}
+[3.331851] (-) TimerEvent: {}
+[3.432450] (-) TimerEvent: {}
+[3.533306] (-) TimerEvent: {}
+[3.635818] (-) TimerEvent: {}
+[3.736286] (-) TimerEvent: {}
+[3.838622] (-) TimerEvent: {}
+[3.939115] (-) TimerEvent: {}
+[4.039739] (-) TimerEvent: {}
+[4.142801] (-) TimerEvent: {}
+[4.243411] (-) TimerEvent: {}
+[4.288733] (quadruped_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_kinematics.cpp:5\x1b[m\x1b[K:\n'}
+[4.289082] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/spot_micro_kinematics.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Ksmk::SpotMicroKinematics::\x1b[01;32m\x1b[KSpotMicroKinematics\x1b[m\x1b[K(float, float, float, const smk::SpotMicroConfig&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.289236] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/spot_micro_kinematics.h:109:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksmk::SpotMicroKinematics::z_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.289360] (quadruped_controller) StderrLine: {'line': b'  109 |   float \x1b[01;35m\x1b[Kz_\x1b[m\x1b[K;\n'}
+[4.289463] (quadruped_controller) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.289640] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/spot_micro_kinematics.h:104:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ksmk::SpotMicroConfig smk::SpotMicroKinematics::smc_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.289753] (quadruped_controller) StderrLine: {'line': b'  104 |   SpotMicroConfig \x1b[01;35m\x1b[Ksmc_\x1b[m\x1b[K; // Spot micro config struct\n'}
+[4.289836] (quadruped_controller) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.289917] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_kinematics.cpp:11:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.290013] (quadruped_controller) StderrLine: {'line': b'   11 | \x1b[01;35m\x1b[KSpotMicroKinematics\x1b[m\x1b[K::SpotMicroKinematics(float x, float y, float z,\n'}
+[4.290100] (quadruped_controller) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.343564] (-) TimerEvent: {}
+[4.372581] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid smk::SpotMicroLeg::\x1b[01;32m\x1b[KsetFootPosGlobalCoordinates\x1b[m\x1b[K(const smk::Point&, const Eigen::Matrix4f&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.373049] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:52:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.373362] (quadruped_controller) StderrLine: {'line': b'   52 |   Point point_local{\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx = p4_ht_vec(0), .y = p4_ht_vec(1), .z = p4_ht_vec(2)};\n'}
+[4.373651] (quadruped_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.375346] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:52:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.377761] (quadruped_controller) StderrLine: {'line': b'   52 |   Point point_local{.x = p4_ht_vec(0), \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = p4_ht_vec(1), .z = p4_ht_vec(2)};\n'}
+[4.378135] (quadruped_controller) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.378522] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:52:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.378802] (quadruped_controller) StderrLine: {'line': b'   52 |   Point point_local{.x = p4_ht_vec(0), .y = p4_ht_vec(1), \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz = p4_ht_vec(2)};\n'}
+[4.379034] (quadruped_controller) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.402423] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ksmk::Point smk::SpotMicroLeg::\x1b[01;32m\x1b[KgetFootPosGlobalCoordinates\x1b[m\x1b[K(const Eigen::Matrix4f&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.402919] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:65:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.403195] (quadruped_controller) StderrLine: {'line': b'   65 |   Point return_point = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kx = ht_foot(0,3),\n'}
+[4.403435] (quadruped_controller) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.405819] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:66:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.406443] (quadruped_controller) StderrLine: {'line': b'   66 |                         \x1b[01;35m\x1b[K.\x1b[m\x1b[Ky = ht_foot(1,3),\n'}
+[4.406712] (quadruped_controller) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.406934] (quadruped_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:67:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.407153] (quadruped_controller) StderrLine: {'line': b'   67 |                         \x1b[01;35m\x1b[K.\x1b[m\x1b[Kz = ht_foot(2,3) };\n'}
+[4.407359] (quadruped_controller) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.446596] (-) TimerEvent: {}
+[4.547150] (-) TimerEvent: {}
+[4.647617] (-) TimerEvent: {}
+[4.748218] (-) TimerEvent: {}
+[4.852886] (-) TimerEvent: {}
+[4.953406] (-) TimerEvent: {}
+[5.053804] (-) TimerEvent: {}
+[5.154343] (-) TimerEvent: {}
+[5.254993] (-) TimerEvent: {}
+[5.355489] (-) TimerEvent: {}
+[5.455836] (-) TimerEvent: {}
+[5.556185] (-) TimerEvent: {}
+[5.656546] (-) TimerEvent: {}
+[5.757122] (-) TimerEvent: {}
+[5.857525] (-) TimerEvent: {}
+[5.957866] (-) TimerEvent: {}
+[6.058271] (-) TimerEvent: {}
+[6.158781] (-) TimerEvent: {}
+[6.259178] (-) TimerEvent: {}
+[6.359687] (-) TimerEvent: {}
+[6.460035] (-) TimerEvent: {}
+[6.560386] (-) TimerEvent: {}
+[6.660749] (-) TimerEvent: {}
+[6.761072] (-) TimerEvent: {}
+[6.861392] (-) TimerEvent: {}
+[6.961714] (-) TimerEvent: {}
+[7.062066] (-) TimerEvent: {}
+[7.162500] (-) TimerEvent: {}
+[7.262816] (-) TimerEvent: {}
+[7.363134] (-) TimerEvent: {}
+[7.463447] (-) TimerEvent: {}
+[7.563767] (-) TimerEvent: {}
+[7.664081] (-) TimerEvent: {}
+[7.764399] (-) TimerEvent: {}
+[7.864748] (-) TimerEvent: {}
+[7.965066] (-) TimerEvent: {}
+[8.065388] (-) TimerEvent: {}
+[8.165717] (-) TimerEvent: {}
+[8.266050] (-) TimerEvent: {}
+[8.366366] (-) TimerEvent: {}
+[8.466692] (-) TimerEvent: {}
+[8.567016] (-) TimerEvent: {}
+[8.667326] (-) TimerEvent: {}
+[8.767654] (-) TimerEvent: {}
+[8.867988] (-) TimerEvent: {}
+[8.968332] (-) TimerEvent: {}
+[9.068670] (-) TimerEvent: {}
+[9.168983] (-) TimerEvent: {}
+[9.269298] (-) TimerEvent: {}
+[9.369631] (-) TimerEvent: {}
+[9.471418] (-) TimerEvent: {}
+[9.571746] (-) TimerEvent: {}
+[9.672072] (-) TimerEvent: {}
+[9.772385] (-) TimerEvent: {}
+[9.872726] (-) TimerEvent: {}
+[9.973031] (-) TimerEvent: {}
+[10.073367] (-) TimerEvent: {}
+[10.173770] (-) TimerEvent: {}
+[10.274084] (-) TimerEvent: {}
+[10.374397] (-) TimerEvent: {}
+[10.474728] (-) TimerEvent: {}
+[10.575040] (-) TimerEvent: {}
+[10.675343] (-) TimerEvent: {}
+[10.775698] (-) TimerEvent: {}
+[10.876019] (-) TimerEvent: {}
+[10.976370] (-) TimerEvent: {}
+[11.076760] (-) TimerEvent: {}
+[11.177214] (-) TimerEvent: {}
+[11.199339] (quadruped_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ik_test_node\x1b[0m\n'}
+[11.277355] (-) TimerEvent: {}
+[11.377762] (-) TimerEvent: {}
+[11.478111] (-) TimerEvent: {}
+[11.578532] (-) TimerEvent: {}
+[11.599802] (quadruped_controller) StdoutLine: {'line': b'[100%] Built target ik_test_node\n'}
+[11.619944] (quadruped_controller) CommandEnded: {'returncode': 0}
+[11.620733] (quadruped_controller) JobProgress: {'identifier': 'quadruped_controller', 'progress': 'install'}
+[11.636807] (quadruped_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/pi-dog_ws/build/quadruped_controller'], 'cwd': '/home/ubuntu/pi-dog_ws/build/quadruped_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/lib:/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws/src', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp:/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/quadruped_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp:/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[11.651747] (quadruped_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.652090] (quadruped_controller) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/lib/quadruped_controller/ik_test_node\n'}
+[11.656128] (quadruped_controller) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/quadruped_controller/lib/quadruped_controller/ik_test_node" to ""\n'}
+[11.656272] (quadruped_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/package_run_dependencies/quadruped_controller\n'}
+[11.656388] (quadruped_controller) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/parent_prefix_path/quadruped_controller\n'}
+[11.656570] (quadruped_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/ament_prefix_path.sh\n'}
+[11.656700] (quadruped_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/ament_prefix_path.dsv\n'}
+[11.656788] (quadruped_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/path.sh\n'}
+[11.656912] (quadruped_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/path.dsv\n'}
+[11.657011] (quadruped_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.bash\n'}
+[11.657094] (quadruped_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.sh\n'}
+[11.657167] (quadruped_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.zsh\n'}
+[11.657246] (quadruped_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.dsv\n'}
+[11.657324] (quadruped_controller) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/package.dsv\n'}
+[11.657441] (quadruped_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/packages/quadruped_controller\n'}
+[11.657539] (quadruped_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/cmake/quadruped_controllerConfig.cmake\n'}
+[11.657618] (quadruped_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/cmake/quadruped_controllerConfig-version.cmake\n'}
+[11.657691] (quadruped_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/package.xml\n'}
+[11.660073] (quadruped_controller) CommandEnded: {'returncode': 0}
+[11.678562] (-) TimerEvent: {}
+[11.687069] (quadruped_controller) JobEnded: {'identifier': 'quadruped_controller', 'rc': 0}
+[11.688246] (-) EventReactorShutdown: {}

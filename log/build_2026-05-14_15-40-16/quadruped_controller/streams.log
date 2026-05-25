@@ -1,0 +1,10 @@
+[0.016s] Invoking command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4
+[0.200s] [  8%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o[0m
+[6.710s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:[m[K In function ‘[01m[Kgeometry_msgs::msg::TransformStamped[01;32m[K eigAndFramesToTrans[m[K(const Eigen::Affine3d&, std::string, std::string)[m[K’:
+[6.710s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp:30:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[6.711s]    30 |   transform_stamped.header.stamp = [01;31m[Kros[m[K::Clock().now();
+[6.711s]       |                                    [01;31m[K^~~[m[K
+[8.865s] gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:146: CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o] Error 1
+[8.865s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+[8.866s] gmake: *** [Makefile:146: all] Error 2
+[8.869s] Invoked command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4

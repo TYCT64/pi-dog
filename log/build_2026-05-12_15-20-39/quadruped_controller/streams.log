@@ -1,0 +1,31 @@
+[0.171s] Invoking command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4
+[0.269s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.713s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.746s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.759s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.774s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.793s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.873s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.875s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.959s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.038s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.059s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[1.060s]   By not providing "Findi2c_pwm_board_msgs.cmake" in CMAKE_MODULE_PATH this
+[1.060s]   project has asked CMake to find a package configuration file provided by
+[1.060s]   "i2c_pwm_board_msgs", but CMake did not find one.
+[1.060s] 
+[1.060s]   Could not find a package configuration file provided by
+[1.060s]   "i2c_pwm_board_msgs" with any of the following names:
+[1.060s] 
+[1.060s]     i2c_pwm_board_msgsConfig.cmake
+[1.060s]     i2c_pwm_board_msgs-config.cmake
+[1.060s] 
+[1.060s]   Add the installation prefix of "i2c_pwm_board_msgs" to CMAKE_PREFIX_PATH or
+[1.060s]   set "i2c_pwm_board_msgs_DIR" to a directory containing one of the above
+[1.060s]   files.  If "i2c_pwm_board_msgs" provides a separate development package or
+[1.061s]   SDK, be sure it has been installed.
+[1.061s] 
+[1.061s] [0m
+[1.061s] -- Configuring incomplete, errors occurred!
+[1.070s] gmake: *** [Makefile:348: cmake_check_build_system] Error 1
+[1.073s] Invoked command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4

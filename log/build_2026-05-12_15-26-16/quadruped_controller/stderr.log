@@ -1,0 +1,31 @@
+In file included from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_kinematics.cpp:5[m[K:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/spot_micro_kinematics.h:[m[K In constructor ‘[01m[Ksmk::SpotMicroKinematics::[01;32m[KSpotMicroKinematics[m[K(float, float, float, const smk::SpotMicroConfig&)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/spot_micro_kinematics.h:109:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksmk::SpotMicroKinematics::z_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  109 |   float [01;35m[Kz_[m[K;
+      |         [01;35m[K^~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/spot_micro_kinematics.h:104:19:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Ksmk::SpotMicroConfig smk::SpotMicroKinematics::smc_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  104 |   SpotMicroConfig [01;35m[Ksmc_[m[K; // Spot micro config struct
+      |                   [01;35m[K^~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_kinematics.cpp:11:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   11 | [01;35m[KSpotMicroKinematics[m[K::SpotMicroKinematics(float x, float y, float z,
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:[m[K In member function ‘[01m[Kvoid smk::SpotMicroLeg::[01;32m[KsetFootPosGlobalCoordinates[m[K(const smk::Point&, const Eigen::Matrix4f&)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:52:21:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   52 |   Point point_local{[01;35m[K.[m[Kx = p4_ht_vec(0), .y = p4_ht_vec(1), .z = p4_ht_vec(2)};
+      |                     [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:52:40:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   52 |   Point point_local{.x = p4_ht_vec(0), [01;35m[K.[m[Ky = p4_ht_vec(1), .z = p4_ht_vec(2)};
+      |                                        [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:52:59:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   52 |   Point point_local{.x = p4_ht_vec(0), .y = p4_ht_vec(1), [01;35m[K.[m[Kz = p4_ht_vec(2)};
+      |                                                           [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:[m[K In member function ‘[01m[Ksmk::Point smk::SpotMicroLeg::[01;32m[KgetFootPosGlobalCoordinates[m[K(const Eigen::Matrix4f&)[m[K’:
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:65:25:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   65 |   Point return_point = {[01;35m[K.[m[Kx = ht_foot(0,3),
+      |                         [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:66:25:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   66 |                         [01;35m[K.[m[Ky = ht_foot(1,3),
+      |                         [01;35m[K^[m[K
+[01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:67:25:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+   67 |                         [01;35m[K.[m[Kz = ht_foot(2,3) };
+      |                         [01;35m[K^[m[K

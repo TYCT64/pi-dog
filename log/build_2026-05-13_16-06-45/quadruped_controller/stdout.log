@@ -1,0 +1,4 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/main.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/utils.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/spot_micro_kinematics.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/spot_micro_leg.cpp.o[0m

@@ -1,0 +1,24 @@
+[0.026s] Invoking command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4
+[0.296s] [ 20%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/main.cpp.o[0m
+[0.298s] [ 40%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/spot_micro_kinematics.cpp.o[0m
+[0.298s] [ 60%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/utils.cpp.o[0m
+[0.298s] [ 80%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/spot_micro_leg.cpp.o[0m
+[0.326s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/utils.cpp: No such file or directory
+[0.326s] compilation terminated.
+[0.329s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp: No such file or directory
+[0.329s] compilation terminated.
+[0.329s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_kinematics.cpp: No such file or directory
+[0.329s] compilation terminated.
+[0.329s] gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:104: CMakeFiles/ik_test_node.dir/src/utils.cpp.o] Error 1
+[0.330s] gmake[2]: *** Waiting for unfinished jobs....
+[0.330s] gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:118: CMakeFiles/ik_test_node.dir/src/spot_micro_leg.cpp.o] Error 1
+[0.331s] gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:90: CMakeFiles/ik_test_node.dir/src/spot_micro_kinematics.cpp.o] Error 1
+[1.021s] In file included from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/main.cpp:3[m[K:
+[1.021s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h:16:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/twist.hpp: No such file or directory
+[1.021s]    16 | #include [01;31m[K"geometry_msgs/msg/twist.hpp"[m[K
+[1.021s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.021s] compilation terminated.
+[1.027s] gmake[2]: *** [CMakeFiles/ik_test_node.dir/build.make:76: CMakeFiles/ik_test_node.dir/src/main.cpp.o] Error 1
+[1.028s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_test_node.dir/all] Error 2
+[1.028s] gmake: *** [Makefile:146: all] Error 2
+[1.032s] Invoked command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4

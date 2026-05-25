@@ -1,0 +1,73 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/i2c_pwm_board_msgs__rs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			}
+		]
+	},
+	"id" : "i2c_pwm_board_msgs__rs::@3a94b1b95d16d25e9a86",
+	"name" : "i2c_pwm_board_msgs__rs",
+	"paths" : 
+	{
+		"build" : "i2c_pwm_board_msgs__rs",
+		"source" : "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/i2c_pwm_board_msgs__rs"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/i2c_pwm_board_msgs__rs/CMakeFiles/i2c_pwm_board_msgs__rs",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/i2c_pwm_board_msgs__rs/CMakeFiles/i2c_pwm_board_msgs__rs.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs/rosidl_generator_rs/i2c_pwm_board_msgs/rust/src/lib.rs.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

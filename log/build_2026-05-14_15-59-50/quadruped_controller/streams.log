@@ -1,0 +1,45 @@
+[0.014s] Invoking command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/pi-dog_ws/src/quadruped_controller -DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/quadruped_controller
+[0.251s] -- The C compiler identification is GNU 13.3.0
+[0.358s] -- The CXX compiler identification is GNU 13.3.0
+[0.389s] -- Detecting C compiler ABI info
+[0.556s] -- Detecting C compiler ABI info - done
+[0.576s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.577s] -- Detecting C compile features
+[0.578s] -- Detecting C compile features - done
+[0.594s] -- Detecting CXX compiler ABI info
+[0.766s] -- Detecting CXX compiler ABI info - done
+[0.783s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.784s] -- Detecting CXX compile features
+[0.784s] -- Detecting CXX compile features - done
+[0.788s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.998s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.156s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.199s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.218s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.238s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.263s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.356s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.360s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.526s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.550s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.583s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.672s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.697s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[1.698s]   By not providing "Findi2c_pwm_board_msgs.cmake" in CMAKE_MODULE_PATH this
+[1.698s]   project has asked CMake to find a package configuration file provided by
+[1.698s]   "i2c_pwm_board_msgs", but CMake did not find one.
+[1.698s] 
+[1.699s]   Could not find a package configuration file provided by
+[1.699s]   "i2c_pwm_board_msgs" with any of the following names:
+[1.699s] 
+[1.699s]     i2c_pwm_board_msgsConfig.cmake
+[1.699s]     i2c_pwm_board_msgs-config.cmake
+[1.700s] 
+[1.700s]   Add the installation prefix of "i2c_pwm_board_msgs" to CMAKE_PREFIX_PATH or
+[1.700s]   set "i2c_pwm_board_msgs_DIR" to a directory containing one of the above
+[1.700s]   files.  If "i2c_pwm_board_msgs" provides a separate development package or
+[1.700s]   SDK, be sure it has been installed.
+[1.701s] 
+[1.701s] [0m
+[1.701s] -- Configuring incomplete, errors occurred!
+[1.716s] Invoked command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller' returned '1': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/pi-dog_ws/src/quadruped_controller -DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/quadruped_controller

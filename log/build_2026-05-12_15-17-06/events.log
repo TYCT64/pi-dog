@@ -1,0 +1,916 @@
+[0.000000] (-) TimerEvent: {}
+[0.000355] (-) JobUnselected: {'identifier': 'i2c_pwm_board_calibration'}
+[0.000668] (-) JobUnselected: {'identifier': 'quadruped_controller'}
+[0.000695] (i2c_pwm_board_msgs) JobQueued: {'identifier': 'i2c_pwm_board_msgs', 'dependencies': OrderedDict()}
+[0.000719] (xmlrpcpp) JobQueued: {'identifier': 'xmlrpcpp', 'dependencies': OrderedDict()}
+[0.000739] (i2c_pwm_board_xmlrp) JobQueued: {'identifier': 'i2c_pwm_board_xmlrp', 'dependencies': OrderedDict({'xmlrpcpp': '/home/ubuntu/pi-dog_ws/install/xmlrpcpp'})}
+[0.000762] (i2c_pwm_board) JobQueued: {'identifier': 'i2c_pwm_board', 'dependencies': OrderedDict({'i2c_pwm_board_msgs': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs', 'xmlrpcpp': '/home/ubuntu/pi-dog_ws/install/xmlrpcpp', 'i2c_pwm_board_xmlrp': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp'})}
+[0.000786] (xmlrpcpp) JobStarted: {'identifier': 'xmlrpcpp'}
+[0.007028] (i2c_pwm_board_msgs) JobStarted: {'identifier': 'i2c_pwm_board_msgs'}
+[0.012485] (xmlrpcpp) JobProgress: {'identifier': 'xmlrpcpp', 'progress': 'cmake'}
+[0.013258] (xmlrpcpp) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/xmlrpcpp', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/xmlrpcpp'], 'cwd': '/home/ubuntu/pi-dog_ws/build/xmlrpcpp', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/xmlrpcpp', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[0.020143] (i2c_pwm_board_msgs) JobProgress: {'identifier': 'i2c_pwm_board_msgs', 'progress': 'cmake'}
+[0.021249] (i2c_pwm_board_msgs) JobProgress: {'identifier': 'i2c_pwm_board_msgs', 'progress': 'build'}
+[0.022022] (i2c_pwm_board_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[0.101332] (-) TimerEvent: {}
+[0.117046] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  1%] Built target i2c_pwm_board_msgs__rs\n'}
+[0.127362] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  1%] Built target i2c_pwm_board_msgs__rosidl_generator_type_description\n'}
+[0.135297] (xmlrpcpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.141311] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_i2c_pwm_board_msgs\n'}
+[0.187729] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[  1%] Built target i2c_pwm_board_msgs__cpp\n'}
+[0.201491] (-) TimerEvent: {}
+[0.237997] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 27%] Built target i2c_pwm_board_msgs__rosidl_generator_c\n'}
+[0.298914] (xmlrpcpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.301604] (-) TimerEvent: {}
+[0.317218] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 37%] Built target i2c_pwm_board_msgs__rosidl_typesupport_c\n'}
+[0.332012] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 46%] Built target i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.343914] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 55%] Built target i2c_pwm_board_msgs__rosidl_typesupport_introspection_c\n'}
+[0.355141] (xmlrpcpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.401743] (-) TimerEvent: {}
+[0.451589] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 65%] Built target i2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.455046] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 75%] Built target i2c_pwm_board_msgs__rosidl_typesupport_cpp\n'}
+[0.461967] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 85%] Built target i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.498333] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 85%] Built target i2c_pwm_board_msgs\n'}
+[0.502282] (-) TimerEvent: {}
+[0.535394] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 86%] Built target i2c_pwm_board_msgs__py\n'}
+[0.602430] (-) TimerEvent: {}
+[0.618990] (xmlrpcpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.646363] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 95%] Built target i2c_pwm_board_msgs__rosidl_generator_py\n'}
+[0.653799] (xmlrpcpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.654729] (xmlrpcpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.655896] (xmlrpcpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.663988] (i2c_pwm_board_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.688489] (xmlrpcpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.698801] (i2c_pwm_board_msgs) StdoutLine: {'line': b'writing i2c_pwm_board_msgs.egg-info/PKG-INFO\n'}
+[0.699128] (i2c_pwm_board_msgs) StdoutLine: {'line': b'writing dependency_links to i2c_pwm_board_msgs.egg-info/dependency_links.txt\n'}
+[0.702563] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 97%] Built target i2c_pwm_board_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[0.702854] (-) TimerEvent: {}
+[0.705374] (i2c_pwm_board_msgs) StdoutLine: {'line': b'writing top-level names to i2c_pwm_board_msgs.egg-info/top_level.txt\n'}
+[0.705641] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[ 99%] Built target i2c_pwm_board_msgs_s__rosidl_typesupport_introspection_c\n'}
+[0.711081] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[100%] Built target i2c_pwm_board_msgs_s__rosidl_typesupport_c\n'}
+[0.792894] (i2c_pwm_board_msgs) StdoutLine: {'line': b"reading manifest file 'i2c_pwm_board_msgs.egg-info/SOURCES.txt'\n"}
+[0.794700] (i2c_pwm_board_msgs) StdoutLine: {'line': b"writing manifest file 'i2c_pwm_board_msgs.egg-info/SOURCES.txt'\n"}
+[0.803031] (-) TimerEvent: {}
+[0.878689] (i2c_pwm_board_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_i2c_pwm_board_msgs_egg\n'}
+[0.901967] (i2c_pwm_board_msgs) CommandEnded: {'returncode': 0}
+[0.902881] (i2c_pwm_board_msgs) JobProgress: {'identifier': 'i2c_pwm_board_msgs', 'progress': 'install'}
+[0.903071] (-) TimerEvent: {}
+[0.913721] (xmlrpcpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.918649] (i2c_pwm_board_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs'], 'cwd': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[0.930290] (xmlrpcpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.930702] (xmlrpcpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.931440] (xmlrpcpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.932992] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.933151] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/ament_index/resource_index/rosidl_interfaces/i2c_pwm_board_msgs\n'}
+[0.933304] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/Position.json\n'}
+[0.933426] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/PositionArray.json\n'}
+[0.933511] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/Servo.json\n'}
+[0.933592] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoArray.json\n'}
+[0.933694] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoConfig.json\n'}
+[0.936272] (xmlrpcpp) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.936520] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoConfigArray.json\n'}
+[0.936771] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/DriveMode.json\n'}
+[0.936871] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/IntValue.json\n'}
+[0.936960] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/ServosConfig.json\n'}
+[0.937046] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/StopServos.json\n'}
+[0.937128] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs\n'}
+[0.937284] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg\n'}
+[0.937382] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo_config_array.h\n'}
+[0.937469] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo_config.h\n'}
+[0.937567] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail\n'}
+[0.937656] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__functions.h\n'}
+[0.937744] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__description.c\n'}
+[0.937829] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__functions.c\n'}
+[0.937911] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__type_support.c\n'}
+[0.937995] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__type_support.c\n'}
+[0.938096] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__functions.c\n'}
+[0.938312] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__type_support.h\n'}
+[0.938434] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support.c\n'}
+[0.938536] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__functions.h\n'}
+[0.938625] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__struct.h\n'}
+[0.938735] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__type_support.h\n'}
+[0.938841] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__type_support.c\n'}
+[0.938934] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__type_support.h\n'}
+[0.939019] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__functions.h\n'}
+[0.939110] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__type_support.c\n'}
+[0.939215] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__type_support.h\n'}
+[0.939410] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__struct.h\n'}
+[0.939491] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__description.c\n'}
+[0.939582] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__functions.c\n'}
+[0.939668] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__functions.c\n'}
+[0.939749] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__functions.c\n'}
+[0.939842] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__functions.h\n'}
+[0.939982] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__type_support.c\n'}
+[0.940073] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__struct.h\n'}
+[0.940182] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__description.c\n'}
+[0.940409] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__struct.h\n'}
+[0.940517] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__description.c\n'}
+[0.940609] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support.h\n'}
+[0.940697] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__description.c\n'}
+[0.940781] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__type_support.h\n'}
+[0.940881] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__description.c\n'}
+[0.940964] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__functions.h\n'}
+[0.941046] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__struct.h\n'}
+[0.941177] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__struct.h\n'}
+[0.941285] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__functions.h\n'}
+[0.941373] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__functions.c\n'}
+[0.941462] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.941548] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo.h\n'}
+[0.941632] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/position.h\n'}
+[0.941715] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo_array.h\n'}
+[0.941799] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/position_array.h\n'}
+[0.941881] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv\n'}
+[0.941963] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/servos_config.h\n'}
+[0.942050] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail\n'}
+[0.942134] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__description.c\n'}
+[0.942330] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__functions.h\n'}
+[0.942453] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__description.c\n'}
+[0.942541] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__type_support.h\n'}
+[0.942616] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__struct.h\n'}
+[0.942705] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__functions.h\n'}
+[0.942831] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__struct.h\n'}
+[0.942911] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__functions.c\n'}
+[0.942993] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support.c\n'}
+[0.943071] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__description.c\n'}
+[0.943157] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__type_support.h\n'}
+[0.943288] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__functions.c\n'}
+[0.943384] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support.c\n'}
+[0.943462] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__functions.h\n'}
+[0.943535] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__functions.c\n'}
+[0.943607] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__struct.h\n'}
+[0.943677] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__functions.h\n'}
+[0.943749] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support.h\n'}
+[0.943837] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__type_support.c\n'}
+[0.943910] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__description.c\n'}
+[0.943982] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__struct.h\n'}
+[0.944062] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__functions.c\n'}
+[0.944146] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support.h\n'}
+[0.944435] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__type_support.c\n'}
+[0.944545] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/int_value.h\n'}
+[0.944623] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/drive_mode.h\n'}
+[0.944711] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/stop_servos.h\n'}
+[0.944784] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/library_path.sh\n'}
+[0.944857] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/library_path.dsv\n'}
+[0.944929] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_generator_c.so\n'}
+[0.945004] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs\n'}
+[0.945083] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg\n'}
+[0.945157] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail\n'}
+[0.945257] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__rosidl_typesupport_fastrtps_c.h\n'}
+[0.945352] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__rosidl_typesupport_fastrtps_c.h\n'}
+[0.945437] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__rosidl_typesupport_fastrtps_c.h\n'}
+[0.945514] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__rosidl_typesupport_fastrtps_c.h\n'}
+[0.945587] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__rosidl_typesupport_fastrtps_c.h\n'}
+[0.945659] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__rosidl_typesupport_fastrtps_c.h\n'}
+[0.945735] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.945809] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv\n'}
+[0.945882] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail\n'}
+[0.945958] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__rosidl_typesupport_fastrtps_c.h\n'}
+[0.946037] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__rosidl_typesupport_fastrtps_c.h\n'}
+[0.946113] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__rosidl_typesupport_fastrtps_c.h\n'}
+[0.946188] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__rosidl_typesupport_fastrtps_c.h\n'}
+[0.946305] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.946380] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs\n'}
+[0.946453] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg\n'}
+[0.946523] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.946594] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail\n'}
+[0.946665] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__rosidl_typesupport_introspection_c.h\n'}
+[0.946737] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__rosidl_typesupport_introspection_c.h\n'}
+[0.946809] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__type_support.c\n'}
+[0.946880] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__type_support.c\n'}
+[0.946952] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__rosidl_typesupport_introspection_c.h\n'}
+[0.947026] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support.c\n'}
+[0.947104] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__type_support.c\n'}
+[0.947177] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__type_support.c\n'}
+[0.947533] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__rosidl_typesupport_introspection_c.h\n'}
+[0.947620] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__rosidl_typesupport_introspection_c.h\n'}
+[0.947708] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__type_support.c\n'}
+[0.947800] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__rosidl_typesupport_introspection_c.h\n'}
+[0.947884] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv\n'}
+[0.947971] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail\n'}
+[0.948063] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__rosidl_typesupport_introspection_c.h\n'}
+[0.948203] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__rosidl_typesupport_introspection_c.h\n'}
+[0.948328] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support.c\n'}
+[0.948405] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__rosidl_typesupport_introspection_c.h\n'}
+[0.948485] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support.c\n'}
+[0.948565] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__type_support.c\n'}
+[0.948644] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__rosidl_typesupport_introspection_c.h\n'}
+[0.948722] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__type_support.c\n'}
+[0.948841] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.948921] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_c.so\n'}
+[0.949002] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs\n'}
+[0.949085] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg\n'}
+[0.949168] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.949351] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/position_array.hpp\n'}
+[0.949438] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo.hpp\n'}
+[0.949511] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail\n'}
+[0.949582] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__struct.hpp\n'}
+[0.949653] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__type_support.hpp\n'}
+[0.949724] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__traits.hpp\n'}
+[0.949795] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__builder.hpp\n'}
+[0.949866] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__type_support.hpp\n'}
+[0.949957] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__builder.hpp\n'}
+[0.950036] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__struct.hpp\n'}
+[0.950108] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__struct.hpp\n'}
+[0.950179] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__traits.hpp\n'}
+[0.950268] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__builder.hpp\n'}
+[0.950343] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__type_support.hpp\n'}
+[0.950414] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__struct.hpp\n'}
+[0.950484] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__builder.hpp\n'}
+[0.950554] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support.hpp\n'}
+[0.950625] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__builder.hpp\n'}
+[0.950694] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__struct.hpp\n'}
+[0.950764] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__traits.hpp\n'}
+[0.950834] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__type_support.hpp\n'}
+[0.950910] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__type_support.hpp\n'}
+[0.950984] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__traits.hpp\n'}
+[0.951067] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__builder.hpp\n'}
+[0.951171] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__traits.hpp\n'}
+[0.951327] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__traits.hpp\n'}
+[0.951479] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__struct.hpp\n'}
+[0.951561] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo_config_array.hpp\n'}
+[0.951650] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo_config.hpp\n'}
+[0.951736] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo_array.hpp\n'}
+[0.951812] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/position.hpp\n'}
+[0.951888] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv\n'}
+[0.951964] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/int_value.hpp\n'}
+[0.952039] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/drive_mode.hpp\n'}
+[0.952124] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/servos_config.hpp\n'}
+[0.952221] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail\n'}
+[0.952325] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__traits.hpp\n'}
+[0.952404] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__builder.hpp\n'}
+[0.952477] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__struct.hpp\n'}
+[0.952549] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support.hpp\n'}
+[0.952627] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__struct.hpp\n'}
+[0.952701] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support.hpp\n'}
+[0.952775] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__traits.hpp\n'}
+[0.952860] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__builder.hpp\n'}
+[0.952942] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__struct.hpp\n'}
+[0.953021] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__traits.hpp\n'}
+[0.953101] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__type_support.hpp\n'}
+[0.953184] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__builder.hpp\n'}
+[0.953332] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__builder.hpp\n'}
+[0.953440] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__struct.hpp\n'}
+[0.953517] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__type_support.hpp\n'}
+[0.953593] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__traits.hpp\n'}
+[0.953668] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/stop_servos.hpp\n'}
+[0.953782] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs\n'}
+[0.953861] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg\n'}
+[0.953939] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.954019] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail\n'}
+[0.954105] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.954229] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/dds_fastrtps\n'}
+[0.954348] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.954434] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.954517] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.954599] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.954702] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.954794] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv\n'}
+[0.954875] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail\n'}
+[0.954954] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/dds_fastrtps\n'}
+[0.955031] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.955107] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.955213] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.955318] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.955404] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.955480] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs\n'}
+[0.955556] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg\n'}
+[0.955637] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail\n'}
+[0.955712] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.955792] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.955870] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.955950] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.956028] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.956130] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.956239] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config__type_support.cpp\n'}
+[0.956339] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_config_array__type_support.cpp\n'}
+[0.956423] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position_array__type_support.cpp\n'}
+[0.956509] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/position__type_support.cpp\n'}
+[0.956591] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__type_support.cpp\n'}
+[0.956670] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__type_support.cpp\n'}
+[0.956748] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv\n'}
+[0.956874] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail\n'}
+[0.956978] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.957065] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__type_support.cpp\n'}
+[0.957143] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__type_support.cpp\n'}
+[0.957245] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/servos_config__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.957328] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/int_value__type_support.cpp\n'}
+[0.957401] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/stop_servos__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.957475] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__type_support.cpp\n'}
+[0.957548] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/srv/detail/drive_mode__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.957621] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.957694] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_cpp.so\n'}
+[0.957766] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/pythonpath.sh\n'}
+[0.957839] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/pythonpath.dsv\n'}
+[0.957911] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs-0.1.0-py3.12.egg-info\n'}
+[0.957983] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs-0.1.0-py3.12.egg-info/dependency_links.txt\n'}
+[0.958055] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs-0.1.0-py3.12.egg-info/SOURCES.txt\n'}
+[0.958128] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs-0.1.0-py3.12.egg-info/top_level.txt\n'}
+[0.958208] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs-0.1.0-py3.12.egg-info/PKG-INFO\n'}
+[0.958296] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs\n'}
+[0.958371] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg\n'}
+[0.958473] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo.py\n'}
+[0.958547] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_array.py\n'}
+[0.958626] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_position.py\n'}
+[0.958709] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_s.c\n'}
+[0.958786] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_config_array_s.c\n'}
+[0.958859] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_position_s.c\n'}
+[0.958931] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_config.py\n'}
+[0.959011] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/__init__.py\n'}
+[0.959083] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_config_s.c\n'}
+[0.959152] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_array_s.c\n'}
+[0.959245] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_servo_config_array.py\n'}
+[0.959322] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_position_array_s.c\n'}
+[0.959393] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg/_position_array.py\n'}
+[0.959464] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv\n'}
+[0.959534] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_stop_servos.py\n'}
+[0.959605] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_int_value.py\n'}
+[0.959675] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_drive_mode_s.c\n'}
+[0.959745] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/__init__.py\n'}
+[0.959815] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_servos_config_s.c\n'}
+[0.959885] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_int_value_s.c\n'}
+[0.959955] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_servos_config.py\n'}
+[0.960039] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_drive_mode.py\n'}
+[0.960111] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv/_stop_servos_s.c\n'}
+[0.960181] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/__init__.py\n'}
+[0.960290] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/_i2c_pwm_board_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.960368] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[0.960442] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/_i2c_pwm_board_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.960517] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_c.so\n'}
+[0.960589] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[0.960665] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/_i2c_pwm_board_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[1.003097] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs'...\n"}
+[1.003379] (-) TimerEvent: {}
+[1.003553] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/msg'...\n"}
+[1.003726] (i2c_pwm_board_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/srv'...\n"}
+[1.017857] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[1.018141] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[1.018375] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages/i2c_pwm_board_msgs/i2c_pwm_board_msgs_s__rosidl_typesupport_c.so\n'}
+[1.018617] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_generator_py.so\n'}
+[1.018900] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/ament_index/resource_index/rust_packages/i2c_pwm_board_msgs\n'}
+[1.019095] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust\n'}
+[1.019338] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src\n'}
+[1.019466] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/msg\n'}
+[1.019576] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/msg/rmw.rs\n'}
+[1.019744] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/srv\n'}
+[1.019845] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/srv/rmw.rs\n'}
+[1.019940] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/msg.rs\n'}
+[1.020029] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/lib.rs\n'}
+[1.020121] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/src/srv.rs\n'}
+[1.020451] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/build.rs\n'}
+[1.020636] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/rust/Cargo.toml\n'}
+[1.020746] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/Position.idl\n'}
+[1.020847] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/PositionArray.idl\n'}
+[1.020952] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/Servo.idl\n'}
+[1.021056] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoArray.idl\n'}
+[1.021158] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoConfig.idl\n'}
+[1.021386] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoConfigArray.idl\n'}
+[1.021500] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/DriveMode.idl\n'}
+[1.021601] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/IntValue.idl\n'}
+[1.021696] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/ServosConfig.idl\n'}
+[1.021788] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/StopServos.idl\n'}
+[1.021885] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/Position.msg\n'}
+[1.021978] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/PositionArray.msg\n'}
+[1.022069] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/Servo.msg\n'}
+[1.022167] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoArray.msg\n'}
+[1.022349] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoConfig.msg\n'}
+[1.022454] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/msg/ServoConfigArray.msg\n'}
+[1.022599] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/DriveMode.srv\n'}
+[1.022740] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/IntValue.srv\n'}
+[1.022885] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/ServosConfig.srv\n'}
+[1.023078] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/srv/StopServos.srv\n'}
+[1.023404] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/ament_index/resource_index/package_run_dependencies/i2c_pwm_board_msgs\n'}
+[1.023648] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/ament_index/resource_index/parent_prefix_path/i2c_pwm_board_msgs\n'}
+[1.023861] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/ament_prefix_path.sh\n'}
+[1.024067] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/ament_prefix_path.dsv\n'}
+[1.024372] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/path.sh\n'}
+[1.024649] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/environment/path.dsv\n'}
+[1.024921] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/local_setup.bash\n'}
+[1.025147] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/local_setup.sh\n'}
+[1.025452] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/local_setup.zsh\n'}
+[1.025654] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/local_setup.dsv\n'}
+[1.025860] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/package.dsv\n'}
+[1.026057] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/ament_index/resource_index/packages/i2c_pwm_board_msgs\n'}
+[1.026431] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_generator_cExport.cmake\n'}
+[1.026579] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.026684] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[1.026775] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[1.026870] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.026959] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.027046] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_cExport.cmake\n'}
+[1.027153] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.027272] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_generator_cppExport.cmake\n'}
+[1.027363] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[1.027446] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[1.027605] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.027813] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.027913] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[1.028025] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.028286] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_generator_pyExport.cmake\n'}
+[1.028412] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/export_i2c_pwm_board_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[1.028529] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[1.028644] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.028760] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.028848] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.028929] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.029006] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.029085] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.029163] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgsConfig.cmake\n'}
+[1.029313] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake/i2c_pwm_board_msgsConfig-version.cmake\n'}
+[1.029399] (i2c_pwm_board_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/package.xml\n'}
+[1.031750] (i2c_pwm_board_msgs) CommandEnded: {'returncode': 0}
+[1.076588] (i2c_pwm_board_msgs) JobEnded: {'identifier': 'i2c_pwm_board_msgs', 'rc': 0}
+[1.103489] (-) TimerEvent: {}
+[1.146663] (xmlrpcpp) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.203588] (-) TimerEvent: {}
+[1.303875] (-) TimerEvent: {}
+[1.404183] (-) TimerEvent: {}
+[1.428791] (xmlrpcpp) StdoutLine: {'line': b'-- Configuring done (1.4s)\n'}
+[1.437623] (xmlrpcpp) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.441376] (xmlrpcpp) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/pi-dog_ws/build/xmlrpcpp\n'}
+[1.448694] (xmlrpcpp) CommandEnded: {'returncode': 0}
+[1.449281] (xmlrpcpp) JobProgress: {'identifier': 'xmlrpcpp', 'progress': 'build'}
+[1.449560] (xmlrpcpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/pi-dog_ws/build/xmlrpcpp', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/pi-dog_ws/build/xmlrpcpp', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/xmlrpcpp', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[1.504281] (-) TimerEvent: {}
+[1.532517] (xmlrpcpp) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_client.cc.o\x1b[0m\n'}
+[1.533029] (xmlrpcpp) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_server_method.cc.o\x1b[0m\n'}
+[1.533832] (xmlrpcpp) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_server.cc.o\x1b[0m\n'}
+[1.535390] (xmlrpcpp) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_server_connection.cc.o\x1b[0m\n'}
+[1.606314] (-) TimerEvent: {}
+[1.707440] (-) TimerEvent: {}
+[1.808023] (-) TimerEvent: {}
+[1.911523] (-) TimerEvent: {}
+[2.012788] (-) TimerEvent: {}
+[2.113321] (-) TimerEvent: {}
+[2.158959] (xmlrpcpp) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_socket.cc.o\x1b[0m\n'}
+[2.216362] (-) TimerEvent: {}
+[2.316786] (-) TimerEvent: {}
+[2.321247] (xmlrpcpp) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_source.cc.o\x1b[0m\n'}
+[2.416954] (-) TimerEvent: {}
+[2.519457] (-) TimerEvent: {}
+[2.526020] (xmlrpcpp) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_util.cc.o\x1b[0m\n'}
+[2.594657] (xmlrpcpp) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/xmlrpcpp.dir/src/xml_rpc_value.cc.o\x1b[0m\n'}
+[2.622328] (-) TimerEvent: {}
+[2.640436] (xmlrpcpp) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/xmlrpcpp.dir/libb64/src/cdecode.c.o\x1b[0m\n'}
+[2.721344] (xmlrpcpp) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/xmlrpcpp.dir/libb64/src/cencode.c.o\x1b[0m\n'}
+[2.722451] (-) TimerEvent: {}
+[2.822866] (-) TimerEvent: {}
+[2.923390] (-) TimerEvent: {}
+[3.023735] (-) TimerEvent: {}
+[3.124071] (-) TimerEvent: {}
+[3.224719] (-) TimerEvent: {}
+[3.325216] (-) TimerEvent: {}
+[3.425530] (-) TimerEvent: {}
+[3.525869] (-) TimerEvent: {}
+[3.588130] (xmlrpcpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libxmlrpcpp.a\x1b[0m\n'}
+[3.625984] (-) TimerEvent: {}
+[3.699203] (xmlrpcpp) StdoutLine: {'line': b'[100%] Built target xmlrpcpp\n'}
+[3.719433] (xmlrpcpp) CommandEnded: {'returncode': 0}
+[3.720110] (xmlrpcpp) JobProgress: {'identifier': 'xmlrpcpp', 'progress': 'install'}
+[3.720349] (xmlrpcpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/pi-dog_ws/build/xmlrpcpp'], 'cwd': '/home/ubuntu/pi-dog_ws/build/xmlrpcpp', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/xmlrpcpp', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[3.726059] (-) TimerEvent: {}
+[3.734785] (xmlrpcpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.735093] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib/libxmlrpcpp.a\n'}
+[3.736837] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include/\n'}
+[3.737021] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp\n'}
+[3.737133] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcServerMethod.h\n'}
+[3.737253] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcValue.h\n'}
+[3.737380] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcException.h\n'}
+[3.737513] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcSocket.h\n'}
+[3.737623] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcClient.h\n'}
+[3.737747] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcDispatch.h\n'}
+[3.737898] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpc.h\n'}
+[3.738018] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcServerConnection.h\n'}
+[3.738137] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcDecl.h\n'}
+[3.738263] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcServer.h\n'}
+[3.738382] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/base64.h\n'}
+[3.738500] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcUtil.h\n'}
+[3.738621] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/include//xmlrpcpp/XmlRpcSource.h\n'}
+[3.738915] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/environment/library_path.sh\n'}
+[3.739080] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/environment/library_path.dsv\n'}
+[3.739369] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/ament_index/resource_index/package_run_dependencies/xmlrpcpp\n'}
+[3.739584] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/ament_index/resource_index/parent_prefix_path/xmlrpcpp\n'}
+[3.739752] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/environment/ament_prefix_path.sh\n'}
+[3.739914] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/environment/ament_prefix_path.dsv\n'}
+[3.740073] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/environment/path.sh\n'}
+[3.740237] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/environment/path.dsv\n'}
+[3.740394] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/local_setup.bash\n'}
+[3.740558] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/local_setup.sh\n'}
+[3.740721] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/local_setup.zsh\n'}
+[3.740893] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/local_setup.dsv\n'}
+[3.741050] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/package.dsv\n'}
+[3.741284] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/ament_index/resource_index/packages/xmlrpcpp\n'}
+[3.741491] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.741661] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.741826] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/cmake/xmlrpcppConfig.cmake\n'}
+[3.741951] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/cmake/xmlrpcppConfig-version.cmake\n'}
+[3.742100] (xmlrpcpp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/package.xml\n'}
+[3.744803] (xmlrpcpp) CommandEnded: {'returncode': 0}
+[3.764547] (xmlrpcpp) JobEnded: {'identifier': 'xmlrpcpp', 'rc': 0}
+[3.765862] (i2c_pwm_board_xmlrp) JobStarted: {'identifier': 'i2c_pwm_board_xmlrp'}
+[3.775081] (i2c_pwm_board_xmlrp) JobProgress: {'identifier': 'i2c_pwm_board_xmlrp', 'progress': 'cmake'}
+[3.776784] (i2c_pwm_board_xmlrp) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_xmlrp', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp'], 'cwd': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[3.826188] (-) TimerEvent: {}
+[3.872722] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[3.926291] (-) TimerEvent: {}
+[3.967398] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[3.993812] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.026409] (-) TimerEvent: {}
+[4.126824] (-) TimerEvent: {}
+[4.144156] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.160693] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.161067] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.161632] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.175745] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.226933] (-) TimerEvent: {}
+[4.327274] (-) TimerEvent: {}
+[4.339562] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.356467] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.356835] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.357543] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.360499] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[4.427366] (-) TimerEvent: {}
+[4.527656] (-) TimerEvent: {}
+[4.570825] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.627756] (-) TimerEvent: {}
+[4.714657] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[4.727831] (-) TimerEvent: {}
+[4.758236] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[4.775565] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[4.795951] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.819263] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.827924] (-) TimerEvent: {}
+[4.919399] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[4.922558] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.928025] (-) TimerEvent: {}
+[5.028380] (-) TimerEvent: {}
+[5.043969] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[5.065470] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[5.098910] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.128476] (-) TimerEvent: {}
+[5.189226] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Found xmlrpcpp: 0.1.0 (/home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/cmake)\n'}
+[5.228577] (-) TimerEvent: {}
+[5.328893] (-) TimerEvent: {}
+[5.335752] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Configuring done (1.5s)\n'}
+[5.349997] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.354408] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp\n'}
+[5.368591] (i2c_pwm_board_xmlrp) CommandEnded: {'returncode': 0}
+[5.369239] (i2c_pwm_board_xmlrp) JobProgress: {'identifier': 'i2c_pwm_board_xmlrp', 'progress': 'build'}
+[5.369567] (i2c_pwm_board_xmlrp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[5.429009] (-) TimerEvent: {}
+[5.449885] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/i2c_pwm_board_xmlrp_lib.dir/src/xmlrp.cc.o\x1b[0m\n'}
+[5.529119] (-) TimerEvent: {}
+[5.629449] (-) TimerEvent: {}
+[5.729772] (-) TimerEvent: {}
+[5.830099] (-) TimerEvent: {}
+[5.930455] (-) TimerEvent: {}
+[6.030779] (-) TimerEvent: {}
+[6.131106] (-) TimerEvent: {}
+[6.231448] (-) TimerEvent: {}
+[6.331777] (-) TimerEvent: {}
+[6.432093] (-) TimerEvent: {}
+[6.532427] (-) TimerEvent: {}
+[6.559207] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libi2c_pwm_board_xmlrp_lib.a\x1b[0m\n'}
+[6.614958] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'[100%] Built target i2c_pwm_board_xmlrp_lib\n'}
+[6.632522] (-) TimerEvent: {}
+[6.634581] (i2c_pwm_board_xmlrp) CommandEnded: {'returncode': 0}
+[6.635313] (i2c_pwm_board_xmlrp) JobProgress: {'identifier': 'i2c_pwm_board_xmlrp', 'progress': 'install'}
+[6.635615] (i2c_pwm_board_xmlrp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp'], 'cwd': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[6.650381] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.650686] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/lib/libi2c_pwm_board_xmlrp_lib.a\n'}
+[6.651098] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/include/\n'}
+[6.651244] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/include//xmlrp\n'}
+[6.651376] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/include//xmlrp/xmlrp.h\n'}
+[6.651656] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/environment/library_path.sh\n'}
+[6.651816] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/environment/library_path.dsv\n'}
+[6.652120] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/ament_index/resource_index/package_run_dependencies/i2c_pwm_board_xmlrp\n'}
+[6.652363] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/ament_index/resource_index/parent_prefix_path/i2c_pwm_board_xmlrp\n'}
+[6.652524] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/environment/ament_prefix_path.sh\n'}
+[6.652680] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/environment/ament_prefix_path.dsv\n'}
+[6.652851] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/environment/path.sh\n'}
+[6.653020] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/environment/path.dsv\n'}
+[6.653171] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/local_setup.bash\n'}
+[6.653429] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/local_setup.sh\n'}
+[6.653600] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/local_setup.zsh\n'}
+[6.653767] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/local_setup.dsv\n'}
+[6.653923] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/package.dsv\n'}
+[6.654134] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/ament_index/resource_index/packages/i2c_pwm_board_xmlrp\n'}
+[6.654364] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.654525] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.654690] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.654844] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/cmake/i2c_pwm_board_xmlrpConfig.cmake\n'}
+[6.654970] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/cmake/i2c_pwm_board_xmlrpConfig-version.cmake\n'}
+[6.655116] (i2c_pwm_board_xmlrp) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/package.xml\n'}
+[6.657829] (i2c_pwm_board_xmlrp) CommandEnded: {'returncode': 0}
+[6.679320] (i2c_pwm_board_xmlrp) JobEnded: {'identifier': 'i2c_pwm_board_xmlrp', 'rc': 0}
+[6.680487] (i2c_pwm_board) JobStarted: {'identifier': 'i2c_pwm_board'}
+[6.696673] (i2c_pwm_board) JobProgress: {'identifier': 'i2c_pwm_board', 'progress': 'cmake'}
+[6.698306] (i2c_pwm_board) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/i2c_pwm_board'], 'cwd': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/lib:/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp:/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp:/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[6.732644] (-) TimerEvent: {}
+[6.795206] (i2c_pwm_board) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[6.832764] (-) TimerEvent: {}
+[6.890871] (i2c_pwm_board) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[6.917292] (i2c_pwm_board) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.932883] (-) TimerEvent: {}
+[7.033228] (-) TimerEvent: {}
+[7.068340] (i2c_pwm_board) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[7.083928] (i2c_pwm_board) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.084352] (i2c_pwm_board) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.084982] (i2c_pwm_board) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.098783] (i2c_pwm_board) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.133351] (-) TimerEvent: {}
+[7.233697] (-) TimerEvent: {}
+[7.262601] (i2c_pwm_board) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[7.278754] (i2c_pwm_board) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[7.279175] (i2c_pwm_board) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[7.279920] (i2c_pwm_board) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[7.283244] (i2c_pwm_board) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[7.333811] (-) TimerEvent: {}
+[7.434154] (-) TimerEvent: {}
+[7.491568] (i2c_pwm_board) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[7.534244] (-) TimerEvent: {}
+[7.634540] (-) TimerEvent: {}
+[7.639237] (i2c_pwm_board) StdoutLine: {'line': b'-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[7.685285] (i2c_pwm_board) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[7.703271] (i2c_pwm_board) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[7.724728] (i2c_pwm_board) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.734608] (-) TimerEvent: {}
+[7.749490] (i2c_pwm_board) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.834724] (-) TimerEvent: {}
+[7.849290] (i2c_pwm_board) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[7.852832] (i2c_pwm_board) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.934843] (-) TimerEvent: {}
+[7.976422] (i2c_pwm_board) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[7.998519] (i2c_pwm_board) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[8.032724] (i2c_pwm_board) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.034907] (-) TimerEvent: {}
+[8.124309] (i2c_pwm_board) StdoutLine: {'line': b'-- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[8.134991] (-) TimerEvent: {}
+[8.150344] (i2c_pwm_board) StdoutLine: {'line': b'-- Found std_srvs: 5.3.7 (/opt/ros/jazzy/share/std_srvs/cmake)\n'}
+[8.183820] (i2c_pwm_board) StdoutLine: {'line': b'-- Found i2c_pwm_board_msgs: 0.1.0 (/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake)\n'}
+[8.207880] (i2c_pwm_board) StdoutLine: {'line': b'-- Found xmlrpcpp: 0.1.0 (/home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/cmake)\n'}
+[8.216953] (i2c_pwm_board) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[8.235095] (-) TimerEvent: {}
+[8.251273] (i2c_pwm_board) StdoutLine: {'line': b'-- Found i2c_pwm_board_xmlrp: 0.0.0 (/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/cmake)\n'}
+[8.335239] (-) TimerEvent: {}
+[8.409553] (i2c_pwm_board) StdoutLine: {'line': b'-- Configuring done (1.7s)\n'}
+[8.430791] (i2c_pwm_board) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[8.435305] (-) TimerEvent: {}
+[8.436912] (i2c_pwm_board) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/pi-dog_ws/build/i2c_pwm_board\n'}
+[8.453287] (i2c_pwm_board) CommandEnded: {'returncode': 0}
+[8.453961] (i2c_pwm_board) JobProgress: {'identifier': 'i2c_pwm_board', 'progress': 'build'}
+[8.455108] (i2c_pwm_board) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/lib:/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp:/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp:/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[8.535981] (-) TimerEvent: {}
+[8.540954] (i2c_pwm_board) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/node.dir/src/board_controller.cc.o\x1b[0m\n'}
+[8.541255] (i2c_pwm_board) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/node.dir/src/board.cc.o\x1b[0m\n'}
+[8.541389] (i2c_pwm_board) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/node.dir/src/board_handler.cc.o\x1b[0m\n'}
+[8.638277] (-) TimerEvent: {}
+[8.738651] (-) TimerEvent: {}
+[8.839112] (-) TimerEvent: {}
+[8.939502] (-) TimerEvent: {}
+[9.040007] (-) TimerEvent: {}
+[9.140408] (-) TimerEvent: {}
+[9.240902] (-) TimerEvent: {}
+[9.341310] (-) TimerEvent: {}
+[9.441853] (-) TimerEvent: {}
+[9.542352] (-) TimerEvent: {}
+[9.642860] (-) TimerEvent: {}
+[9.743627] (-) TimerEvent: {}
+[9.844085] (-) TimerEvent: {}
+[9.945123] (-) TimerEvent: {}
+[10.048530] (-) TimerEvent: {}
+[10.149113] (-) TimerEvent: {}
+[10.249576] (-) TimerEvent: {}
+[10.350015] (-) TimerEvent: {}
+[10.450934] (-) TimerEvent: {}
+[10.551794] (-) TimerEvent: {}
+[10.655545] (-) TimerEvent: {}
+[10.755982] (-) TimerEvent: {}
+[10.856549] (-) TimerEvent: {}
+[10.956972] (-) TimerEvent: {}
+[11.060560] (-) TimerEvent: {}
+[11.161012] (-) TimerEvent: {}
+[11.261537] (-) TimerEvent: {}
+[11.361909] (-) TimerEvent: {}
+[11.462287] (-) TimerEvent: {}
+[11.562645] (-) TimerEvent: {}
+[11.663056] (-) TimerEvent: {}
+[11.766300] (-) TimerEvent: {}
+[11.866666] (-) TimerEvent: {}
+[11.967071] (-) TimerEvent: {}
+[12.067589] (-) TimerEvent: {}
+[12.168006] (-) TimerEvent: {}
+[12.268551] (-) TimerEvent: {}
+[12.368912] (-) TimerEvent: {}
+[12.471316] (-) TimerEvent: {}
+[12.571828] (-) TimerEvent: {}
+[12.672294] (-) TimerEvent: {}
+[12.772690] (-) TimerEvent: {}
+[12.873250] (-) TimerEvent: {}
+[12.975521] (-) TimerEvent: {}
+[13.075946] (-) TimerEvent: {}
+[13.176491] (-) TimerEvent: {}
+[13.276923] (-) TimerEvent: {}
+[13.378595] (-) TimerEvent: {}
+[13.479071] (-) TimerEvent: {}
+[13.579629] (-) TimerEvent: {}
+[13.680050] (-) TimerEvent: {}
+[13.780953] (-) TimerEvent: {}
+[13.881690] (-) TimerEvent: {}
+[13.982596] (-) TimerEvent: {}
+[14.083336] (-) TimerEvent: {}
+[14.184423] (-) TimerEvent: {}
+[14.285133] (-) TimerEvent: {}
+[14.386104] (-) TimerEvent: {}
+[14.486515] (-) TimerEvent: {}
+[14.587421] (-) TimerEvent: {}
+[14.687835] (-) TimerEvent: {}
+[14.789320] (-) TimerEvent: {}
+[14.890083] (-) TimerEvent: {}
+[14.991735] (-) TimerEvent: {}
+[15.092285] (-) TimerEvent: {}
+[15.192727] (-) TimerEvent: {}
+[15.295533] (-) TimerEvent: {}
+[15.395972] (-) TimerEvent: {}
+[15.496538] (-) TimerEvent: {}
+[15.597010] (-) TimerEvent: {}
+[15.698556] (-) TimerEvent: {}
+[15.798957] (-) TimerEvent: {}
+[15.899295] (-) TimerEvent: {}
+[15.999688] (-) TimerEvent: {}
+[16.100057] (-) TimerEvent: {}
+[16.200507] (-) TimerEvent: {}
+[16.300821] (-) TimerEvent: {}
+[16.401144] (-) TimerEvent: {}
+[16.501468] (-) TimerEvent: {}
+[16.601784] (-) TimerEvent: {}
+[16.702106] (-) TimerEvent: {}
+[16.802433] (-) TimerEvent: {}
+[16.902757] (-) TimerEvent: {}
+[17.003061] (-) TimerEvent: {}
+[17.103374] (-) TimerEvent: {}
+[17.203723] (-) TimerEvent: {}
+[17.304147] (-) TimerEvent: {}
+[17.404481] (-) TimerEvent: {}
+[17.504802] (-) TimerEvent: {}
+[17.605125] (-) TimerEvent: {}
+[17.705472] (-) TimerEvent: {}
+[17.805802] (-) TimerEvent: {}
+[17.906127] (-) TimerEvent: {}
+[18.006470] (-) TimerEvent: {}
+[18.106793] (-) TimerEvent: {}
+[18.207116] (-) TimerEvent: {}
+[18.307453] (-) TimerEvent: {}
+[18.407769] (-) TimerEvent: {}
+[18.508093] (-) TimerEvent: {}
+[18.608433] (-) TimerEvent: {}
+[18.708759] (-) TimerEvent: {}
+[18.809103] (-) TimerEvent: {}
+[18.909430] (-) TimerEvent: {}
+[19.009740] (-) TimerEvent: {}
+[19.110058] (-) TimerEvent: {}
+[19.210450] (-) TimerEvent: {}
+[19.310876] (-) TimerEvent: {}
+[19.411218] (-) TimerEvent: {}
+[19.511544] (-) TimerEvent: {}
+[19.611863] (-) TimerEvent: {}
+[19.712173] (-) TimerEvent: {}
+[19.812508] (-) TimerEvent: {}
+[19.912825] (-) TimerEvent: {}
+[20.013146] (-) TimerEvent: {}
+[20.113485] (-) TimerEvent: {}
+[20.213813] (-) TimerEvent: {}
+[20.314147] (-) TimerEvent: {}
+[20.414485] (-) TimerEvent: {}
+[20.514812] (-) TimerEvent: {}
+[20.615144] (-) TimerEvent: {}
+[20.715524] (-) TimerEvent: {}
+[20.815907] (-) TimerEvent: {}
+[20.916239] (-) TimerEvent: {}
+[21.016590] (-) TimerEvent: {}
+[21.117022] (-) TimerEvent: {}
+[21.217349] (-) TimerEvent: {}
+[21.317660] (-) TimerEvent: {}
+[21.417974] (-) TimerEvent: {}
+[21.518288] (-) TimerEvent: {}
+[21.618611] (-) TimerEvent: {}
+[21.718935] (-) TimerEvent: {}
+[21.819254] (-) TimerEvent: {}
+[21.919556] (-) TimerEvent: {}
+[22.019874] (-) TimerEvent: {}
+[22.120213] (-) TimerEvent: {}
+[22.220566] (-) TimerEvent: {}
+[22.320888] (-) TimerEvent: {}
+[22.421231] (-) TimerEvent: {}
+[22.521573] (-) TimerEvent: {}
+[22.621985] (-) TimerEvent: {}
+[22.722456] (-) TimerEvent: {}
+[22.822762] (-) TimerEvent: {}
+[22.923060] (-) TimerEvent: {}
+[23.023399] (-) TimerEvent: {}
+[23.123752] (-) TimerEvent: {}
+[23.224070] (-) TimerEvent: {}
+[23.324390] (-) TimerEvent: {}
+[23.424702] (-) TimerEvent: {}
+[23.525018] (-) TimerEvent: {}
+[23.625442] (-) TimerEvent: {}
+[23.725876] (-) TimerEvent: {}
+[23.826182] (-) TimerEvent: {}
+[23.926538] (-) TimerEvent: {}
+[24.026967] (-) TimerEvent: {}
+[24.127276] (-) TimerEvent: {}
+[24.227622] (-) TimerEvent: {}
+[24.328053] (-) TimerEvent: {}
+[24.428378] (-) TimerEvent: {}
+[24.528688] (-) TimerEvent: {}
+[24.629003] (-) TimerEvent: {}
+[24.729317] (-) TimerEvent: {}
+[24.829624] (-) TimerEvent: {}
+[24.929948] (-) TimerEvent: {}
+[25.030343] (-) TimerEvent: {}
+[25.130782] (-) TimerEvent: {}
+[25.231086] (-) TimerEvent: {}
+[25.331411] (-) TimerEvent: {}
+[25.431718] (-) TimerEvent: {}
+[25.532021] (-) TimerEvent: {}
+[25.632357] (-) TimerEvent: {}
+[25.732667] (-) TimerEvent: {}
+[25.832978] (-) TimerEvent: {}
+[25.933297] (-) TimerEvent: {}
+[26.033607] (-) TimerEvent: {}
+[26.133919] (-) TimerEvent: {}
+[26.234243] (-) TimerEvent: {}
+[26.334589] (-) TimerEvent: {}
+[26.435014] (-) TimerEvent: {}
+[26.535359] (-) TimerEvent: {}
+[26.635693] (-) TimerEvent: {}
+[26.735996] (-) TimerEvent: {}
+[26.836301] (-) TimerEvent: {}
+[26.936601] (-) TimerEvent: {}
+[27.036904] (-) TimerEvent: {}
+[27.137221] (-) TimerEvent: {}
+[27.237520] (-) TimerEvent: {}
+[27.337819] (-) TimerEvent: {}
+[27.438127] (-) TimerEvent: {}
+[27.538463] (-) TimerEvent: {}
+[27.638823] (-) TimerEvent: {}
+[27.739187] (-) TimerEvent: {}
+[27.839579] (-) TimerEvent: {}
+[27.939940] (-) TimerEvent: {}
+[28.040289] (-) TimerEvent: {}
+[28.140642] (-) TimerEvent: {}
+[28.240979] (-) TimerEvent: {}
+[28.341312] (-) TimerEvent: {}
+[28.441671] (-) TimerEvent: {}
+[28.542103] (-) TimerEvent: {}
+[28.642444] (-) TimerEvent: {}
+[28.742775] (-) TimerEvent: {}
+[28.843109] (-) TimerEvent: {}
+[28.943452] (-) TimerEvent: {}
+[29.043789] (-) TimerEvent: {}
+[29.144138] (-) TimerEvent: {}
+[29.244518] (-) TimerEvent: {}
+[29.344869] (-) TimerEvent: {}
+[29.445271] (-) TimerEvent: {}
+[29.545672] (-) TimerEvent: {}
+[29.631580] (i2c_pwm_board) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable node\x1b[0m\n'}
+[29.645763] (-) TimerEvent: {}
+[29.746086] (-) TimerEvent: {}
+[29.846507] (-) TimerEvent: {}
+[29.947137] (-) TimerEvent: {}
+[30.047819] (-) TimerEvent: {}
+[30.148367] (-) TimerEvent: {}
+[30.248804] (-) TimerEvent: {}
+[30.349243] (-) TimerEvent: {}
+[30.449589] (-) TimerEvent: {}
+[30.549922] (-) TimerEvent: {}
+[30.650257] (-) TimerEvent: {}
+[30.750558] (-) TimerEvent: {}
+[30.824578] (i2c_pwm_board) StdoutLine: {'line': b'[100%] Built target node\n'}
+[30.843677] (i2c_pwm_board) CommandEnded: {'returncode': 0}
+[30.844414] (i2c_pwm_board) JobProgress: {'identifier': 'i2c_pwm_board', 'progress': 'install'}
+[30.844726] (i2c_pwm_board) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board'], 'cwd': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/lib:/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/helpers/browser.sh', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/pi-dog_ws', 'TERM_PROGRAM_VERSION': '1.119.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3b3719a9-5624-4f74-b29b-8f509549a2fd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-8b640eef5a6c6089c029249d48efa5c99adf7d51/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c8fad6250e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp:/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::7d4a:e4e8:b97b:1a29%wlan0 53687 fe80::2ecf:67ff:fe63:7ac%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp:/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy'}), 'shell': False}
+[30.850632] (-) TimerEvent: {}
+[30.859741] (i2c_pwm_board) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.860033] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/lib/i2c_pwm_board/node\n'}
+[30.876030] (i2c_pwm_board) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/i2c_pwm_board/lib/i2c_pwm_board/node" to ""\n'}
+[30.876334] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/include/\n'}
+[30.876457] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/include//board_controller.h\n'}
+[30.876584] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/include//board_handler.h\n'}
+[30.876821] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/ament_index/resource_index/package_run_dependencies/i2c_pwm_board\n'}
+[30.877058] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/ament_index/resource_index/parent_prefix_path/i2c_pwm_board\n'}
+[30.877298] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/i2c_pwm_board/environment/ament_prefix_path.sh\n'}
+[30.877515] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/i2c_pwm_board/environment/ament_prefix_path.dsv\n'}
+[30.877732] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/i2c_pwm_board/environment/path.sh\n'}
+[30.877922] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/i2c_pwm_board/environment/path.dsv\n'}
+[30.878092] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/i2c_pwm_board/local_setup.bash\n'}
+[30.878266] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/i2c_pwm_board/local_setup.sh\n'}
+[30.878438] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/i2c_pwm_board/local_setup.zsh\n'}
+[30.878604] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/i2c_pwm_board/local_setup.dsv\n'}
+[30.878758] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/i2c_pwm_board/package.dsv\n'}
+[30.878997] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/ament_index/resource_index/packages/i2c_pwm_board\n'}
+[30.879214] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/i2c_pwm_board/cmake/i2c_pwm_boardConfig.cmake\n'}
+[30.879345] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/i2c_pwm_board/cmake/i2c_pwm_boardConfig-version.cmake\n'}
+[30.879502] (i2c_pwm_board) StdoutLine: {'line': b'-- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board/share/i2c_pwm_board/package.xml\n'}
+[30.882370] (i2c_pwm_board) CommandEnded: {'returncode': 0}
+[30.902740] (i2c_pwm_board) JobEnded: {'identifier': 'i2c_pwm_board', 'rc': 0}
+[30.903998] (-) EventReactorShutdown: {}

@@ -1,0 +1,81 @@
+[0.015s] Invoking command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4
+[0.056s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.374s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.405s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.418s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.434s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.452s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.533s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.535s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.621s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.700s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.718s] -- Found i2c_pwm_board_msgs: 0.1.0 (/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/share/i2c_pwm_board_msgs/cmake)
+[0.763s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.956s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.956s] -- Configured cppcheck include dirs: /home/ubuntu/pi-dog_ws/src/quadruped_controller/include
+[0.956s] -- Configured cppcheck exclude dirs and/or files: 
+[0.957s] -- Added test 'lint_cmake' to check CMake code style
+[0.959s] -- Added test 'uncrustify' to check C / C++ code style
+[0.959s] -- Configured uncrustify additional arguments: 
+[0.959s] -- Added test 'xmllint' to check XML markup files
+[0.961s] -- Configuring done (0.9s)
+[1.002s] -- Generating done (0.0s)
+[1.019s] -- Build files have been written to: /home/ubuntu/pi-dog_ws/build/quadruped_controller
+[1.107s] [ 60%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/spot_micro_kinematics.cpp.o[0m
+[1.110s] [ 60%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/main.cpp.o[0m
+[1.111s] [ 60%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/utils.cpp.o[0m
+[1.113s] [ 80%] [32mBuilding CXX object CMakeFiles/ik_test_node.dir/src/spot_micro_leg.cpp.o[0m
+[4.288s] In file included from [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_kinematics.cpp:5[m[K:
+[4.288s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/spot_micro_kinematics.h:[m[K In constructor ‘[01m[Ksmk::SpotMicroKinematics::[01;32m[KSpotMicroKinematics[m[K(float, float, float, const smk::SpotMicroConfig&)[m[K’:
+[4.288s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/spot_micro_kinematics.h:109:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksmk::SpotMicroKinematics::z_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.288s]   109 |   float [01;35m[Kz_[m[K;
+[4.289s]       |         [01;35m[K^~[m[K
+[4.289s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_kinematics/spot_micro_kinematics.h:104:19:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Ksmk::SpotMicroConfig smk::SpotMicroKinematics::smc_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.289s]   104 |   SpotMicroConfig [01;35m[Ksmc_[m[K; // Spot micro config struct
+[4.289s]       |                   [01;35m[K^~~~[m[K
+[4.289s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_kinematics.cpp:11:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.289s]    11 | [01;35m[KSpotMicroKinematics[m[K::SpotMicroKinematics(float x, float y, float z,
+[4.289s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.372s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:[m[K In member function ‘[01m[Kvoid smk::SpotMicroLeg::[01;32m[KsetFootPosGlobalCoordinates[m[K(const smk::Point&, const Eigen::Matrix4f&)[m[K’:
+[4.372s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:52:21:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+[4.373s]    52 |   Point point_local{[01;35m[K.[m[Kx = p4_ht_vec(0), .y = p4_ht_vec(1), .z = p4_ht_vec(2)};
+[4.373s]       |                     [01;35m[K^[m[K
+[4.377s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:52:40:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+[4.377s]    52 |   Point point_local{.x = p4_ht_vec(0), [01;35m[K.[m[Ky = p4_ht_vec(1), .z = p4_ht_vec(2)};
+[4.377s]       |                                        [01;35m[K^[m[K
+[4.378s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:52:59:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+[4.378s]    52 |   Point point_local{.x = p4_ht_vec(0), .y = p4_ht_vec(1), [01;35m[K.[m[Kz = p4_ht_vec(2)};
+[4.378s]       |                                                           [01;35m[K^[m[K
+[4.402s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:[m[K In member function ‘[01m[Ksmk::Point smk::SpotMicroLeg::[01;32m[KgetFootPosGlobalCoordinates[m[K(const Eigen::Matrix4f&)[m[K’:
+[4.402s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:65:25:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+[4.402s]    65 |   Point return_point = {[01;35m[K.[m[Kx = ht_foot(0,3),
+[4.403s]       |                         [01;35m[K^[m[K
+[4.405s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:66:25:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+[4.406s]    66 |                         [01;35m[K.[m[Ky = ht_foot(1,3),
+[4.406s]       |                         [01;35m[K^[m[K
+[4.406s] [01m[K/home/ubuntu/pi-dog_ws/src/quadruped_controller/src/spot_micro_leg.cpp:67:25:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+[4.406s]    67 |                         [01;35m[K.[m[Kz = ht_foot(2,3) };
+[4.407s]       |                         [01;35m[K^[m[K
+[11.199s] [100%] [32m[1mLinking CXX executable ik_test_node[0m
+[11.599s] [100%] Built target ik_test_node
+[11.619s] Invoked command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/quadruped_controller -- -j4 -l4
+[11.637s] Invoking command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/pi-dog_ws/build/quadruped_controller
+[11.651s] -- Install configuration: ""
+[11.651s] -- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/lib/quadruped_controller/ik_test_node
+[11.655s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/pi-dog_ws/install/quadruped_controller/lib/quadruped_controller/ik_test_node" to ""
+[11.655s] -- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/package_run_dependencies/quadruped_controller
+[11.655s] -- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/parent_prefix_path/quadruped_controller
+[11.656s] -- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/ament_prefix_path.sh
+[11.656s] -- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/ament_prefix_path.dsv
+[11.656s] -- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/path.sh
+[11.656s] -- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/path.dsv
+[11.656s] -- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.bash
+[11.656s] -- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.sh
+[11.656s] -- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.zsh
+[11.656s] -- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/local_setup.dsv
+[11.656s] -- Installing: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/package.dsv
+[11.657s] -- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/packages/quadruped_controller
+[11.657s] -- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/cmake/quadruped_controllerConfig.cmake
+[11.657s] -- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/cmake/quadruped_controllerConfig-version.cmake
+[11.657s] -- Up-to-date: /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/package.xml
+[11.659s] Invoked command in '/home/ubuntu/pi-dog_ws/build/quadruped_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/pi-dog_ws/build/quadruped_controller

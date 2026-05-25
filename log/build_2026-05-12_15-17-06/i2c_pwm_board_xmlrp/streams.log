@@ -1,0 +1,62 @@
+[0.012s] Invoking command in '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp': AMENT_PREFIX_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_xmlrp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp
+[0.107s] -- The C compiler identification is GNU 13.3.0
+[0.202s] -- The CXX compiler identification is GNU 13.3.0
+[0.228s] -- Detecting C compiler ABI info
+[0.378s] -- Detecting C compiler ABI info - done
+[0.395s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.395s] -- Detecting C compile features
+[0.396s] -- Detecting C compile features - done
+[0.410s] -- Detecting CXX compiler ABI info
+[0.574s] -- Detecting CXX compiler ABI info - done
+[0.591s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.591s] -- Detecting CXX compile features
+[0.592s] -- Detecting CXX compile features - done
+[0.595s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.805s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.949s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.993s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.010s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.030s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.054s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.154s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.157s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.278s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.300s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.333s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.423s] -- Found xmlrpcpp: 0.1.0 (/home/ubuntu/pi-dog_ws/install/xmlrpcpp/share/xmlrpcpp/cmake)
+[1.570s] -- Configuring done (1.5s)
+[1.584s] -- Generating done (0.0s)
+[1.589s] -- Build files have been written to: /home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp
+[1.603s] Invoked command in '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/ubuntu/pi-dog_ws/src/i2c_pwm_board/i2c_pwm_board_xmlrp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp
+[1.605s] Invoking command in '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp': AMENT_PREFIX_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp -- -j4 -l4
+[1.684s] [ 50%] [32mBuilding CXX object CMakeFiles/i2c_pwm_board_xmlrp_lib.dir/src/xmlrp.cc.o[0m
+[2.793s] [100%] [32m[1mLinking CXX static library libi2c_pwm_board_xmlrp_lib.a[0m
+[2.849s] [100%] Built target i2c_pwm_board_xmlrp_lib
+[2.869s] Invoked command in '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp -- -j4 -l4
+[2.871s] Invoking command in '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp': AMENT_PREFIX_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp
+[2.885s] -- Install configuration: ""
+[2.885s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/lib/libi2c_pwm_board_xmlrp_lib.a
+[2.885s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/include/
+[2.885s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/include//xmlrp
+[2.886s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/include//xmlrp/xmlrp.h
+[2.886s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/environment/library_path.sh
+[2.886s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/environment/library_path.dsv
+[2.886s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/ament_index/resource_index/package_run_dependencies/i2c_pwm_board_xmlrp
+[2.887s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/ament_index/resource_index/parent_prefix_path/i2c_pwm_board_xmlrp
+[2.887s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/environment/ament_prefix_path.sh
+[2.887s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/environment/ament_prefix_path.dsv
+[2.887s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/environment/path.sh
+[2.887s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/environment/path.dsv
+[2.887s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/local_setup.bash
+[2.888s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/local_setup.sh
+[2.888s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/local_setup.zsh
+[2.888s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/local_setup.dsv
+[2.888s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/package.dsv
+[2.888s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/ament_index/resource_index/packages/i2c_pwm_board_xmlrp
+[2.889s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.889s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/cmake/ament_cmake_export_libraries-extras.cmake
+[2.889s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.889s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/cmake/i2c_pwm_board_xmlrpConfig.cmake
+[2.889s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/cmake/i2c_pwm_board_xmlrpConfig-version.cmake
+[2.889s] -- Installing: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_xmlrp/share/i2c_pwm_board_xmlrp/package.xml
+[2.893s] Invoked command in '/home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp:/home/ubuntu/pi-dog_ws/install/quadruped_controller:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/pi-dog_ws/install/xmlrpcpp/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ubuntu/pi-dog_ws/build/i2c_pwm_board_xmlrp
