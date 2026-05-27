@@ -5,10 +5,10 @@ ik_test_node:
     # Robot wireframe size parameters
     # Lengths representening a wireframe model of the robot. All lengths joint to joint
     hip_link_length: 0.055 # Straight line distance of the hip link (horizontal leg link)
-    upper_leg_link_length: 0.1075 # Straight line distance of the upper leg link, joint to joint
-    lower_leg_link_length: 0.130 # Straight line distance of the lower leg link, joint to joint
-    body_width: 0.078 # Horizontal width between hip joints
-    body_length: 0.186 # Length between shoulder joints
+    upper_leg_link_length: 0.13 # Straight line distance of the upper leg link, joint to joint
+    lower_leg_link_length: 0.155 # Straight line distance of the lower leg link, joint to joint
+    body_width: 0.105 # Horizontal width between hip joints
+    body_length: 0.30 # Length between shoulder joints
 
     # Stance parameters
     default_stand_height: 0.155   # Height of robot body center when standing
@@ -23,19 +23,19 @@ ik_test_node:
     #center_angle_deg  這顆馬達在物理上的90度時，在我運動學大腦中是幾度
     # range 極限角度需要多少脈衝
     num_servos: 12
-    servo_max_angle_deg: 150.0 #中心點往左右x度
-    RF_3: {num: 1.0,  center: 306.0, range: 372.0,direction:  1.0, center_angle_deg: 88.2}
-    RF_2: {num: 2.0,  center: 306.0, range: 389.0,direction:  1.0, center_angle_deg: -27.6}
-    RF_1: {num: 3.0,  center: 306.0, range: 396.0,direction: -1.0, center_angle_deg:  -5.4}
-    RB_3: {num: 4.0,  center: 306.0, range: 396.0,direction:  1.0, center_angle_deg:  85.8}
-    RB_2: {num: 5.0,  center: 306.0, range: 396.0,direction:  1.0, center_angle_deg: -35.4}
-    RB_1: {num: 6.0,  center: 306.0, range: 411.0,direction:  1.0, center_angle_deg:  -4.4}
-    LB_3: {num: 7.0,  center: 306.0, range: 390.0,direction:  1.0, center_angle_deg: -73.9}
-    LB_2: {num: 8.0,  center: 306.0, range: 392.0,direction:  1.0, center_angle_deg:  38.7}
-    LB_1: {num: 9.0,  center: 306.0, range: 374.0,direction: -1.0, center_angle_deg:  -0.4}
-    LF_3: {num: 10.0, center: 306.0, range: 387.0,direction:  1.0, center_angle_deg: -82.8}
-    LF_2: {num: 11.0, center: 306.0, range: 397.0,direction:  1.0, center_angle_deg:  38.6}
-    LF_1: {num: 12.0, center: 306.0, range: 389.0,direction:  1.0, center_angle_deg:  -7.6}
+    servo_max_angle_deg: 82.5 #中心點往左右x度
+    RF_3: {num: 13.0,  center: 306.0, range: 372.0,direction:  1.0, center_angle_deg: 88.2} #knee
+    RF_2: {num: 9.0,  center: 306.0, range: 389.0,direction:  1.0, center_angle_deg: -27.6} #thigh
+    RF_1: {num: 10.0,  center: 306.0, range: 396.0,direction: -1.0, center_angle_deg: -5.4} #hip
+    RB_3: {num: 6.0,  center: 306.0, range: 396.0,direction:  1.0, center_angle_deg:  85.8}
+    RB_2: {num: 1.0,  center: 306.0, range: 396.0,direction:  1.0, center_angle_deg: -35.4}
+    RB_1: {num: 3.0,  center: 306.0, range: 411.0,direction:  1.0, center_angle_deg:  -4.4}
+    LB_3: {num: 5.0,  center: 306.0, range: 390.0,direction:  1.0, center_angle_deg: -73.9}
+    LB_2: {num: 4.0,  center: 306.0, range: 392.0,direction:  1.0, center_angle_deg:  38.7}
+    LB_1: {num: 2.0,  center: 306.0, range: 374.0,direction: -1.0, center_angle_deg:  -0.4}
+    LF_3: {num: 14.0, center: 306.0, range: 387.0,direction:  1.0, center_angle_deg: -82.8}
+    LF_2: {num: 12.0, center: 306.0, range: 397.0,direction:  1.0, center_angle_deg:  38.6}
+    LF_1: {num: 11.0, center: 306.0, range: 389.0,direction:  1.0, center_angle_deg:  -7.6}
 
     # Control Parameters
     transit_tau: 0.3 # Time constant in seconds for first order filters during transition state 低通濾波

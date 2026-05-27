@@ -157,7 +157,7 @@ void SpotMicroMotionCmd::runOnce() {
   if (smnc_.debug_mode) {
     std::cout<<"from Runonce \n";
   }
-
+  RCLCPP_INFO(this->get_logger(), "🧠 目前大腦內的 Stand 狀態: %d", cmd_.stand_cmd_);
   // Call method to handle input commands
   /*呼叫狀態機讀取搖桿指令計算馬達角度，發送PWM訊號*/
   handleInputCommands();
@@ -245,6 +245,7 @@ void SpotMicroMotionCmd::setServoCommandMessageData() {
 
 
 void SpotMicroMotionCmd::publishServoProportionalCommand() {
+  int array_index = 0;
   for (std::map<std::string, std::map<std::string, float>>::iterator
        iter = smnc_.servo_config.begin();
        iter != smnc_.servo_config.end();
@@ -270,8 +271,9 @@ void SpotMicroMotionCmd::publishServoProportionalCommand() {
       RCLCPP_WARN(this->get_logger(),"Joint %s, Angle: %1.2f", servo_name.c_str(), cmd_ang_rad*180.0/M_PI);
     }
  
-    servo_array_.servos[servo_num-1].servo = servo_num;
-    servo_array_.servos[servo_num-1].value = servo_proportional_cmd; 
+    servo_array_.servos[array_index].servo = servo_num;
+    servo_array_.servos[array_index].value = servo_proportional_cmd; 
+    array_index++;
  }
 
  // Publish message
@@ -441,17 +443,26 @@ void SpotMicroMotionCmd::readInConfigParameters() {
     get_float_param(servo_name + ".center", temp_map["center"]);
     get_float_param(servo_name + ".range", temp_map["range"]);
     get_float_param(servo_name + ".direction", temp_map["direction"]);
-
+``` get_flaot_param(servo_name + ".center_angle_deg", temp_map["center_angle_deg"]);
     smnc_.servo_config[servo_name] = temp_map; 
   }
 
-  RCLCPP_INFO(this->get_logger(), "Pro 機器狗全套參數載入完畢");
+  int absIndex = 0;
+  for(auto iter = smnc_.servo_config.begin(); iter != smnc_.servo_config.end(); ++iter){
+    std::map<std::string, float> servo_config_params = iter->second;
+    int servo_num = servo_config_params["num"];
+    servo_array_absolute_.servos[absIndex].servo = servo_num;
+    absIndex++;
+  }
+
+  RCLCPP_INFO(this->get_logger(), "Pro 機器狗參數載入完");
 }
 
 
 void SpotMicroMotionCmd::standCommandCallback(
     const std_msgs::msg::Bool::SharedPtr msg) {
   if (msg->data == true) {cmd_.stand_cmd_ = true;}
+  RCLCPP_INFO(this->get_logger(), "🚨 報告！我收到 Stand 指令了！內容是: %d", msg->data);
 }
 
 
