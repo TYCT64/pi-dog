@@ -53,6 +53,7 @@ SpotMicroMotionCmd::SpotMicroMotionCmd() : Node("spot_micro_motion_cmd_node") {
   robot_odometry_.xyz_pos = {.x = 0.0f, .y = 0.0f, .z = 0.0f};
 
   // Initialize servo array message with 12 servo objects
+  servo_array_.servos.clear();
   for (int i = 1; i <= smnc_.num_servos; i++) {
     i2c_pwm_board_msgs::msg::Servo temp_servo;
     temp_servo.servo = i;
@@ -92,10 +93,10 @@ SpotMicroMotionCmd::SpotMicroMotionCmd() : Node("spot_micro_motion_cmd_node") {
 
   // servos_absolute publisher
   // 發送<i2c_pwm_board_msgs::msg::ServoArray>這種包裹 "servos_absolute"廣播的頻道名 頻道容量10
-  servos_absolute_pub_ = this->create_publisher<i2c_pwm_board_msgs::msg::ServoArray>("servos_absolute", 10);
+  servos_absolute_pub_ = this->create_publisher<i2c_pwm_board_msgs::msg::ServoArray>("servos_absolute", 10); //"servos_absolute"
 
   // Servos proportional publisher
-  servos_proportional_pub_ = this->create_publisher<i2c_pwm_board_msgs::msg::ServoArray>("servos_proportional",10);  
+  servos_proportional_pub_ = this->create_publisher<i2c_pwm_board_msgs::msg::ServoArray>("servos_proportional",10);  //servos_proportional
 
   // Body state publisher for plotting
   body_state_pub_ = this->create_publisher<std_msgs::msg::Float32MultiArray>("body_state",10);
@@ -443,16 +444,18 @@ void SpotMicroMotionCmd::readInConfigParameters() {
     get_float_param(servo_name + ".center", temp_map["center"]);
     get_float_param(servo_name + ".range", temp_map["range"]);
     get_float_param(servo_name + ".direction", temp_map["direction"]);
-``` get_flaot_param(servo_name + ".center_angle_deg", temp_map["center_angle_deg"]);
+    get_float_param(servo_name + ".center_angle_deg", temp_map["center_angle_deg"]);
     smnc_.servo_config[servo_name] = temp_map; 
   }
-
-  int absIndex = 0;
+  servo_array_absolute_.servos.clear();
   for(auto iter = smnc_.servo_config.begin(); iter != smnc_.servo_config.end(); ++iter){
     std::map<std::string, float> servo_config_params = iter->second;
-    int servo_num = servo_config_params["num"];
-    servo_array_absolute_.servos[absIndex].servo = servo_num;
-    absIndex++;
+    int servo_num = static_cast<int>(servo_config_params["num"]);
+    // servo_array_absolute_.servos[absIndex].servo = servo_num;
+    i2c_pwm_board_msgs::msg::Servo temp_servo;
+    temp_servo.servo = servo_num;
+    temp_servo.value = 0.0f;
+    servo_array_absolute_.servos.push_back(temp_servo);
   }
 
   RCLCPP_INFO(this->get_logger(), "Pro 機器狗參數載入完");
@@ -500,7 +503,7 @@ void SpotMicroMotionCmd::resetEventCommands() {
 }
 
 
-void SpotMicroMotionCmd::handleInputCommands() {
+void SpotMicroMotionCmd::handleInputCommands() {  
   // Delegate input handling to state
   state_->handleInputCommands(sm_.getBodyState(), smnc_, cmd_, this, &body_state_cmd_);
 }

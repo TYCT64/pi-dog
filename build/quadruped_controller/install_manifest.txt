@@ -1,6 +1,7 @@
 /home/ubuntu/pi-dog_ws/install/quadruped_controller/lib/quadruped_controller/ik_test_node
 /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/launch/run_robot.launch.py
 /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/config/spot_micro_config.yaml
+/home/ubuntu/pi-dog_ws/install/quadruped_controller/lib/quadruped_controller/keyboard_teleop.py
 /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/package_run_dependencies/quadruped_controller
 /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/ament_index/resource_index/parent_prefix_path/quadruped_controller
 /home/ubuntu/pi-dog_ws/install/quadruped_controller/share/quadruped_controller/environment/ament_prefix_path.sh

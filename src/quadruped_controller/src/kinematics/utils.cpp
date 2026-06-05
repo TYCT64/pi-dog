@@ -50,11 +50,11 @@ Matrix4f homogInverse(const Matrix4f& ht)
 //    linear trasnformation portions of the original transform.  
 
   Matrix3f temp_rot = ht.block<3,3>(0,0); // Get rotation matrix portion from homogeneous transform via block
-  temp_rot.transposeInPlace();    // Transpose, equivalent to inverse for rotation matrix
+  temp_rot.transposeInPlace();    // Transpose, equivalent to inverse for rotation matrix  旋轉矩陣轉置 (等同求逆)
 
   // Store linear translation portion and negate directions
   Vector3f temp_translate = ht.block<3,1>(0,3);
-  temp_translate = temp_translate * -1.0f;
+  temp_translate = temp_translate * -1.0f; //平移向量反轉
 
   // Create left hand portion of ht_inv from comment block above
   Matrix4f ht_inverted1 = Matrix4f::Identity();
@@ -159,11 +159,11 @@ Matrix4f ht3To4(float rot_ang, float link_length) {
   
   return ht2To3(rot_ang, link_length);
 }
-
+//腳尖座標總和 (FK) 由四個轉換矩陣相乘得到
 Matrix4f ht0To4(const JointAngles& joint_angles,
                 const LinkLengths& link_lengths) {
   // Result is a sequential multiplication of all 4 transform matrices
-  return (ht0To1(joint_angles.ang1, link_lengths.l1) *
+  return (ht0To1(joint_angles.ang1, link_lengths.l1) *  
           ht1To2() *
           ht2To3(joint_angles.ang2, link_lengths.l2) *
           ht3To4(joint_angles.ang3,  link_lengths.l3));
@@ -180,11 +180,11 @@ JointAngles ikine(const Point& point, const LinkLengths& link_lengths, bool is_l
   float x4 = point.x;
   float y4 = point.y;
   float z4 = point.z;
-  float l1 = link_lengths.l1;
-  float l2 = link_lengths.l2;
-  float l3 = link_lengths.l3;
+  float l1 = link_lengths.l1;//hip
+  float l2 = link_lengths.l2;//thigh
+  float l3 = link_lengths.l3;//calf
   
-  // Supporting variable D
+  // Supporting variable D 膝蓋角度 餘弦定理 
   float D = (x4*x4 + y4*y4 + z4*z4 - l1*l1 - l2*l2 - l3*l3) /
             (2*l2*l3);
   

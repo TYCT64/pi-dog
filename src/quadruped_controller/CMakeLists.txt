@@ -72,6 +72,10 @@ install(DIRECTORY
   config
   DESTINATION share/${PROJECT_NAME}
 )
+install(PROGRAMS
+  scripts/keyboard_teleop.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 # ==========================================
 # ▲▲▲ 新增區塊結束 ▲▲▲
