@@ -23,6 +23,32 @@ def generate_launch_description():
             parameters=[{'i2c_bus': 1}]  # 完美解決之前硬改 C++ 的問題！
         ),
 
+        Node(
+            package='mpu6050_driver',
+            executable='mpu6050_node',
+            name='mpu6050_node',
+            output='screen'
+        ),
+
+        Node(
+            package='imu_complementary_filter',
+            executable='complementary_filter_node',
+            name='complementary_filter_gain_node',
+            output='screen',
+            parameters=[
+                {'do_bias_estimation': True},
+                {'do_adaptive_gain': True},
+                {'use_mag': False},      # MPU6050 沒有磁力計，必須設為 False！
+                {'gain_acc': 0.01},      # 信任加速度計的程度 (越小越不相信震動)
+                {'gain_mag': 0.01},
+                {'publish_tf': False}    # 不要干擾你原本狗的 TF
+            ],
+            remappings=[
+                ('/imu/data_raw', '/imu/data_raw'),
+                ('/imu/data', '/imu/data') # 算好的完美姿態會從這裡吐出來
+            ]
+        ),
+
         # 【節點二】：機器狗大腦（核心中樞），自動餵 YAML 參數
         Node(
             package='quadruped_controller',
