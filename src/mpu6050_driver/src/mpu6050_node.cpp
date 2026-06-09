@@ -38,6 +38,17 @@ private:
     rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
 
+    int calibration_count_ = 0;
+    const int calibration_samples_ = 500;
+
+    int32_t gyro_x_sum_ = 0;
+    int32_t gyro_y_sum_ = 0;
+    int32_t gyro_z_sum_ = 0;
+
+    int16_t gyro_x_offset_ = 0;
+    int16_t gyro_y_offset_ = 0;
+    int16_t gyro_z_offset_ = 0;
+
     void publish_imu_data() {
         // 告訴 MPU6050 我們要從暫存器 0x3B (ACCEL_XOUT_H) 開始讀取
         uint8_t reg = 0x3B;
@@ -65,17 +76,38 @@ private:
         int16_t gyro_x  = (data[8] << 8) | data[9];
         int16_t gyro_y  = (data[10] << 8) | data[11];
         int16_t gyro_z  = (data[12] << 8) | data[13];
+        
+        if(calibration_count_ < calibration_samples_) {
+            gyro_x_sum_ += gyro_x;
+            gyro_y_sum_ += gyro_y;
+            gyro_z_sum_ += gyro_z;
+            calibration_count_++;
 
+            if(calibration_count_ == calibration_samples_) {
+                gyro_x_offset_ = gyro_x_sum_ / calibration_samples_;
+                gyro_y_offset_ = gyro_y_sum_ / calibration_samples_;
+                gyro_z_offset_ = gyro_z_sum_ / calibration_samples_;
+                RCLCPP_INFO(this->get_logger(), "陀螺儀校準完成！偏移值: X=%d, Y=%d, Z=%d", 
+                            gyro_x_offset_, gyro_y_offset_, gyro_z_offset_);
+            }
+            return; 
+        }
+
+        gyro_x -= gyro_x_offset_;
+        gyro_y -= gyro_y_offset_;
+        gyro_z -= gyro_z_offset_;
+        
+        /*mpu6050原廠 +- 2g 加速度 內建16bit類比數位轉換器(ADC) -32768~32767*/
         // 進行物理單位轉換
         // 加速度計預設為 +-2g，1g = 16384 LSB。轉換為 m/s^2 需要乘上 9.80665
         float raw_accel_x_in_meters_per_sec_sq = (accel_x / 16384.0f) * 9.80665f;
         float raw_accel_y_in_meters_per_sec_sq = (accel_y / 16384.0f) * 9.80665f;
         float raw_accel_z_in_meters_per_sec_sq = (accel_z / 16384.0f) * 9.80665f;
 
-        // 陀螺儀預設為 +-250 度/秒，1度/秒 = 131 LSB。轉換為 rad/s 需要乘上 (PI / 180)
+        // 陀螺儀預設為 +-250 度/秒，1度/秒 = 131 LSB。轉換為 rad/s 需要乘上 (PI / 180)  $32768 / 250 = 131.072$ 約等於131 LSB/度/秒
         float raw_gyro_x_in_rad_per_sec = (gyro_x / 131.0f) * (M_PI / 180.0f);
         float raw_gyro_y_in_rad_per_sec = (gyro_y / 131.0f) * (M_PI / 180.0f);
-        float raw_gyro_z_in_rad_per_sec = (gyro_z / 131.0f) * (M_PI / 180.0f);
+           float raw_gyro_z_in_rad_per_sec = (gyro_z / 131.0f) * (M_PI / 180.0f);
 
         // 準備 ROS 2 訊息
         auto msg = sensor_msgs::msg::Imu();
@@ -92,7 +124,7 @@ private:
         msg.angular_velocity.y = raw_gyro_y_in_rad_per_sec;
         msg.angular_velocity.z = raw_gyro_z_in_rad_per_sec;
 
-        // 告訴濾波器：「我沒有算姿態 (Orientation)，請幫我算」
+        
         msg.orientation_covariance[0] = -1.0;
 
         // 發射！
