@@ -7,6 +7,8 @@
 #include <cmath>
 #include <cstdint>
 
+// pitch : x roll : y yaw : z
+
 class MPU6050Node : public rclcpp::Node {
 public:
     MPU6050Node() : Node("mpu6050_node") {
@@ -19,7 +21,7 @@ public:
             return;
         }
 
-        // 2. 喚醒 MPU6050 (寫入 0x00 到電源管理暫存器 0x6B)
+        // 2. 喚醒 MPU6050 (寫入 0x00 到電源管理暫存器 0x6B)  0x00 是要寫入的數值，表示喚醒裝置，因為 MPU6050 預設是睡眠模式，所以需要寫入 0x00 來喚醒它
         uint8_t wake_buf[2] = {0x6B, 0x00};
         if (write(file_, wake_buf, 2) != 2) { // 
             RCLCPP_ERROR(this->get_logger(), "無法喚醒 MPU6050！");
@@ -27,6 +29,19 @@ public:
             RCLCPP_INFO(this->get_logger(), "MPU6050 喚醒成功，開始發佈 IMU 數據！");
         }
 
+        // 2-1. 強制設定加速度計為 +-2g (寫入 0x00 到 0x1C 暫存器)
+        // 這樣除以 16384 算出來的地心引力才會是正確的 9.8
+        uint8_t accel_cfg_buf[2] = {0x1C, 0x00};
+        if (write(file_, accel_cfg_buf, 2) != 2) {
+            RCLCPP_WARN(this->get_logger(), "無法設定加速度計範圍");
+        }
+        // 2-2. 開啟數位低通濾波器 DLPF (寫入 0x04 到 0x1A 暫存器)
+        // 0x04 代表將頻寬限制在 21Hz，這能完美消除風扇與馬達的高頻震動雜訊！
+        uint8_t dlpf_cfg_buf[2] = {0x1A, 0x04};
+        if (write(file_, dlpf_cfg_buf, 2) != 2) {
+            RCLCPP_WARN(this->get_logger(), "無法設定低通濾波器");
+        }
+        
         // 3. 設定 100Hz (10ms) 的定時器，瘋狂讀取數據
         timer_ = this->create_wall_timer( // create_wall_timer 是 ROS 2 中用來創建定時器的方法，第一個參數是定時器的週期，一定要使用std::chrono，第二個參數是一個回調函數，當定時器觸發時會呼叫這個函數，這裡使用 std::bind 將 MPU6050Node 的 publish_imu_data 方法綁定為回調函數
             std::chrono::milliseconds(10),
@@ -114,14 +129,14 @@ private:
         msg.header.stamp = this->get_clock()->now();
         msg.header.frame_id = "imu_link"; // TF 座標系名稱
 
-        // 填入加速度
-        msg.linear_acceleration.x = raw_accel_x_in_meters_per_sec_sq;
-        msg.linear_acceleration.y = raw_accel_y_in_meters_per_sec_sq;
+        // 填入加速度 陀螺儀裝歪90度 所以 xy 相反傳入 
+        msg.linear_acceleration.x = -raw_accel_y_in_meters_per_sec_sq;
+        msg.linear_acceleration.y = raw_accel_x_in_meters_per_sec_sq;
         msg.linear_acceleration.z = raw_accel_z_in_meters_per_sec_sq;
 
-        // 填入角速度
-        msg.angular_velocity.x = raw_gyro_x_in_rad_per_sec;
-        msg.angular_velocity.y = raw_gyro_y_in_rad_per_sec;
+        // 填入角速度 陀螺儀裝歪90度 所以xy 相反傳入 
+        msg.angular_velocity.x = -raw_gyro_y_in_rad_per_sec;
+        msg.angular_velocity.y = raw_gyro_x_in_rad_per_sec;
         msg.angular_velocity.z = raw_gyro_z_in_rad_per_sec;
 
         
