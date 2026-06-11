@@ -25,7 +25,7 @@ class SpotMicroStandState : public SpotMicroState {
     return "Stand";
   }
 
- private:
+ protected:
   smk::BodyState cmd_state_;//上一次身體姿態
 
   // Three filters for angle commands

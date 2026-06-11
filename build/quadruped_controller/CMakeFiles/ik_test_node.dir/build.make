@@ -268,6 +268,11 @@ ik_test_node: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transi
 ik_test_node: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o
 ik_test_node: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o
 ik_test_node: CMakeFiles/ik_test_node.dir/build.make
+ik_test_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
+ik_test_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+ik_test_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+ik_test_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+ik_test_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_py.so
 ik_test_node: /opt/ros/jazzy/lib/libstatic_transform_broadcaster_node.so
 ik_test_node: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_fastrtps_c.so
 ik_test_node: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_introspection_c.so
@@ -275,6 +280,9 @@ ik_test_node: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_b
 ik_test_node: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_introspection_cpp.so
 ik_test_node: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_cpp.so
 ik_test_node: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_generator_py.so
+ik_test_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_c.so
+ik_test_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+ik_test_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_c.so
 ik_test_node: /opt/ros/jazzy/lib/libtf2_ros.so
 ik_test_node: /opt/ros/jazzy/lib/libtf2.so
 ik_test_node: /opt/ros/jazzy/lib/libmessage_filters.so
@@ -362,8 +370,8 @@ ik_test_node: /usr/lib/aarch64-linux-gnu/liborocos-kdl.so
 ik_test_node: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_typesupport_c.so
 ik_test_node: /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/lib/libi2c_pwm_board_msgs__rosidl_generator_c.so
 ik_test_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
-ik_test_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
 ik_test_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
+ik_test_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
 ik_test_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so
 ik_test_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so
 ik_test_node: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so

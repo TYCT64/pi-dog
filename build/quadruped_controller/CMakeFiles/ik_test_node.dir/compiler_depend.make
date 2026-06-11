@@ -1732,6 +1732,12 @@ CMakeFiles/ik_test_node.dir/src/main.cpp.o: /home/ubuntu/pi-dog_ws/src/quadruped
   /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/message_introspection.hpp \
   /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__builder.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__traits.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/imu.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h \
   /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp \
   /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp \
@@ -9079,6 +9085,12 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o: /home/ub
   /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/message_introspection.hpp \
   /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__builder.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__traits.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/imu.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h \
   /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp \
   /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp \
@@ -10922,6 +10934,16 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o: /home/ubuntu/pi-dog_ws/s
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/wrench__type_support.hpp:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/wrench__traits.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
+
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
@@ -11134,6 +11156,8 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o: /home/ubuntu/pi-dog_ws/s
 
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/matched.h:
 
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp:
+
 /usr/include/c++/13/pstl/glue_memory_defs.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/clock.hpp:
@@ -11226,8 +11250,6 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o: /home/ubuntu/pi-dog_ws/s
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h:
 
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h:
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose.hpp:
@@ -11299,8 +11321,6 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o: /home/ubuntu/pi-dog_ws/s
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__builder.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Replicate.h:
-
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Ref.h:
 
@@ -11694,8 +11714,6 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o: /home/ubuntu/pi-dog_ws/s
 
 /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h:
 
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp:
-
 /usr/include/aarch64-linux-gnu/bits/byteswap.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
@@ -11735,8 +11753,6 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o: /home/ubuntu/pi-dog_ws/s
 /usr/include/eigen3/Eigen/src/Core/Product.h:
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__type_support.hpp:
-
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/wrench__traits.hpp:
 
 /usr/include/c++/13/bits/vector.tcc:
 
@@ -12097,6 +12113,8 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o: /home/ubuntu/pi-dog_ws/s
 /opt/ros/jazzy/include/rcl/rcl/wait.h:
 
 /usr/include/c++/13/debug/assertions.h:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
 
@@ -12522,6 +12540,12 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o: /home/ubuntu/pi-dog_ws/s
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_clock_interface.hpp:
 
+/opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp:
+
+/opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
 
 /usr/include/c++/13/bits/uses_allocator_args.h:
@@ -12812,6 +12836,22 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o: /home/ubuntu/pi-dog_ws/s
 
 /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/message_introspection.hpp:
 
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__builder.hpp:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__traits.hpp:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/gthr.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/aarch64-linux-gnu/bits/iscanonical.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/accel__type_support.hpp:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/imu.hpp:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
 /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:
 
 /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp:
@@ -13082,14 +13122,6 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o: /home/ubuntu/pi-dog_ws/s
 
 /usr/include/libintl.h:
 
-/usr/include/aarch64-linux-gnu/c++/13/bits/gthr.h:
-
-/usr/include/linux/close_range.h:
-
-/usr/include/aarch64-linux-gnu/bits/iscanonical.h:
-
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/accel__type_support.hpp:
-
 /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h:
@@ -13161,11 +13193,3 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o: /home/ubuntu/pi-dog_ws/s
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp:
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp:
-
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
-
-/opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.hpp:
-
-/opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h:
-
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp:

@@ -17,7 +17,7 @@ class Command {
   bool idle_cmd_;
   bool walk_cmd_;
   bool stand_cmd_;
- 
+  bool balance_enable_cmd_;
   // Constructor
   Command()
       : x_vel_cmd_mps_(0.0)
@@ -29,6 +29,7 @@ class Command {
       , idle_cmd_(false)
       , walk_cmd_(false)
       , stand_cmd_(false)
+      , balance_enable_cmd_(false)
       { }
 
   bool getStandCmd() const {
@@ -43,6 +44,10 @@ class Command {
   bool getWalkCmd() const {
      return walk_cmd_;
   } 
+
+  bool getBalanceEnableCmd() const {
+    return balance_enable_cmd_;
+  }
  
   float getXSpeedCmd() const {
     return x_vel_cmd_mps_;
@@ -82,5 +87,6 @@ class Command {
     idle_cmd_ = false;
     walk_cmd_ = false;
     stand_cmd_ = false;
+    balance_enable_cmd_ = false;
   }
 };

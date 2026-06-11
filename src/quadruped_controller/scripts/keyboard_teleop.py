@@ -15,6 +15,7 @@ Pi-Dog 鍵盤遙控器
   1 : 進入 Idle (怠速放軟)
   2 : 進入 Stand (站立)
   3 : 進入 Walk (步行模式)
+  4 : 進入 Balance (IMU 平衡輔助模式) 🌟
 
 移動控制 (需在 Walk 模式):
        W
@@ -22,7 +23,7 @@ Pi-Dog 鍵盤遙控器
   Q/E : 左轉 / 右轉
   空白鍵 : 緊急煞車 (速度歸零)
 
-姿態控制 (需在 Stand 模式):
+姿態控制 (需在 Stand / Balance 模式):
   I/K : 點頭 / 抬頭 (Pitch)
   J/L : 左傾 / 右傾 (Roll)
   U/O : 左搖 / 右搖 (Yaw)
@@ -45,6 +46,8 @@ class KeyboardTeleop(Node):
         self.pub_stand = self.create_publisher(Bool, '/stand_cmd', 10)
         self.pub_idle = self.create_publisher(Bool, '/idle_cmd', 10)
         self.pub_walk = self.create_publisher(Bool, '/walk_cmd', 10)
+        self.pub_balance = self.create_publisher(Bool, '/balance_enable_cmd', 10) # 🌟 新增 Balance 發射器
+        
         self.pub_vel = self.create_publisher(Twist, '/cmd_vel', 10)
         self.pub_angle = self.create_publisher(Vector3, '/angle_cmd', 10)
 
@@ -62,6 +65,7 @@ class KeyboardTeleop(Node):
         if state == 'idle': self.pub_idle.publish(b)
         elif state == 'stand': self.pub_stand.publish(b)
         elif state == 'walk': self.pub_walk.publish(b)
+        elif state == 'balance': self.pub_balance.publish(b) # 🌟 觸發 Balance 狀態
 
     def publish_vel(self):
         t = Twist()
@@ -128,6 +132,10 @@ def main(args=None):
                 print(">> 切換至 Walk 模式 (清除殘留姿態)")
                 node.reset_all()
                 node.publish_state('walk')
+            elif key == '4': # 🌟 新增 Balance 模式按鍵
+                print(">> 切換至 Balance 模式 (啟動 IMU 水平輔助)")
+                node.reset_all()
+                node.publish_state('balance')
 
             # ==========================================
             # 2. 速度控制 (加入安全極限)

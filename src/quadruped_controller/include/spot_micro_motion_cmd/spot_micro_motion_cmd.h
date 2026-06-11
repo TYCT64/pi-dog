@@ -17,6 +17,7 @@
 #include "geometry_msgs/msg/vector3.hpp"
 #include "std_msgs/msg/bool.hpp"
 #include "std_msgs/msg/string.hpp"
+#include <sensor_msgs/msg/imu.hpp>
 #include "std_msgs/msg/float32_multi_array.hpp"
 #include "i2c_pwm_board_msgs/msg/servo_array.hpp"
 #include "i2c_pwm_board_msgs/msg/servo.hpp"
@@ -119,6 +120,10 @@ class SpotMicroMotionCmd : public rclcpp::Node
   // Returns current state name
   std::string getCurrentStateName();
 
+  // Returns current IMU roll angle
+  float getImuRoll() const; 
+  float getImuPitch() const;
+
  private:
   // Declare SpotMicroState a friend so it can access and modify private
   // members of this class
@@ -162,6 +167,10 @@ class SpotMicroMotionCmd : public rclcpp::Node
   // Servo array message for servo absolute command
   i2c_pwm_board_msgs::msg::ServoArray servo_array_absolute_;
 
+  // IMU balance related variables
+  bool balance_enabled_;
+  float imu_roll_ = 0.0f;
+  float imu_pitch_ = 0.0f;
 
   // ROS publisher and subscriber handles
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr stand_sub_; //讀取站立bool
@@ -169,6 +178,8 @@ class SpotMicroMotionCmd : public rclcpp::Node
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr  walk_sub_;//讀取行走bool
   rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr vel_cmd_sub_;//讀取Twist訊息包含 xyz 直線速度和 xyz 旋轉角速度）
   rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr body_angle_cmd_sub_; //原地姿態控制 三軸旋轉角度指令
+  rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr balance_enable_sub_; //讀取是否啟用平衡控制的bool
+  rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_; //讀取IMU數據 包含加速度和角速度
   rclcpp::Publisher<i2c_pwm_board_msgs::msg::ServoArray>::SharedPtr servos_absolute_pub_; // 12個馬達的絕對角度(通常是弧度)
   rclcpp::Publisher<i2c_pwm_board_msgs::msg::ServoArray>::SharedPtr servos_proportional_pub_; //12個馬達換算後的pwm比例
   rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr body_state_pub_; //除錯與報表
@@ -198,8 +209,14 @@ class SpotMicroMotionCmd : public rclcpp::Node
   // Callback method for walk command
   void walkCommandCallback(const std_msgs::msg::Bool::SharedPtr msg);
 
+  // Callback method for balance enable command
+  void balanceEnableCommandCallback(const std_msgs::msg::Bool::SharedPtr msg);
+
   // Callback method for angle command
   void angleCommandCallback(const geometry_msgs::msg::Vector3::SharedPtr msg);
+
+  //Callback method for IMU data
+  void imuDataCallback(const sensor_msgs::msg::Imu::SharedPtr msg);
 
   // Callback method for velocity command
   // Currently, the only supported commands from this message are 

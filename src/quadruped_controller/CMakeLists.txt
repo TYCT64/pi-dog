@@ -8,6 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(i2c_pwm_board_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)    # 解決找不到 Twist 的問題
@@ -55,6 +56,7 @@ ament_target_dependencies(ik_test_node
   rclcpp
   std_msgs
   geometry_msgs
+  sensor_msgs
   tf2
   tf2_ros
   tf2_eigen

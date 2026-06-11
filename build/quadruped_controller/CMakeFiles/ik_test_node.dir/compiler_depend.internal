@@ -1736,6 +1736,12 @@ CMakeFiles/ik_test_node.dir/src/main.cpp.o
  /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
  /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/message_introspection.hpp
  /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__builder.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__traits.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/imu.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp
@@ -9090,6 +9096,12 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o
  /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
  /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/message_introspection.hpp
  /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__builder.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__traits.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/imu.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp

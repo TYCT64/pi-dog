@@ -82,7 +82,15 @@ SpotMicroMotionCmd::SpotMicroMotionCmd() : Node("spot_micro_motion_cmd_node") {
   // walk cmd event subscriber
   walk_sub_ = this->create_subscription<std_msgs::msg::Bool>(
     "/walk_cmd" , 10, std::bind(&SpotMicroMotionCmd::walkCommandCallback, this, std::placeholders::_1));
+  
+  // balance enable cmd event subscriber
+  balance_enable_sub_ = this->create_subscription<std_msgs::msg::Bool>(
+    "/balance_enable_cmd" , 10, std::bind(&SpotMicroMotionCmd::balanceEnableCommandCallback, this, std::placeholders::_1));
 
+  // IMU data subscriber
+  imu_sub_ = this->create_subscription<sensor_msgs::msg::Imu>(
+    "/imu/data", 10, std::bind(&SpotMicroMotionCmd::imuDataCallback, this, std::placeholders::_1));
+    
   // body angle command subscriber
   body_angle_cmd_sub_ = this->create_subscription<geometry_msgs::msg::Vector3>(
     "/angle_cmd" , 10, std::bind(&SpotMicroMotionCmd::angleCommandCallback, this, std::placeholders::_1));
@@ -496,6 +504,38 @@ void SpotMicroMotionCmd::velCommandCallback(
   cmd_.yaw_rate_cmd_rps_ = msg->angular.z;//角速度
 }
 
+void SpotMicroMotionCmd::imuDataCallback(
+    const sensor_msgs::msg::Imu::SharedPtr msg) {
+  float qx =  msg->orientation.x;
+  float qy =  msg->orientation.y;
+  float qz =  msg->orientation.z;
+  float qw =  msg->orientation.w;
+
+  float sinr_cosp = 2.0f * (qw * qx + qy * qz);
+  float cosr_cosp = 1.0f - 2.0f * (qx * qx + qy * qy);
+  imu_roll_ = std::atan2(sinr_cosp, cosr_cosp);
+
+  float sinp = 2.0f * (qw * qy - qz * qx);
+  if (std::abs(sinp) >= 1){
+    imu_pitch_ = std::copysign(M_PI / 2.0f, sinp); // use 90 degrees if out of range
+  } else {
+    imu_pitch_ = std::asin(sinp);
+  }
+  
+}
+
+void SpotMicroMotionCmd::balanceEnableCommandCallback(
+    const std_msgs::msg::Bool::SharedPtr msg) {
+  if (msg->data == true) {cmd_.balance_enable_cmd_ = true;}
+}
+
+float SpotMicroMotionCmd::getImuRoll() const {
+  return imu_roll_;
+}
+
+float SpotMicroMotionCmd::getImuPitch() const {
+  return imu_pitch_;
+}
 
 void SpotMicroMotionCmd::resetEventCommands() {
   // Reset all event commands, setting all command states false if they were true 
@@ -506,6 +546,7 @@ void SpotMicroMotionCmd::resetEventCommands() {
 void SpotMicroMotionCmd::handleInputCommands() {  
   // Delegate input handling to state
   state_->handleInputCommands(sm_.getBodyState(), smnc_, cmd_, this, &body_state_cmd_);
+  
 }
 
 

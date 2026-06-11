@@ -1051,6 +1051,12 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o: \
  /usr/include/kdl/utilities/kdl-config.h /usr/include/kdl/frames.inl \
  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Transform.hpp \
  /home/ubuntu/pi-dog_ws/src/quadruped_controller/include/spot_micro_motion_cmd/spot_micro_motion_cmd.h \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/imu.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__builder.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__traits.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/servo_array.hpp \
  /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo_array__struct.hpp \
  /home/ubuntu/pi-dog_ws/install/i2c_pwm_board_msgs/include/i2c_pwm_board_msgs/i2c_pwm_board_msgs/msg/detail/servo__struct.hpp \
