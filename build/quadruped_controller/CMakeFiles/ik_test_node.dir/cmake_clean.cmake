@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ik_test_node.dir/src/kinematics/utils.cpp.o.d"
   "CMakeFiles/ik_test_node.dir/src/main.cpp.o"
   "CMakeFiles/ik_test_node.dir/src/main.cpp.o.d"
+  "CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.o"
+  "CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.o.d"
   "CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o"
   "CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o.d"
   "CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o"

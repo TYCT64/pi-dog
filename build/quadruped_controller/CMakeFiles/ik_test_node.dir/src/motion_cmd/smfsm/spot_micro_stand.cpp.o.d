@@ -968,4 +968,5 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o: \
  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/jazzy/include/tf2_ros/tf2_ros/qos.hpp \
  /opt/ros/jazzy/include/tf2_ros/tf2_ros/static_transform_broadcaster.h \
- /opt/ros/jazzy/include/tf2_ros/tf2_ros/static_transform_broadcaster.hpp
+ /opt/ros/jazzy/include/tf2_ros/tf2_ros/static_transform_broadcaster.hpp \
+ /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_balance.h

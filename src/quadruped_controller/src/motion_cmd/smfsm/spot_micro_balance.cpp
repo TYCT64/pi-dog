@@ -52,12 +52,12 @@ void SpotMicroBalanceState::handleInputCommands(const smk::BodyState& body_state
     body_state_cmd->xyz_pos = cmd_state_.xyz_pos;
     body_state_cmd->leg_feet_pos = cmd_state_.leg_feet_pos;
 
-    // ==========================================
-    // 3. 🌟 核心：疊加 IMU 現實角度 (加法補償) 🌟
-    // ==========================================
-    // 注意：必須放在 PWM 發佈之前！
-    body_state_cmd->euler_angs.phi -= smmc->getImuRoll();
-    body_state_cmd->euler_angs.theta -= smmc->getImuPitch();
+    float imu_roll = smmc->getImuRoll();
+    float imu_pitch = smmc->getImuPitch();
+    if (std::abs(imu_roll) < 0.02f) imu_roll = 0.0f;
+    if (std::abs(imu_pitch) < 0.02f) imu_pitch = 0.0f;
+    body_state_cmd->euler_angs.phi -= imu_roll;
+    body_state_cmd->euler_angs.theta -= imu_pitch;
 
     // ==========================================
     // 4. 送出運算與發佈 PWM

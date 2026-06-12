@@ -3,6 +3,7 @@
 #include "spot_micro_transition_idle.h"
 #include "spot_micro_walk.h"
 #include "spot_micro_motion_cmd.h"
+#include "spot_micro_balance.h"
 #include "rate_limited_first_order_filter.h"
 
 SpotMicroStandState::SpotMicroStandState() {
@@ -32,7 +33,9 @@ void SpotMicroStandState::handleInputCommands(const smk::BodyState& body_state,
 
   } else if (cmd.getWalkCmd() == true) {
     changeState(smmc, std::make_unique<SpotMicroWalkState>());
-
+  
+  } else if (cmd.getBalanceEnableCmd() == true) {
+    changeState(smmc, std::make_unique<SpotMicroBalanceState>());
   } else {
     // Get command values
     cmd_state_.euler_angs.phi   = cmd.getPhiCmd();

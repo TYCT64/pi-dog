@@ -36,7 +36,7 @@ add_executable(ik_test_node
 
   src/motion_cmd/spot_micro_motion_cmd.cpp
   src/motion_cmd/utils.cpp
-
+  src/motion_cmd/smfsm/spot_micro_balance.cpp
   src/motion_cmd/smfsm/spot_micro_idle.cpp
   src/motion_cmd/smfsm/spot_micro_state.cpp
   src/motion_cmd/smfsm/spot_micro_stand.cpp

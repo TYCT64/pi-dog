@@ -153,10 +153,24 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/utils.cpp -o CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.s
 
+CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.o: CMakeFiles/ik_test_node.dir/flags.make
+CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.o: /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_balance.cpp
+CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.o: CMakeFiles/ik_test_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.o -MF CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.o.d -o CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.o -c /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_balance.cpp
+
+CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_balance.cpp > CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.i
+
+CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_balance.cpp -o CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.s
+
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o: CMakeFiles/ik_test_node.dir/flags.make
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o: /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_idle.cpp
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o: CMakeFiles/ik_test_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o -MF CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o.d -o CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o -c /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_idle.cpp
 
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.s: cmake_fo
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_state.cpp.o: CMakeFiles/ik_test_node.dir/flags.make
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_state.cpp.o: /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_state.cpp.o: CMakeFiles/ik_test_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_state.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_state.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_state.cpp.o -MF CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_state.cpp.o.d -o CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_state.cpp.o -c /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_state.cpp
 
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_state.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_state.cpp.s: cmake_f
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o: CMakeFiles/ik_test_node.dir/flags.make
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o: /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_stand.cpp
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o: CMakeFiles/ik_test_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o -MF CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o.d -o CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o -c /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_stand.cpp
 
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.s: cmake_f
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o: CMakeFiles/ik_test_node.dir/flags.make
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o: /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o: CMakeFiles/ik_test_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o -MF CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o.d -o CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.o -c /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp
 
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_idle.cpp.
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o: CMakeFiles/ik_test_node.dir/flags.make
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o: /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o: CMakeFiles/ik_test_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o -MF CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o.d -o CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.o -c /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp
 
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_transition_stand.cpp
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o: CMakeFiles/ik_test_node.dir/flags.make
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o: /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_walk.cpp
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o: CMakeFiles/ik_test_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o -MF CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o.d -o CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.o -c /home/ubuntu/pi-dog_ws/src/quadruped_controller/src/motion_cmd/smfsm/spot_micro_walk.cpp
 
 CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_walk.cpp.i: cmake_force
@@ -245,6 +259,7 @@ ik_test_node_OBJECTS = \
 "CMakeFiles/ik_test_node.dir/src/kinematics/spot_micro_leg.cpp.o" \
 "CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o" \
 "CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o" \
+"CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.o" \
 "CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o" \
 "CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_state.cpp.o" \
 "CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o" \
@@ -261,6 +276,7 @@ ik_test_node: CMakeFiles/ik_test_node.dir/src/kinematics/utils.cpp.o
 ik_test_node: CMakeFiles/ik_test_node.dir/src/kinematics/spot_micro_leg.cpp.o
 ik_test_node: CMakeFiles/ik_test_node.dir/src/motion_cmd/spot_micro_motion_cmd.cpp.o
 ik_test_node: CMakeFiles/ik_test_node.dir/src/motion_cmd/utils.cpp.o
+ik_test_node: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.o
 ik_test_node: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_idle.cpp.o
 ik_test_node: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_state.cpp.o
 ik_test_node: CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_stand.cpp.o
@@ -397,7 +413,7 @@ ik_test_node: /opt/ros/jazzy/lib/librcpputils.so
 ik_test_node: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 ik_test_node: /opt/ros/jazzy/lib/librcutils.so
 ik_test_node: CMakeFiles/ik_test_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable ik_test_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/pi-dog_ws/build/quadruped_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable ik_test_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ik_test_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

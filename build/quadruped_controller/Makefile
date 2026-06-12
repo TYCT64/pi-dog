@@ -306,6 +306,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ik_test_node.dir/build.make CMakeFiles/ik_test_node.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/motion_cmd/smfsm/spot_micro_balance.o: src/motion_cmd/smfsm/spot_micro_balance.cpp.o
+.PHONY : src/motion_cmd/smfsm/spot_micro_balance.o
+
+# target to build an object file
+src/motion_cmd/smfsm/spot_micro_balance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ik_test_node.dir/build.make CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.o
+.PHONY : src/motion_cmd/smfsm/spot_micro_balance.cpp.o
+
+src/motion_cmd/smfsm/spot_micro_balance.i: src/motion_cmd/smfsm/spot_micro_balance.cpp.i
+.PHONY : src/motion_cmd/smfsm/spot_micro_balance.i
+
+# target to preprocess a source file
+src/motion_cmd/smfsm/spot_micro_balance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ik_test_node.dir/build.make CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.i
+.PHONY : src/motion_cmd/smfsm/spot_micro_balance.cpp.i
+
+src/motion_cmd/smfsm/spot_micro_balance.s: src/motion_cmd/smfsm/spot_micro_balance.cpp.s
+.PHONY : src/motion_cmd/smfsm/spot_micro_balance.s
+
+# target to generate assembly for a file
+src/motion_cmd/smfsm/spot_micro_balance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ik_test_node.dir/build.make CMakeFiles/ik_test_node.dir/src/motion_cmd/smfsm/spot_micro_balance.cpp.s
+.PHONY : src/motion_cmd/smfsm/spot_micro_balance.cpp.s
+
 src/motion_cmd/smfsm/spot_micro_idle.o: src/motion_cmd/smfsm/spot_micro_idle.cpp.o
 .PHONY : src/motion_cmd/smfsm/spot_micro_idle.o
 
@@ -526,6 +550,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/motion_cmd/smfsm/spot_micro_balance.o"
+	@echo "... src/motion_cmd/smfsm/spot_micro_balance.i"
+	@echo "... src/motion_cmd/smfsm/spot_micro_balance.s"
 	@echo "... src/motion_cmd/smfsm/spot_micro_idle.o"
 	@echo "... src/motion_cmd/smfsm/spot_micro_idle.i"
 	@echo "... src/motion_cmd/smfsm/spot_micro_idle.s"
