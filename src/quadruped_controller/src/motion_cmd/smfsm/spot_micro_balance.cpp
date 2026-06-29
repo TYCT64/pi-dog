@@ -14,7 +14,7 @@ SpotMicroBalanceState::~SpotMicroBalanceState() {
 void SpotMicroBalanceState::handleInputCommands(const smk::BodyState& body_state,
                                                 const SpotMicroNodeConfig& smnc,
                                                 const Command& cmd,
-                                                SpotMicroMotionCmd* smmc,
+                                                SsourpotMicroMotionCmd* smmc,
                                                 smk::BodyState* body_state_cmd) {
   if (smnc.debug_mode) {
     std::cout << "In Spot Micro Balance State" << std::endl;
@@ -54,10 +54,10 @@ void SpotMicroBalanceState::handleInputCommands(const smk::BodyState& body_state
 
     float imu_roll = smmc->getImuRoll();
     float imu_pitch = smmc->getImuPitch();
-    if (std::abs(imu_roll) < 0.02f) imu_roll = 0.0f;
-    if (std::abs(imu_pitch) < 0.02f) imu_pitch = 0.0f;
+    if (std::abs(imu_roll) < 0.05f) imu_roll = 0.0f;
+    if (std::abs(imu_pitch) < 0.05f) imu_pitch = 0.0f;
     body_state_cmd->euler_angs.phi -= imu_roll;
-    body_state_cmd->euler_angs.theta -= imu_pitch;
+    body_state_cmd->euler_angs.theta += imu_pitch;
 
     // ==========================================
     // 4. 送出運算與發佈 PWM

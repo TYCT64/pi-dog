@@ -34,7 +34,7 @@ void SpotMicroTransitionStandState::init(const smk::BodyState& body_state,
   end_body_state_.xyz_pos.x = 0.0f;
   end_body_state_.xyz_pos.y = smnc.default_stand_height;
   end_body_state_.xyz_pos.z = 0.0f;
-
+  
   // Initialize filters
   float dt = smnc.dt;
   float tau = smnc.transit_tau;

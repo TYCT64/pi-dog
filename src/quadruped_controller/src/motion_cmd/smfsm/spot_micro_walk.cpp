@@ -303,6 +303,7 @@
       const Command& cmd,
       const SpotMicroNodeConfig& smnc) {
 
+        
     // Convenience variables
     float dt = smnc.dt;
 

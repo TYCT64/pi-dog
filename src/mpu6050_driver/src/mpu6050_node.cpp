@@ -14,8 +14,8 @@ public:
     MPU6050Node() : Node("mpu6050_node") {
         publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("/imu/data_raw", 10);
         
-        // 1. 打開樹莓派的 I2C Bus 1
-        file_ = open("/dev/i2c-1", O_RDWR); //Open for ReaD and WRite 
+        // 1. 打開樹莓派的 I2C Bus 2
+        file_ = open("/dev/i2c-2", O_RDWR); //Open for ReaD and WRite 
         if (file_ < 0 || ioctl(file_, I2C_SLAVE, 0x68) < 0) {  //ioctl (Input/Output Control) 用來設定 I2C 裝置地址 I2C_SLAVE 是一個常數，代表要設定的裝置是 I2C 的從設備 (Slave)，0x68 是 MPU6050 的 I2C 地址
             RCLCPP_ERROR(this->get_logger(), "MPU6050 連線失敗！檢查 i2cdetect");
             return;

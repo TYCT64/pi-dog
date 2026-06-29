@@ -5,37 +5,37 @@ ik_test_node:
     # Robot wireframe size parameters
     # Lengths representening a wireframe model of the robot. All lengths joint to joint
     hip_link_length: 0.055 # Straight line distance of the hip link (horizontal leg link)
-    upper_leg_link_length: 0.13 # Straight line distance of the upper leg link, joint to joint
-    lower_leg_link_length: 0.155 # Straight line distance of the lower leg link, joint to joint
+    upper_leg_link_length: 0.125 # Straight line distance of the upper leg link, joint to joint
+    lower_leg_link_length: 0.15 # Straight line distance of the lower leg link, joint to joint
     body_width: 0.205 # Horizontal width between hip joints
     body_length: 0.30 # Length between shoulder joints
 
     # Stance parameters
     default_stand_height: 0.2   # Height of robot body center when standing
-    stand_front_x_offset: 0.015   # Fwb/back offset of front two legs from default stance
-    stand_back_x_offset: -0.000      # Fwd/back offset of back two legs from default stance
+    stand_front_x_offset: 0.000   # Fwb/back offset of front two legs from default stance
+    stand_back_x_offset: -0.015      # Fwd/back offset of back two legs from default stance
     #stand_front_x_offset: -0.010   # Offset better tuned for trot gait
     #stand_back_x_offset: -0.010      # Offset better tuned for trot gait
-    lie_down_height: 0.12        # Height of body center when sitting
-    lie_down_foot_x_offset: 0.065 # Fwd/back offset of all(?) feet from default stance when sitting 
+    lie_down_height: 0.1       # Height of body center when sitting
+    lie_down_foot_x_offset: -0.025 # Fwd/back offset of all(?) 1feet from default stance when sitting 
 
     # Servo parameters
     #center_angle_deg  這顆馬達在物理上的90度時，在我運動學大腦中是幾度
     # range 極限角度需要多少脈衝
     num_servos: 12
     servo_max_angle_deg: 82.5 #中心點往左右x度
-    RF_3: {num: 13.0,  center: 306.0, range: 390.0,direction:  1.0, center_angle_deg: 86.1} #knee 0, 107 90, 315
-    RF_2: {num: 9.0,  center: 306.0, range: 390.0,direction:  1.0, center_angle_deg: -0.42} #thigh 0, 307 -90, 95
-    RF_1: {num: 10.0,  center: 306.0, range: 390.0,direction: -1.0, center_angle_deg: 42.2} #hip 0, 410 , -45, 507
-    RB_3: {num: 6.0,  center: 306.0, range: 390.0,direction:  1.0, center_angle_deg:  88.2} #0, 107 90, 310
-    RB_2: {num: 1.0,  center: 306.0, range: 390.0,direction:  1.0, center_angle_deg: 1.7} #0,305 -90, 101
-    RB_1: {num: 3.0,  center: 306.0, range: 390.0,direction:  1.0, center_angle_deg:  44.8} #0, 215  -45, 104
-    LB_3: {num: 5.0,  center: 306.0, range: 390.0,direction:  1.0, center_angle_deg: -90.0} #0,510 , -90, 306
-    LB_2: {num: 4.0,  center: 306.0, range: 390.0,direction:  1.0, center_angle_deg:  6.2} #0, 290 90, 520
-    LB_1: {num: 2.0,  center: 306.0, range: 390.0,direction: -1.0, center_angle_deg:  43.6} #0, 405 -45, 507
-    LF_3: {num: 14.0, center: 306.0, range: 390.0,direction:  1.0, center_angle_deg: -83.0} #0, 493 -90, 290
-    LF_2: {num: 12.0, center: 306.0, range: 390.0,direction:  1.0, center_angle_deg:  3.2} #0, 298 90, 520
-    LF_1: {num: 11.0, center: 306.0, range: 390.0,direction:  1.0, center_angle_deg:  52.9} #0,203 ,-45, 95
+    RF_3: {num: 13.0,  center: 307.0, range: 390.0,direction:  -1.0, center_angle_deg: 101.45} #knee 0, 555 90, 335 
+    RF_2: {num: 12.0,  center: 307.0, range: 390.0,direction:  1.0, center_angle_deg: -1.22} #thigh 0, 310 -90, 90
+    RF_1: {num: 11.0,  center: 307.0, range: 390.0,direction: -1.0, center_angle_deg: 8.28} #hip 0, 330 , -45, 455
+    RB_3: {num: 5.0,  center: 307.0, range: 390.0,direction:  -1.0, center_angle_deg:  52.04} #0, 440 90, 210
+    RB_2: {num: 4.0,  center: 307.0, range: 390.0,direction:  1.0, center_angle_deg: -14.2} #0,343 -90, 115
+    RB_1: {num: 3.0,  center: 307.0, range: 390.0,direction:  1.0, center_angle_deg:  25.12} #0, 250  -45, 130
+    LB_3: {num: 6.0,  center: 307.0, range: 390.0,direction:  -1.0, center_angle_deg: -53.61} #0,170 , -90, 400
+    LB_2: {num: 1.0,  center: 307.0, range: 390.0,direction:  1.0, center_angle_deg:  -3.34} #0, 315 90, 530
+    LB_1: {num: 2.0,  center: 307.0, range: 390.0,direction: -1.0, center_angle_deg:  16.12} #0, 350 -45, 470
+    LF_3: {num: 14.0, center: 307.0, range: 390.0,direction:  -1.0, center_angle_deg: -55.12} #0, 160 -90, 400
+    LF_2: {num: 9.0, center: 307.0, range: 390.0,direction:  1.0, center_angle_deg:  18.9} #0, 260 90, 483
+    LF_1: {num: 10.0, center: 307.0, range: 390.0,direction:  1.0, center_angle_deg:  14.87} #0,270 ,-45, 158
 
     # Control Parameters
     transit_tau: 0.3 # Time constant in seconds for first order filters during transition state 低通濾波
@@ -70,7 +70,7 @@ ik_test_node:
     lf_contact_phases: [1, 1, 1, 1, 1, 1, 1, 0]
     lb_contact_phases: [1, 1, 1, 1, 1, 0, 1, 1]
     overlap_time: 0.2
-    swing_time: 0.425
+    swing_time: 0.38
     body_shift_phases: [1, 2, 3, 4, 5, 6, 7, 8]
     # 1：肚子正在滑向【左前方】！為接下來要抬起的「右前腳」做準備。
 
@@ -87,9 +87,9 @@ ik_test_node:
     # 6：【定格在右前方】。此時左前腳在空中揮舞，重心穩在右前。
 
     # 8：【定格在右後方】。此時右後腳在空中揮舞，重心穩在右後。
-    fwd_body_balance_shift: 0.017 # Amount the body center will shift forward when walking 0.015
-    back_body_balance_shift: 0.012 # Amount the body center will shift backward when walking 0.01
-    side_body_balance_shift: 0.012 # Amount the body center will shift side to side when walking  0.012
+    fwd_body_balance_shift: 0.02 # Amount the body center will shift forward when walking 0.015
+    back_body_balance_shift: 0.01 # Amount the body center will shift backward when walking 0.01
+    side_body_balance_shift: 0.015 # Amount the body center will shift side to side when walking  0.012
 
     #################################################
     ############## 4 Phase Trot Gait ################
